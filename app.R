@@ -97,7 +97,7 @@ shinyApp(
                              column(2,
                                     h4("")),
                              br(),
-                             h3("We'd like to thank the tremendous effort our the team who are maintaining this database (twitter handles): Gautam Dey (@Dey_Gautam), Srivats Venkataramanan (@srivatsv), Sundar Naganathan (@Sundar_Ram_07), Debbie Ho, Zhang-He Goh (@zhanghe_goh), Kirsty Hooper (@KirstyHooper13), Lars Hubatsch (@LarsHubatsch), Mariana De Niz (@mariana_deniz), Sejal Davla (@JustABrainThing), Mate Palfy (@mate_palfy) & Jonny Coates (@JACoates91). For questions or queries please contact prelights@biologists.com")),
+                             h3("We'd like to thank the tremendous effort of our the team who are maintaining this database (twitter handles): Gautam Dey (@Dey_Gautam), Srivats Venkataramanan (@srivatsv), Sundar Naganathan (@Sundar_Ram_07), Debbie Ho, Zhang-He Goh (@zhanghe_goh), Kirsty Hooper (@KirstyHooper13), Lars Hubatsch (@LarsHubatsch), Mariana De Niz (@mariana_deniz), Sejal Davla (@JustABrainThing), Mate Palfy (@mate_palfy) & Jonny Coates (@JACoates91). For questions or queries please contact prelights@biologists.com")),
                            
                            br(),
                            
