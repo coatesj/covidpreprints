@@ -1,3 +1,4 @@
+#
 # Code relating to the preprints in response to COVID-19 timeline 
 # Maintained by the team @preLights (full team details in About page)
 # 
@@ -56,7 +57,7 @@ shinyApp(
                                column(2,
                                       h4("")),
                                br(),
-                               h3("This work is being maintained by Gautam Dey, Sundar Naganathan, Debbie Ho, Zhang-He Goh, Kirsty Hooper, Lars Hubatsch, Mariana De Niz, Sejal Davla, Mate Palfy & Jonny Coates. For questions or queries please contact prelights@biologists.com or Jonny Coates jc2216@cam.ac.uk")),
+                               h3("This work is being maintained by Gautam Dey, Srivats Venkataramanan, Sundar Naganathan, Debbie Ho, Zhang-He Goh, Kirsty Hooper, Lars Hubatsch, Mariana De Niz, Sejal Davla, Mate Palfy & Jonny Coates. For questions or queries please contact prelights@biologists.com or Jonny Coates jc2216@cam.ac.uk")),
                              
                              br(),
                              
@@ -96,7 +97,7 @@ shinyApp(
                              column(2,
                                     h4("")),
                              br(),
-                             h3("We'd like to thank the tremendous effort of our the team who are maintaining this database (twitter handles): Gautam Dey (@Dey_Gautam), Sundar Naganathan (@Sundar_Ram_07), Debbie Ho, Zhang-He Goh (@zhanghe_goh), Kirsty Hooper (@KirstyHooper13), Lars Hubatsch (@LarsHubatsch), Mariana De Niz (@mariana_deniz), Sejal Davla (@JustABrainThing), Mate Palfy (@mate_palfy) & Jonny Coates (@JACoates91). For questions or queries please contact prelights@biologists.com  or Jonny Coates jc2216@cam.ac.uk"),
+                             h3("We'd like to thank the tremendous effort of our the team who are maintaining this database (twitter handles): Gautam Dey (@Dey_Gautam), Srivats Venkataramanan (@srivatsv), Sundar Naganathan (@Sundar_Ram_07), Debbie Ho, Zhang-He Goh (@zhanghe_goh), Kirsty Hooper (@KirstyHooper13), Lars Hubatsch (@LarsHubatsch), Mariana De Niz (@mariana_deniz), Sejal Davla (@JustABrainThing), Mate Palfy (@mate_palfy) & Jonny Coates (@JACoates91). For questions or queries please contact prelights@biologists.com  or Jonny Coates jc2216@cam.ac.uk"),
                              br(),
                              h3("Please also find a curated prelist of interesting COVID-19 related preprints ",
                              a("here ", 
