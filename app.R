@@ -64,7 +64,7 @@ shinyApp(
                              fluidRow(
                                column(2,
                                       h4("")),
-                               h4("To use the timeline, navigate by clicking and dragging or through the use of the buttons. Hovering the mouse over an item will reveal more details pertaining to that point. Navigate between the timeline view and the table view using the navigation buttons at the top of this page")),
+                               h4("To use the timeline, navigate by clicking and dragging or through the use of the buttons. Hovering the mouse over an item will reveal more details pertaining to that point. Navigate between the timeline view and the table view using the navigation buttons at the top of this page. This timeline will be updated weekly.")),
                            
                              br(),
                              
