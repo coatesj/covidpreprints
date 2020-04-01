@@ -49,7 +49,7 @@ shinyApp(
                              fluidRow(
                                column(2,
                                       h4(" ")),
-                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see table). Last updated: 01/04/2020")),
+                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information). Last updated: 01/04/2020")),
                              
                              #br(),
                              
@@ -82,7 +82,7 @@ shinyApp(
                   
                   # Page 2
                   
-                  tabPanel("Table",
+                  tabPanel("Further information",
                            DT::dataTableOutput("table")
                   ),
                   
@@ -117,7 +117,7 @@ shinyApp(
   # Server settings  
   server <- function(input, output, session) {
     output$timeline <- renderTimevis({
-      timevis(final_data)
+      timevis(final_data, fit = FALSE)
     })
     
     output$table <- DT::renderDataTable({
