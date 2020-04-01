@@ -1,10 +1,13 @@
 #
 # Code relating to the preprints in response to COVID-19 timeline 
-# Maintained by the team @preLights
+# Maintained by the team @preLights (full team details in About page)
 # 
-# Last update: 30/03/2020
 #
-# Jonny Coates, jc2216@cam.ac.uk
+# Thanks to Dean Attali for developing the timevis library and writing an excellent, clear, guide to hosting a shiny app website on Digital Ocean.
+#
+# Last update: 01/04/2020
+#
+# For questions or quiries please contact Jonny Coates, jc2216@cam.ac.uk
 
 #Load relevant libraries
 library(shiny)
@@ -36,6 +39,8 @@ shinyApp(
                              actionButton("btn2", "Center on first reported case"),
                              actionButton("btn3", "Center on 1st Feb"),
                              actionButton("btn4", "Center on 1st March"),
+                             actionButton("btn5", "Center on 1st April"),
+                             actionButton("btn6", "Center on 1st May"),
                              
                              #Add rows underneath containing additional text
                              br(),
@@ -44,7 +49,7 @@ shinyApp(
                              fluidRow(
                                column(2,
                                       h4(" ")),
-                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see table). Last updated: 30/03/2020")),
+                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see table). Last updated: 01/04/2020")),
                              
                              #br(),
                              
@@ -52,7 +57,7 @@ shinyApp(
                                column(2,
                                       h4("")),
                                br(),
-                               h3("This work is being maintained by Gautam Dey, Srivats Venkataramanan, Sundar Naganathan, Debbie Ho, Zhang-He, Kirsty Hooper, Lars Hubatsch, Mariana De Niz, Sejal Davla, Mate Palfy & Jonny Coates. For questions or queries please contact prelights@biologists.com")),
+                               h3("This work is being maintained by Gautam Dey, Srivats Venkataramanan, Sundar Naganathan, Debbie Ho, Zhang-He Goh, Kirsty Hooper, Lars Hubatsch, Mariana De Niz, Sejal Davla, Mate Palfy & Jonny Coates. For questions or queries please contact prelights@biologists.com")),
                              
                              br(),
                              
@@ -81,12 +86,30 @@ shinyApp(
                            DT::dataTableOutput("table")
                   ),
                   
-                  #Page 3
+                  # Page 3
                   tabPanel("Resources",
                            DT::dataTableOutput("resources")
-                  )
+                  ),
                   
-                  
+                  # Page 4 - About
+                  tabPanel("About",
+                           fluidRow(
+                             column(2,
+                                    h4("")),
+                             br(),
+                             h3("We'd like to thank the tremendous effort our the team who are maintaining this database (twitter handles): Gautam Dey (@Dey_Gautam), Srivats Venkataramanan (@srivatsv), Sundar Naganathan (@Sundar_Ram_07), Debbie Ho, Zhang-He Goh (@zhanghe_goh), Kirsty Hooper (@KirstyHooper13), Lars Hubatsch (@LarsHubatsch), Mariana De Niz (@mariana_deniz), Sejal Davla (@JustABrainThing), Mate Palfy (@mate_palfy) & Jonny Coates (@JACoates91). For questions or queries please contact prelights@biologists.com")),
+                           
+                           br(),
+                           
+                           fluidRow(
+                             column(2,
+                                    h4("")),
+                             p("preLights is a community service supported by The Company of Biologists, the not-for-profit publisher of Development, Journal of Cell Science, Journal of Experimental Biology, Disease Models & Mechanisms and Biology Open. The Company of Biologists is also a UK charity, providing grants and other support for the scientific community. 
+                                 Follow preLights on Twitter at https://twitter.com/preLights")),
+                           br(),
+                           
+                           img(src = "prelights.png", height = 70, width = 200))
+                           
                   # Close UI
   ),
   
@@ -117,6 +140,12 @@ shinyApp(
     })
     observeEvent(input$btn4, {
       centerTime("timeline", "03-01-2020", (animation = TRUE))
+    })
+    observeEvent(input$btn5, {
+      centerTime("timeline", "04-01-2020", (animation = TRUE))
+    })
+    observeEvent(input$btn6, {
+      centerTime("timeline", "05-01-2020", (animation = TRUE))
     })
   }
 )
