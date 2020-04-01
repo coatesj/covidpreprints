@@ -3,7 +3,7 @@
 # Maintained by the team @preLights (full team details in About page)
 # 
 #
-# Thanks to Dean Attali for developing the timevis library and writing an excellent, clear, guide to hosting a shiny app website on Digital Ocean.
+# Thanks to Dean Attali for developing the timevis library and writing an excellent clear guide to hosting a shiny app website on Digital Ocean.
 #
 # Last update: 01/04/2020
 #
