@@ -1,10 +1,11 @@
 #
-# Code relating to the preprints in response to COVID-19 timeline 
+# Code relating to the preprints in response to COVID-19 timeline (www.covidpreprints.com)
 # Maintained by the team @preLights (full team details in About page)
 # 
 #
 # Thanks to Dean Attali for developing the timevis library and writing an excellent clear guide to hosting a shiny app website on Digital Ocean.
-#
+# The code and data used to create this site is hosted on github: https://github.com/coatesj/shiny-server 
+# 
 # Last update: 01/04/2020
 #
 # For questions or quiries please contact Jonny Coates, jc2216@cam.ac.uk
@@ -97,7 +98,7 @@ shinyApp(
                              column(2,
                                     h4("")),
                              br(),
-                             h3("We'd like to thank the tremendous effort of our the team who are maintaining this database (twitter handles): Gautam Dey (@Dey_Gautam), Srivats Venkataramanan (@srivatsv), Sundar Naganathan (@Sundar_Ram_07), Debbie Ho, Zhang-He Goh (@zhanghe_goh), Kirsty Hooper (@KirstyHooper13), Lars Hubatsch (@LarsHubatsch), Mariana De Niz (@mariana_deniz), Sejal Davla (@JustABrainThing), Mate Palfy (@mate_palfy) & Jonny Coates (@JACoates91). For questions or queries please contact prelights@biologists.com  or Jonny Coates jc2216@cam.ac.uk"),
+                             h3("We'd like to thank the tremendous effort of our team who are maintaining this database (twitter handles): Gautam Dey (@Dey_Gautam), Srivats Venkataramanan (@srivatsv), Sundar Naganathan (@Sundar_Ram_07), Debbie Ho, Zhang-He Goh (@zhanghe_goh), Kirsty Hooper (@KirstyHooper13), Lars Hubatsch (@LarsHubatsch), Mariana De Niz (@mariana_deniz), Sejal Davla (@JustABrainThing), Mate Palfy (@mate_palfy) & Jonny Coates (@JACoates91). For questions or queries please contact prelights@biologists.com  or Jonny Coates jc2216@cam.ac.uk"),
                              br(),
                              h3("Please also find a curated prelist of interesting COVID-19 related preprints ",
                              a("here ", 
