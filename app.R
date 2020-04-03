@@ -109,7 +109,11 @@ shinyApp(
                                href = "https://prelights.biologists.com/prelists/wuhan-coronavirus-2019-ncov/"),
                              ("or visit the preLights website "),
                              a("here.",
-                               href = "https://prelights.biologists.com"))),
+                               href = "https://prelights.biologists.com")),
+                             br(),
+                             h3("The underlying code and data in support of this resource can be found on ",
+                                a("github.",
+                                  href = "https://github.com/coatesj/shiny-server"))),
                            
                            br(),
                            
