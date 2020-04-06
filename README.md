@@ -7,4 +7,4 @@ Coding & website maintained by Dr J Coates (jc2216@cam.ac.uk) and the preLights 
 Suggestions for improvement to the code are welcomed - The current code is the result of a "learn as I do it" approach. 
 
 
-Code also used in support of a manuscript on the role of preprints during the pandemic, for questions relating to this, contact jc2216@cam.ac.uk directly. 
+Code also used in part support of a manuscript on the role of preprints during the pandemic, for questions relating to this, contact jc2216@cam.ac.uk directly. 
