@@ -6,7 +6,10 @@
 # Thanks to Dean Attali for developing the timevis library and writing an excellent clear guide to hosting a shiny app website on Digital Ocean.
 # The code and data used to create this site is hosted on github: https://github.com/coatesj/shiny-server 
 # 
-# Last code update: 05/04/2020
+# Thanks to Lars Hubatsch for contributions to code (data scraping to determine if preprints are published) 
+#
+#
+#Last code update: 06/04/2020
 #
 #
 # This code also supports part of the manuscript "Preprinting a pandemic: the role of preprints in the COVID-19 pandemic", 27/03/2020. 
@@ -59,7 +62,7 @@ shinyApp(
                              fluidRow(
                                column(2,
                                       h4(" ")),
-                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information). Last updated: 01/04/2020")),
+                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information). Last updated: 05/04/2020")),
                              
                              #br(),
                              
