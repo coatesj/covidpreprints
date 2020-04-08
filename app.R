@@ -1,6 +1,7 @@
 #
 # Code relating to the preprints in response to COVID-19 timeline (www.covidpreprints.com)
 # Maintained by the team @preLights (full team details in About page)
+# 
 #
 # Thanks to Dean Attali for developing the timevis library and writing an excellent clear guide to hosting a shiny app website on Digital Ocean.
 # The code and data used to create this site is hosted on github: https://github.com/coatesj/shiny-server 
@@ -8,7 +9,7 @@
 # Thanks to Lars Hubatsch for contributions to code (data scraping to determine if preprints are published) 
 #
 #
-#Last code update: 06/04/2020
+#Last code update: 05/04/2020
 #
 #
 # This code also supports part of the manuscript "Preprinting a pandemic: the role of preprints in the COVID-19 pandemic", 27/03/2020. 
@@ -61,15 +62,20 @@ shinyApp(
                              fluidRow(
                                column(2,
                                       h4(" ")),
-                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information). Last updated: 05/04/2020")),
-                             
+                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information). Last updated: 08/04/2020")),
                              #br(),
+                             h3("If you would like to suggest an article for inclusion or to add a commentary to one of our highlighted articles please fil out the form ",
+                                a("here.", 
+                                  href = "https://docs.google.com/forms/d/e/1FAIpQLSfRuZegczktW7SCmkopVZLNL7k0IHrEuoPRdAn6czTNxkM_xQ/viewform?usp=sf_link")),
+                            
+                              #br(),
                              
                              fluidRow(
                                column(2,
                                       h4("")),
                                br(),
                                h3("This work is being maintained by Gautam Dey, Srivats Venkataramanan, Sundar Naganathan, Debbie Ho, Zhang-He Goh, Kirsty Hooper, Lars Hubatsch, Mariana De Niz, Sejal Davla, Mate Palfy & Jonny Coates. For questions or queries please contact prelights@biologists.com or Jonny Coates jc2216@cam.ac.uk")),
+                             
                              
                              br(),
                              
@@ -117,6 +123,9 @@ shinyApp(
                                 ("or visit the preLights website "),
                                 a("here.",
                                   href = "https://prelights.biologists.com")),
+                             h3("If you would like to suggest an article for inclusion or to add a commentary to one of our highlighted articles please fil out the form ",
+                                a("here.", 
+                                  href = "https://docs.google.com/forms/d/e/1FAIpQLSfRuZegczktW7SCmkopVZLNL7k0IHrEuoPRdAn6czTNxkM_xQ/viewform?usp=sf_link")),
                              br(),
                              h3("The underlying code and data in support of this resource can be found on ",
                                 a("github.",
