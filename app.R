@@ -64,7 +64,7 @@ shinyApp(
                                       h4(" ")),
                                h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information). Last updated: 08/04/2020")),
                              #br(),
-                             h3("If you would like to suggest an article for inclusion or to add a commentary to one of our highlighted articles please fil out the form ",
+                             h3("If you would like to suggest an article for inclusion or to add a commentary to one of our highlighted articles please complete the form ",
                                 a("here.", 
                                   href = "https://docs.google.com/forms/d/e/1FAIpQLSfRuZegczktW7SCmkopVZLNL7k0IHrEuoPRdAn6czTNxkM_xQ/viewform?usp=sf_link")),
                             
@@ -123,7 +123,7 @@ shinyApp(
                                 ("or visit the preLights website "),
                                 a("here.",
                                   href = "https://prelights.biologists.com")),
-                             h3("If you would like to suggest an article for inclusion or to add a commentary to one of our highlighted articles please fil out the form ",
+                             h3("If you would like to suggest an article for inclusion or to add a commentary to one of our highlighted articles please complete the form ",
                                 a("here.", 
                                   href = "https://docs.google.com/forms/d/e/1FAIpQLSfRuZegczktW7SCmkopVZLNL7k0IHrEuoPRdAn6czTNxkM_xQ/viewform?usp=sf_link")),
                              br(),
