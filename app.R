@@ -142,7 +142,18 @@ shinyApp(
                            
                            img(src = "prelights.png", height = 70, width = 200)),
                   
-                  # Page 5, manually load Sinai review .md files
+                  #Page 5, preprints posted, Stephen Royle
+                  tabPanel("Preprints posted to BioRxiv & MedRxiv",
+                           fluidRow(
+                             column(2, 
+                                    h4("The following is a graph demonstrating the volume of COVID-19 related preprints posted to popular preprint sites (BioRxiv & MedRxiv). Thanks to Prof. Steve Royle for allowing us to include this here (https://quantixed.org/2020/03/18/take-off-preprints-on-covid-19/)")),
+                             br(),
+                             
+                             img(src = "covidpreprintsplot.jpg", height = 600, width = 1000))),
+                  
+                  
+                  
+                  # Page 6, manually load Sinai review .md files
                   tabPanel("Mount Sinai peer-reviews of COVID-19 preprints",
                            fluidRow(
                              column(2, 
