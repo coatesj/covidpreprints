@@ -2,14 +2,13 @@
 # Code relating to the preprints in response to COVID-19 timeline (www.covidpreprints.com)
 # Maintained by the team @preLights (full team details in About page)
 # 
-#
 # Thanks to Dean Attali for developing the timevis library and writing an excellent clear guide to hosting a shiny app website on Digital Ocean.
 # The code and data used to create this site is hosted on github: https://github.com/coatesj/shiny-server 
 # 
 # Thanks to Lars Hubatsch for contributions to code (data scraping to determine if preprints are published) 
 #
 #
-#Last code update: 14/04/2020
+#Last code update: 15/04/2020
 #
 #
 # This code also supports part of the manuscript "Preprinting a pandemic: the role of preprints in the COVID-19 pandemic", 27/03/2020. 
