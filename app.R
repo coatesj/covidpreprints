@@ -35,6 +35,7 @@ shinyApp(
                   theme = shinytheme("spacelab"),
                   tabPanel("Timeline",
                            fluidPage(
+                             tags$head(includeHTML(("google_analytics.html"))),
                              
                              titlePanel("Landmark preprints in response to COVID-19, maintained by the @preLights team"),
                              
