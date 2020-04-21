@@ -7,8 +7,7 @@
 # 
 # Thanks to Lars Hubatsch for contributions to code (data scraping to determine if preprints are published) 
 #
-#
-#Last code update: 15/04/2020
+#Last code update: 21/04/2020
 #
 #
 # This code also supports part of the manuscript "Preprinting a pandemic: the role of preprints in the COVID-19 pandemic", 27/03/2020. 
