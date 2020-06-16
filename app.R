@@ -25,9 +25,6 @@ readRDS("infotable.rds") -> info_table
 readRDS("resources.rds") -> resources
 
 
-#Import markdown files from Mount Sinai
-#?
-
 #Define UI
 shinyApp(
   ui = navbarPage("Preprints & COVID-19",
