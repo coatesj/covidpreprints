@@ -14,18 +14,18 @@
 #
 # For questions or quiries please contact Jonny Coates, jc2216@cam.ac.uk
 
-#Load relevant libraries
+# Load relevant libraries
 library(shiny)
 library(timevis)
 library(shinythemes)
 
-#Import data
+# Import data
 readRDS("final_data.rds") -> final_data
 readRDS("infotable.rds") -> info_table
 readRDS("resources.rds") -> resources
 
 
-#Define UI
+# Define UI
 shinyApp(
   ui = navbarPage("Preprints & COVID-19",
                   theme = shinytheme("spacelab"),
