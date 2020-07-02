@@ -6,7 +6,7 @@
 # 
 # Thanks to Lars Hubatsch for contributions to code (data scraping to determine if preprints are published) 
 #
-#Last code update: 31/05/2020
+# Last update: 02/07/2020
 #
 #
 # Preprinting a pandemic: the role of preprints in the COVID-19 pandemic now posted on bioRxiv https://www.biorxiv.org/content/10.1101/2020.05.22.111294v1
