@@ -2,7 +2,6 @@
 # Code relating to the preprints in response to COVID-19 timeline (www.covidpreprints.com)
 # Maintained by the team @preLights (full team details in About page)
 # 
-#
 # Thanks to Dean Attali for developing the timevis library and writing an excellent clear guide to hosting a shiny app website on Digital Ocean.
 # The code and data used to create this site is hosted on github: https://github.com/coatesj/shiny-server 
 # 
