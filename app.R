@@ -8,7 +8,6 @@
 #
 # Last update: 02/07/2020
 #
-#
 # Preprinting a pandemic: the role of preprints in the COVID-19 pandemic now posted on bioRxiv https://www.biorxiv.org/content/10.1101/2020.05.22.111294v1
 #
 #
