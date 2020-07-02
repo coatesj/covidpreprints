@@ -1,30 +1,37 @@
+#
 # Code relating to the preprints in response to COVID-19 timeline (www.covidpreprints.com)
 # Maintained by the team @preLights (full team details in About page)
 # 
+#
 # Thanks to Dean Attali for developing the timevis library and writing an excellent clear guide to hosting a shiny app website on Digital Ocean.
 # The code and data used to create this site is hosted on github: https://github.com/coatesj/shiny-server 
-#
+# 
 # Thanks to Lars Hubatsch for contributions to code (data scraping to determine if preprints are published) 
 #
-# Last update: 02/07/2020
 #
-# Preprinting a pandemic: the role of preprints in the COVID-19 pandemic now posted on bioRxiv https://www.biorxiv.org/content/10.1101/2020.05.22.111294v1
+#Last code update: 02/07/2020
+#
+#
+# 
 #
 #
 # For questions or quiries please contact Jonny Coates, jc2216@cam.ac.uk
 
-# Load relevant libraries
+#Load relevant libraries
 library(shiny)
 library(timevis)
 library(shinythemes)
 
-# Import data
+#Import data
 readRDS("final_data.rds") -> final_data
 readRDS("infotable.rds") -> info_table
 readRDS("resources.rds") -> resources
 
 
-# Define UI
+#Import markdown files from Mount Sinai
+#?
+
+#Define UI
 shinyApp(
   ui = navbarPage("Preprints & COVID-19",
                   theme = shinytheme("spacelab"),
@@ -48,6 +55,8 @@ shinyApp(
                              actionButton("btn4", "Center on 1st March"),
                              actionButton("btn5", "Center on 1st April"),
                              actionButton("btn6", "Center on 1st May"),
+                             actionButton("btn7", "Center on 1st June"),
+                             actionButton("btn8", "Center on 1st July"),
                              
                              #Add rows underneath containing additional text
                              br(),
@@ -56,7 +65,7 @@ shinyApp(
                              fluidRow(
                                column(2,
                                       h4(" ")),
-                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information).To use, left-click and drag along the timeline or use the navigation buttons.")),
+                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information). Last updated: 08/04/2020")),
                              #br(),
                              h3("If you would like to suggest an article for inclusion or to add a commentary to one of our highlighted articles please complete the form ",
                                 a("here.", 
@@ -136,7 +145,7 @@ shinyApp(
                            
                            img(src = "prelights.png", height = 70, width = 200)),
                   
-                  #Page 5, preprints posted, Stephen Royle
+                  #Page 5, preprints posted
                   tabPanel("Preprints posted to BioRxiv & MedRxiv",
                            fluidRow(
                              column(2, 
@@ -144,8 +153,7 @@ shinyApp(
                              br(),
                              
                              img(src = "covidpreprintsplot.jpg", height = 600, width = 1000))),
-                  
-                  
+                
                   
                   # Page 6, manually load Sinai review .md files
                   tabPanel("Mount Sinai peer-reviews of COVID-19 preprints",
@@ -302,6 +310,12 @@ shinyApp(
     })
     observeEvent(input$btn6, {
       centerTime("timeline", "05-01-2020", (animation = TRUE))
+    })
+    observeEvent(input$btn7, {
+      centerTime("timeline", "06-01-2020", (animation = TRUE))
+    })
+    observeEvent(input$btn8, {
+      centerTime("timeline", "07-01-2020", (animation = TRUE))
     })
   }
 )
