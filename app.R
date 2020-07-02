@@ -3,9 +3,8 @@
 # 
 # Thanks to Dean Attali for developing the timevis library and writing an excellent clear guide to hosting a shiny app website on Digital Ocean.
 # The code and data used to create this site is hosted on github: https://github.com/coatesj/shiny-server 
-# 
-# Thanks to Lars Hubatsch for contributions to code (data scraping to determine if preprints are published) 
 #
+# Thanks to Lars Hubatsch for contributions to code (data scraping to determine if preprints are published) 
 #
 # Last update: 02/07/2020
 #
