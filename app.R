@@ -2,10 +2,12 @@
 # Code relating to the preprints in response to COVID-19 timeline (www.covidpreprints.com)
 # Maintained by the team @preLights (full team details in About page)
 # 
+#
 # Thanks to Dean Attali for developing the timevis library and writing an excellent clear guide to hosting a shiny app website on Digital Ocean.
 # The code and data used to create this site is hosted on github: https://github.com/coatesj/shiny-server 
 # 
 # Thanks to Lars Hubatsch for contributions to code (data scraping to determine if preprints are published) 
+#
 #
 #Last code update: 02/07/2020
 #
@@ -18,7 +20,7 @@
 #Load relevant libraries
 library(shiny)
 library(timevis)
-library(shinythemes)
+#library(shinythemes)
 
 #Import data
 readRDS("final_data.rds") -> final_data
@@ -32,7 +34,7 @@ readRDS("resources.rds") -> resources
 #Define UI
 shinyApp(
   ui = navbarPage("Preprints & COVID-19",
-                  theme = shinytheme("spacelab"),
+                 # theme = shinytheme("spacelab"),
                   tabPanel("Timeline",
                            fluidPage(
                              tags$head(includeHTML(("google_analytics.html"))),
