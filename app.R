@@ -11,7 +11,6 @@
 #
 #Last code update: 02/07/2020
 #
-#
 # 
 #
 #
@@ -65,7 +64,7 @@ shinyApp(
                              fluidRow(
                                column(2,
                                       h4(" ")),
-                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information). Last updated: 08/04/2020")),
+                               h3("Key: Orange = Event, Teal = Preprint, yellow = Important caveat/comment on preprint (see further information). Last updated: 04/07/2020")),
                              #br(),
                              h3("If you would like to suggest an article for inclusion or to add a commentary to one of our highlighted articles please complete the form ",
                                 a("here.", 
