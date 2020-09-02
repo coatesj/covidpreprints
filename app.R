@@ -19,12 +19,14 @@
 #Load relevant libraries
 library(shiny)
 library(timevis)
+library(ggplot2)
 #library(shinythemes)
 
 #Import data
 readRDS("final_data.rds") -> final_data
 readRDS("infotable.rds") -> info_table
 readRDS("resources.rds") -> resources
+readRDS("preprints_covid.rds") -> preprints_covid
 
 
 #Import markdown files from Mount Sinai
@@ -150,8 +152,7 @@ shinyApp(
                              column(2, 
                                     h4("The following is a graph demonstrating the volume of COVID-19 related preprints posted to popular preprint sites (BioRxiv & MedRxiv). Thanks to Prof. Steve Royle for allowing us to include this here (https://quantixed.org/2020/03/18/take-off-preprints-on-covid-19/)")),
                              br(),
-                             
-                             img(src = "covidpreprintsplot.jpg", height = 600, width = 1000))),
+                             plotOutput("preprintplot", height = 600, width = 1000))),
                 
                   
                   # Page 6, manually load Sinai review .md files
@@ -291,6 +292,14 @@ shinyApp(
       DT::datatable(resources, list(lengthMenu = c(5, 10, 15, 20, 30), pageLength = 25))
     })
     
+    output$preprintplot <- renderPlot({
+      ggplot(preprints_covid, aes(x = date, y = n, fill = site)) +
+        geom_bar(stat = "identity") +
+        theme_minimal() +
+        labs(x = "Deposition date", y = "Preprints") +
+        scale_fill_brewer(palette = "Set1")
+    })
+
     #Make buttons work
     observeEvent(input$btn, {
       fitWindow("timeline", list(animation = TRUE))
