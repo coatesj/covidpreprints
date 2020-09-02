@@ -1,0 +1,20 @@
+---
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = FALSE
+)
+```
+
+```{r}
+readRDS("resources.rds") -> resources
+DT::datatable(resources, list(lengthMenu = c(5, 10, 15, 20, 30), pageLength = 25))
+```
