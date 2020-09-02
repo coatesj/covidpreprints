@@ -1,0 +1,14 @@
+navbar:
+  type: default
+  left:
+    - text: Further information
+      href: articles/further_info.html
+    - text: Resources
+      href: articles/resources.html
+    - text: About
+      href: articles/about.html
+    - text: Preprints posted to bioRxiv and medRxiv
+      href: articles/preprint_plot.html
+    - text: Mount Sinai peer-reviews of COVID-19 preprints
+      href: articles/mount_sinai.html
+
