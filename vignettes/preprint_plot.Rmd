@@ -1,0 +1,57 @@
+---
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = FALSE
+)
+```
+
+The following is a graph demonstrating the volume of COVID-19 related preprints posted to popular preprint sites (BioRxiv & MedRxiv). Thanks to Prof. Steve Royle for allowing us to include this here (https://quantixed.org/2020/03/18/take-off-preprints-on-covid-19/)
+
+```{r}
+library(httr)
+
+list_preprints_url <- "https://api.biorxiv.org/covid19/"
+
+latest_preprints <- content(GET(paste0(list_preprints_url, 0)))
+
+total_nb <- latest_preprints$messages[[1]]$total
+
+res <- latest_preprints$collection
+
+for (i in seq(30, total_nb, by = 30)) {
+
+  preprints <- content(GET(paste0(list_preprints_url, i)))
+
+  res <- c(res, preprints$collection)
+
+}
+
+df <- lapply(res, function(e) c(e$rel_date, e$rel_site))
+df <- do.call(rbind.data.frame, df)
+colnames(df) <- c("date", "site")
+
+library(dplyr)
+preprints_covid <- df %>%
+  mutate(date = as.Date(date)) %>%
+  filter(date >= "2020-01-01") %>%
+  count(date, site) %>%
+  mutate(tot = cumsum(n))
+```
+
+```{r}
+library(ggplot2)
+ggplot(preprints_covid, aes(x = date, y = n, fill = site)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(x = "Deposition date", y = "Preprints") +
+  scale_fill_brewer(palette = "Set1")
+```
