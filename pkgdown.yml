@@ -1,6 +1,11 @@
 pandoc: 2.7.3
 pkgdown: 1.5.1
 pkgdown_sha: ~
-articles: []
-last_built: 2020-09-02T15:52Z
+articles:
+  about: about.html
+  further_info: further_info.html
+  mount_sinai: mount_sinai.html
+  preprint_plot: preprint_plot.html
+  resources: resources.html
+last_built: 2020-09-02T17:10Z
 
