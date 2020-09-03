@@ -1,0 +1,1648 @@
+[
+  {
+    "class": "event",
+    "title": "Pneumonia of unknown cause in Wuhan, China",
+    "publicationDate": "2019-12-31",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "class": "event",
+    "title": "1st COVID-19 death",
+    "publicationDate": "2020-01-09",
+    "url": "https://www.theguardian.com/world/ng-interactive/2020/apr/08/coronavirus-100-days-that-changed-the-world"
+  },
+  {
+    "class": "event",
+    "title": "China shares full genome sequence of 2019-nCoV",
+    "publicationDate": "2020-01-12",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "class": "event",
+    "title": "First cases detected outside of China",
+    "publicationDate": "2020-01-13",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "class": "event",
+    "title": "China releases testing protocols for 2019-nCov",
+    "publicationDate": "2020-01-21",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "id": "10.1101/2020.01.22.914952",
+    "class": "preprint",
+    "title": "Discovery of a novel coronavirus associated with the recent pneumonia outbreak in humans and its potential bat origin",
+    "publicationDate": "2020-01-23",
+    "authorString": "Zhou P et al.",
+    "url": "https://doi.org/10.1101/2020.01.22.914952",
+    "briefSummary": "Reports the identification and characterization of (nCoV-2019). Full-length genome sequences were obtained from patients, and were found to share 79.5% sequence identify to SARS-CoV, and to be 96% identical at the whole genome level to a bat coronavirus. Study confirmed that virus uses the same cell entry receptor, ACE2, as SARS-CoV.",
+    "altmetricScore": 3539,
+    "publishedVersionDoi": "10.1038/s41586-020-2012-7"
+  },
+  {
+    "id": "10.1101/2020.01.23.917351",
+    "class": "preprint",
+    "title": "Pattern of early human-to-human transmission of Wuhan 2019-nCoV",
+    "publicationDate": "2020-01-24",
+    "authorString": "Riou J et al.",
+    "url": "https://doi.org/10.1101/2020.01.23.917351",
+    "briefSummary": "Stochastic simulations of early outbreak trajectories revealed that transmission characteristics were similar in magnitude to SARS-CoV and the 1918 influenza pandemic. Findings underlie importance of surveillance and early control in controlling viral transmission.",
+    "altmetricScore": 199
+  },
+  {
+    "id": "10.1101/2020.01.24.919183",
+    "class": "preprint",
+    "title": "Complete genome characterisation of a novel coronavirus associated with severe human respiratory disease in Wuhan, China",
+    "publicationDate": "2020-01-25",
+    "authorString": "Wu F et al.",
+    "url": "https://doi.org/10.1101/2020.01.24.919183",
+    "briefSummary": "Bronchoalveolar lavage was collected from 7 workers at the Wuhan seafood market. Next generation metagenomic RNA sequencing identified an RNA virus of family Coronaviridae, called at the time WH-Human-1 coronavirus. Phylogenetic analyis showed 89.1% similarity to SARS-like coronaviruses previously sampled from bats in China.",
+    "altmetricScore": 491
+  },
+  {
+    "class": "event",
+    "title": "First reported cases in Australia",
+    "publicationDate": "2020-01-25",
+    "url": "https://pandemic.internationalsos.com/login?returnUrl=/countries/australia"
+  },
+  {
+    "id": "10.1101/2020.01.25.919787",
+    "class": "preprint",
+    "title": "Time-varying transmission dynamics of Novel Coronavirus Pneumonia in China",
+    "publicationDate": "2020-01-26",
+    "authorString": "Liu T et al.",
+    "url": "https://doi.org/10.1101/2020.01.25.919787",
+    "briefSummary": "Proposed that novel coronavirus has higher transmissibility than SARS between humans.",
+    "altmetricScore": 1821
+  },
+  {
+    "id": "10.1101/2020.01.26.920249",
+    "class": "preprint",
+    "title": "Full-genome evolutionary analysis of the novel corona virus (2019-nCoV) rejects the hypothesis of emergence as a result of a recent recombination event",
+    "publicationDate": "2020-01-27",
+    "authorString": "Paraskevis D et al.",
+    "url": "https://doi.org/10.1101/2020.01.26.920249",
+    "briefSummary": "SARS-CoV-2 shows discordant clustering with the Bat-SARS-like coronavirus sequences. Almost half of the virus’ genome is of a distinct lineage within the betacoronavirus, suggesting that spontaneous emergence of SARS-CoV-2 is unlikely.",
+    "altmetricScore": 718,
+    "publishedVersionDoi": "10.1016/j.meegid.2020.104212"
+  },
+  {
+    "id": "10.1101/2020.01.28.923169",
+    "class": "preprint",
+    "title": "Beware of asymptomatic transmission: Study on 2019-nCoV prevention and control measures based on extended SEIR model",
+    "publicationDate": "2020-01-28",
+    "authorString": "Shao P et al.",
+    "url": "https://doi.org/10.1101/2020.01.28.923169",
+    "briefSummary": "Based on models studying the movement of people, this study posits a possibility of assymptomatic transmission. It is also one of the first studies advocating the importance of testing.",
+    "altmetricScore": 24
+  },
+  {
+    "id": "10.1101/2020.01.28.923011",
+    "class": "preprint",
+    "title": "Potent binding of 2019 novel coronavirus spike protein by a SARS coronavirus-specific human monoclonal antibody",
+    "publicationDate": "2020-01-28",
+    "authorString": "Tian X et al.",
+    "url": "https://doi.org/10.1101/2020.01.28.923011",
+    "briefSummary": "This study found that CR3022, a SARS-CoV-specific human monoclonal antibody, binds potently with SARS-CoV-2. Therefore, CR3022 may be a potential candidate for therapeutics; in contrast to other anti-SARS-CoV antibodies that fail to neutralize SARS-CoV-2.",
+    "longerSummary": "Sinai review here:\nhttp://disq.us/p/28aczcq",
+    "altmetricScore": 187,
+    "publishedVersionDoi": "10.1080/22221751.2020.1729069"
+  },
+  {
+    "id": "10.1101/2020.01.27.20018986",
+    "class": "preprint",
+    "title": "The incubation period of 2019-nCoV infections among travellers from Wuhan, China",
+    "publicationDate": "2020-01-28",
+    "authorString": "Backer JA et al.",
+    "url": "https://doi.org/10.1101/2020.01.27.20018986",
+    "briefSummary": "Using the travel history of cases detected outside Wuhan, authors first estimated the mean incubation period to be 6.4 days, ranging from 2.1 to 11.1 days. They first suggested using these values for case definition.",
+    "altmetricScore": 260,
+    "publishedVersionDoi": "10.2807/1560-7917.es.2020.25.5.2000062"
+  },
+  {
+    "id": "10.1101/2020.01.30.926477",
+    "class": "bad",
+    "title": "Evolution and variation of 2019-novel coronavirus",
+    "publicationDate": "2020-01-30",
+    "authorString": "Xiong C et al.",
+    "url": "https://doi.org/10.1101/2020.01.30.926477",
+    "briefSummary": "The study found a viral isolate different from other 2019-nCoVs. An analysis of genomic sequences tenatively suggests that at least two different viral strains of 2019-nCoV may be involved in the outbreak. Caveat: confirmation of genomic sequences are necessary.",
+    "altmetricScore": 81
+  },
+  {
+    "id": "10.1101/2020.01.28.20019224",
+    "class": "preprint",
+    "title": "Estimated effectiveness of traveller screening to prevent international spread of 2019 novel coronavirus (2019-nCoV)",
+    "publicationDate": "2020-01-30",
+    "authorString": "Gostic K et al.",
+    "url": "https://doi.org/10.1101/2020.01.28.20019224",
+    "briefSummary": "Using an interactive model, authors analyzed the impact of travel screening programs on coronavirus spread. They estimated that around half of infected travelers will be missed by screening programs, generally consisting of those who have not yet developed symptoms and are unaware of exposure.",
+    "altmetricScore": 114
+  },
+  {
+    "class": "event",
+    "title": "2019-nCoV declared a public health emergency by WHO",
+    "publicationDate": "2020-01-30",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "class": "event",
+    "title": "First reported cases in UK, Russia, Sweden and Spain",
+    "publicationDate": "2020-01-30",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "id": "10.1101/2020.01.31.929042",
+    "class": "preprint",
+    "title": "The novel coronavirus 2019 (2019-nCoV) uses the SARS-coronavirus receptor ACE2 and the cellular protease TMPRSS2 for entry into target cells",
+    "publicationDate": "2020-01-31",
+    "authorString": "Hoffmann M et al.",
+    "url": "https://doi.org/10.1101/2020.01.31.929042",
+    "briefSummary": "SARS-CoV-2 enters cells via SARS-coronavirus receptor, ACE2, and cellular protease TMPRSS2. TMPRSS2 inhibitor and serum from convalescent SARS patient prevented entry of SARS-CoV-2. This highlights the similarities between SARS-CoV-2 and SARS-coronavirus infections and could identify a potential target for antiviral intervention.",
+    "altmetricScore": 531
+  },
+  {
+    "id": "10.1101/2020.01.30.927806",
+    "class": "preprint",
+    "title": "The digestive system is a potential route of 2019-nCov infection: a bioinformatics analysis based on single-cell transcriptomes",
+    "publicationDate": "2020-01-31",
+    "authorString": "Zhang H et al.",
+    "url": "https://doi.org/10.1101/2020.01.30.927806",
+    "briefSummary": "Single-cell transcriptomes of lung, esophagus, gastric, ileum and colon showed that ACE2 is highly expressed in the respiratory tract and in absorptive enterocytes from ileum and colon; indicating that the digestive system may be another route for 2019-nCov infection.",
+    "altmetricScore": 313
+  },
+  {
+    "id": "10.1101/2020.02.01.929976",
+    "class": "preprint",
+    "title": "Potent neutralization of 2019 novel coronavirus by recombinant ACE2-Ig",
+    "publicationDate": "2020-02-02",
+    "authorString": "Lei C et al.",
+    "url": "https://doi.org/10.1101/2020.02.01.929976",
+    "briefSummary": "The study generated a novel recombinant protein by connecting the extracellular domain of human ACE2 to the Fc region of the human immunoglobulin IgG1. Fusion proteins potently neutralized SARS-CoV and 2019-nCoV in vitro.",
+    "longerSummary": "Review by Mount Sinai Immunolgoy Review project (disq.us/t/3luocex)",
+    "altmetricScore": 50
+  },
+  {
+    "class": "event",
+    "title": "First reported death outside of China",
+    "publicationDate": "2020-02-02",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "id": "10.1101/2020.02.03.931766",
+    "class": "preprint",
+    "title": "Specific ACE2 Expression in Cholangiocytes May Cause Liver Damage After 2019-nCoV Infection",
+    "publicationDate": "2020-02-04",
+    "authorString": "Chai X et al.",
+    "url": "https://doi.org/10.1101/2020.02.03.931766",
+    "briefSummary": "The study found specific expression of ACE2 in cholangiocytes (epithelial cells of the bile duct), tentatively suggesting that the liver damage observed in some infected patients may be caused by cholangiocyte dysfunction. Further studies will be needed to reinforce the relationship between SARS-CoV-2 and liver injury before these findings are incorporated into the clinical management of COVID-19 patients.",
+    "longerSummary": "Review by Mount Sinai Immunolgoy Review project (http://disq.us/p/289seyf)",
+    "altmetricScore": 19
+  },
+  {
+    "id": "10.1101/2020.02.05.20020792",
+    "class": "preprint",
+    "title": "Preparedness and vulnerability of African countries against introductions of 2019-nCoV",
+    "publicationDate": "2020-02-07",
+    "authorString": "Gilbert M et al.",
+    "url": "https://doi.org/10.1101/2020.02.05.20020792",
+    "briefSummary": "Authors evaluated the preparedness and vulnerability of African countries against the risk of importation of 2019-nCoV based on travel volumes from infected provinces in China to African countries. Authors identified countries with highest (Egypt, Algeria, and South Africa) and moderate risk with high vulnerabilities (Nigeria, Ethiopia, Sudan, Angola, Tanzania, Ghana, and Kenya), and called for  intensifying surveillance and capacity building.",
+    "longerSummary": "Evaluated the preparedness and vulnerability of African countries against the risk of importation of 2019-nCoV based on travel volumes from infected provinces in China to African countries. Identified Egypt, Algeria, and South Africa as having the highest importation risk. Identified Nigeria, Ethiopia, Sudan, Angola, Tanzania, Ghana, and Kenya as being at moderate risk, but as having high vulnerability. Suggests intensifying surveillance, and prioritizing capacity building.",
+    "altmetricScore": 70
+  },
+  {
+    "id": "10.1101/2020.02.05.920009",
+    "class": "preprint",
+    "title": "A database resource for Genome-wide dynamics analysis of Coronaviruses on a historical and global scale",
+    "publicationDate": "2020-02-07",
+    "authorString": "Zhu Z et al.",
+    "url": "https://doi.org/10.1101/2020.02.05.920009",
+    "briefSummary": "This work developed a coronavirus database (CoVdb)- an online genomics and proteomics analysis platform. The database annotates the genome of every strain and identifies possible ORFs of all strains available in Genebank. It also provides population genetics analysis, functional analysis and structural analysis on a historical and global scale. Accessed freely at http://covdb.popgenetics.net.",
+    "altmetricScore": 7
+  },
+  {
+    "id": "10.1101/2020.02.03.20020289",
+    "class": "preprint",
+    "title": "Diarrhea may be underestimated: a missing link in 2019 novel coronavirus",
+    "publicationDate": "2020-02-11",
+    "authorString": "Liang W et al.",
+    "url": "https://doi.org/10.1101/2020.02.03.20020289",
+    "briefSummary": "The authors suggest that ACE2-expressing small intestinal epithelium cells might be vulnerable to 2019-nCoV infection, and that diarrhea may serve as an indicator for infection. The authors suggest that clinicians should pay more attention to patients with diarrhea during the outbreak of pneumonia.",
+    "altmetricScore": 42
+  },
+  {
+    "id": "10.1101/2020.02.07.939389",
+    "class": "preprint",
+    "title": "The Pathogenicity of SARS-CoV-2 in hACE2 Transgenic Mice",
+    "publicationDate": "2020-02-11",
+    "authorString": "Bao L et al.",
+    "url": "https://doi.org/10.1101/2020.02.07.939389",
+    "briefSummary": "The study used hACE2 transgenic mice to study the pathogenicity of SARS-CoV-2. They define histopathology in the lungs, specific to transgenic mice and not observed in wild type mice. They propose this mouse model may facilitate the development of therapeutics and vaccines against SARS-CoV-2.",
+    "altmetricScore": 219,
+    "publishedVersionDoi": "10.1038/s41586-020-2312-y"
+  },
+  {
+    "id": "10.1101/2020.02.07.20021154",
+    "class": "preprint",
+    "title": "The Novel Coronavirus, 2019-nCoV, is Highly Contagious and More Infectious Than Initially Estimated",
+    "publicationDate": "2020-02-11",
+    "authorString": "Sanche S et al.",
+    "url": "https://doi.org/10.1101/2020.02.07.20021154",
+    "briefSummary": "Initially, the basic reproductive number (R0) was estimated to be 2.2 to 2.7. This study integrates new estimates and high-resolution real-time human travel and infection data with mathematical models, and re-estimates the R0 value as being between 4.7 and 6.6.",
+    "altmetricScore": 2562
+  },
+  {
+    "class": "event",
+    "title": "2019-nCoV officially named COVID-19 (disease)/ SARS-CoV-2 (virus)",
+    "publicationDate": "2020-02-11",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen, related preprint https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "id": "10.1101/2020.02.10.20021832",
+    "class": "preprint",
+    "title": "Characteristics of lymphocyte subsets and cytokines in peripheral blood of 123 hospitalized patients with 2019 novel coronavirus pneumonia (NCP)",
+    "publicationDate": "2020-02-12",
+    "authorString": "Wan S et al.",
+    "url": "https://doi.org/10.1101/2020.02.10.20021832",
+    "briefSummary": "Reviewed by the Mount Sinai Immunology review project",
+    "longerSummary": "Reviewed by the Mount Sinai Immunology review project (http://disq.us/p/28bg09p)",
+    "altmetricScore": 15
+  },
+  {
+    "class": "event",
+    "title": "First reported case in Africa",
+    "publicationDate": "2020-02-14",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "id": "10.1101/2020.02.11.944462",
+    "class": "preprint",
+    "title": "Cryo-EM Structure of the 2019-nCoV Spike in the Prefusion Conformation",
+    "publicationDate": "2020-02-15",
+    "authorString": "Wrapp D et al.",
+    "url": "https://doi.org/10.1101/2020.02.11.944462",
+    "briefSummary": "3.5 Å-resolution cryo-EM structure of the 2019-nCoV S trimer in the prefusion conformation; now published in Science at https://science.sciencemag.org/content/367/6483/1260",
+    "altmetricScore": 638,
+    "publishedVersionDoi": "10.1126/science.abb2507"
+  },
+  {
+    "class": "event",
+    "title": "First reported death in Europe",
+    "publicationDate": "2020-02-15",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "class": "event",
+    "title": "Over 2000 deaths worldwide",
+    "publicationDate": "2020-02-19",
+    "url": "https://ourworldindata.org/coronavirus"
+  },
+  {
+    "class": "event",
+    "title": "Italy starts lockdown",
+    "publicationDate": "2020-02-22",
+    "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "id": "10.1101/2020.02.24.20027375",
+    "class": "preprint",
+    "title": "Estimation of COVID-2019 burden and potential for international dissemination of infection from Iran",
+    "publicationDate": "2020-02-25",
+    "authorString": "Tuite AR et al.",
+    "url": "https://doi.org/10.1101/2020.02.24.20027375",
+    "briefSummary": "Early suggestion that the Iran likely had a large, undetected outbreak, which could complicate global containment.",
+    "altmetricScore": 2230
+  },
+  {
+    "id": "10.1101/2020.03.05.20030502",
+    "class": "preprint",
+    "title": "Clinical presentation and virological assessment of hospitalized cases of coronavirus disease 2019 in a travel-associated transmission cluster",
+    "publicationDate": "2020-03-08",
+    "authorString": "Woelfel R et al.",
+    "url": "https://doi.org/10.1101/2020.03.05.20030502",
+    "briefSummary": "Analysis of time course and prevalence of viral loads. Active replication of the virus in upper respiratory tract. No infectious virus from stool. Now published at Nature as https://www.nature.com/articles/s41586-020-2196-x#disqus_thread",
+    "altmetricScore": 2963
+  },
+  {
+    "id": "10.1101/2020.03.09.20033217",
+    "class": "preprint",
+    "title": "Aerosol and surface stability of HCoV-19 (SARS-CoV-2) compared to SARS-CoV-1",
+    "publicationDate": "2020-03-10",
+    "authorString": "van Doremalen N et al.",
+    "url": "https://doi.org/10.1101/2020.03.09.20033217",
+    "briefSummary": "Decay kinetics for the virus on various surfaces in varied environmental conditions, including plastic, metal and cardboard; now published as https://www.nejm.org/doi/10.1056/NEJMc2004973",
+    "altmetricScore": 11322,
+    "publishedVersionDoi": "10.1056/nejmc2004973"
+  },
+  {
+    "class": "event",
+    "title": "Over 4000 deaths worldwide",
+    "publicationDate": "2020-03-10",
+    "url": "https://ourworldindata.org/coronavirus"
+  },
+  {
+    "class": "event",
+    "title": "WHO declares COVID-19 a pandemic",
+    "publicationDate": "2020-03-11",
+    "url": "Info from WHO, https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "id": "10.1101/2020.03.11.987958",
+    "class": "preprint",
+    "title": "A human monoclonal antibody blocking SARS-CoV-2 infection",
+    "publicationDate": "2020-03-12",
+    "authorString": "Wang C et al.",
+    "url": "https://doi.org/10.1101/2020.03.11.987958",
+    "briefSummary": "Report of a human monoclonal antibody that neutralizes SARS-CoV-2 (and SARS-CoV). This cross-neutralizing antibody targets a communal epitope on these viruses and offers potential for prevention and treatment of COVID-19.",
+    "longerSummary": "Reviewed by the Mount Sinai Immunology project (http://disq.us/p/28b0v0f)",
+    "altmetricScore": 2594,
+    "publishedVersionDoi": "10.1038/s41467-020-16256-y"
+  },
+  {
+    "id": "10.1101/2020.03.09.20033357",
+    "class": "preprint",
+    "title": "Estimates of the severity of COVID-19 disease",
+    "publicationDate": "2020-03-13",
+    "authorString": "Verity R et al.",
+    "url": "https://doi.org/10.1101/2020.03.09.20033357",
+    "briefSummary": "Modelling suggests that 1-1.5% of COVID-19 cases in China were fatal",
+    "altmetricScore": 569
+  },
+  {
+    "class": "event",
+    "title": "Europe becomes the epicenter of the pandemic",
+    "publicationDate": "2020-03-13",
+    "url": "Info from WHO, https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "id": "10.1101/2020.03.13.990226",
+    "class": "bad",
+    "title": "Lack of Reinfection in Rhesus Macaques Infected with SARS-CoV-2",
+    "publicationDate": "2020-03-14",
+    "authorString": "Bao L et al.",
+    "url": "https://doi.org/10.1101/2020.03.13.990226",
+    "briefSummary": "Rhesus macaques previously infected with SARS-CoV-2 could not be reinfected with virus within a period of 28 days after symptoms were alleviated. Conclusions highly exploratory and based on preliminary data gathered from 4 rhesus macaques.",
+    "longerSummary": "There has been some anecdotal evidence of SARS-CoV-2 virus being detected in patients that had recovered from COVID-19. To investigate the possibility of reinfection, this study infected four rhesus macaques with SARS-CoV-2 and studied reinfection. One of the monkeys was sacrificied at 7 days post infection (dpi) to confirm viral distribution throughout organs. Following alleviation of COVID-19 symptoms and clearance of SARS-CoV-2, two of the rhesus macaques were rechallenged with the virus at 18 dpi. Comparing to one control monkey up until 14 days post-rechallenge (dpr), it was evident that the virus was unable to reinfect the monkeys, one of which was sacrificed at 5 dpr to analyse viral distribution throughout the body. Despite very low numbers of monkeys being used in this study, it provides initial evidence that antibody production in response to SARS-CoV-2 infection provides protection against subsequent exposures. This study needs to be followed up with a greatly increased cohort size to conclude that SARS-CoV-2 reinfection is not possible. (Mount Sinai Immunology review here: http://disq.us/p/288knpd)",
+    "altmetricScore": 7706
+  },
+  {
+    "class": "event",
+    "title": "Modelling from Imperial College London highlights the need for social distancing in limiting infection spread and preventing healthcare systems from being overburdened",
+    "publicationDate": "2020-03-16",
+    "url": "https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/"
+  },
+  {
+    "id": "10.1101/2020.03.15.20036707",
+    "class": "preprint",
+    "title": "Temporal dynamics in viral shedding and transmissibility of COVID-19",
+    "publicationDate": "2020-03-18",
+    "authorString": "He X et al.",
+    "url": "https://doi.org/10.1101/2020.03.15.20036707",
+    "briefSummary": "Models suggest that COVID-19 Infectiousness peaks at or before symptom onset, and 44% of transmissions could happen before symptom onset.",
+    "altmetricScore": 1350,
+    "publishedVersionDoi": "10.1038/s41591-020-0869-5"
+  },
+  {
+    "class": "event",
+    "title": "Italy has highest number of deaths in the world",
+    "publicationDate": "2020-03-19",
+    "url": "Info from WHO, https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+    "briefSummary": "Info from WHO"
+  },
+  {
+    "id": "10.1101/2020.03.16.20037135",
+    "class": "bad",
+    "title": "Hydroxychloroquine and Azithromycin as a treatment of COVID-19: preliminary results of an open-label non-randomized clinical trial",
+    "publicationDate": "2020-03-20",
+    "authorString": "GAUTRET P et al.",
+    "url": "https://doi.org/10.1101/2020.03.16.20037135",
+    "briefSummary": "Debunked by Elizabeth Bik: https://scienceintegritydigest.com/2020/03/24/thoughts-on-the-gautret-et-al-paper-about-hydroxychloroquine-and-azithromycin-treatment-of-covid-19-infections/. Additional data from the lab behind this paper continues to be suspicious (https://twitter.com/houndcl/status/1248294470837133312)",
+    "longerSummary": "This preprint was the first to describe the use of Hydroxychloroquine and Azithromycin to treat COVID-19. It appeared in the journal International Journal of Antimicrobial Agents a day after it was submitted. 42 COVID-19 positive patients were enrolled in this study, 16 of which recieved normal care (control) and 26 receiving the Hydroxychloroquine therapy. Out of these 26, 20 completed the study with 6 of these patients also recieving Azithromycin (antibiotic). At day 6 of treatment, 100% of patients recieving the combination therapy were COVID-19 negative with approximately 50% of the Hydroxychloroquine-only group being COVID-19 negative. In contrast, most of the control were COVID-19 positive. Importantly, this was not a randomised clinical trial and there were numerous issues with the study and the subsequent \"peer review\" prior to publication. These are outlined fully by Dr Elizabeth Bik (https://scienceintegritydigest.com/2020/03/24/thoughts-on-the-gautret-et-al-paper-about-hydroxychloroquine-and-azithromycin-treatment-of-covid-19-infections/). Also see Mount Sinai review of the preprint: https://www.medrxiv.org/content/10.1101/2020.03.16.20037135v1#comment-4842302900. Subsequent work from other groups also suggests that Hydroxychloroquine is not an effective treatment (https://www.sciencedirect.com/science/article/pii/S0399077X20300858)",
+    "altmetricScore": 1408,
+    "publishedVersionDoi": "10.1016/j.ijantimicag.2020.105949"
+  },
+  {
+    "id": "10.1101/2020.03.18.20038059",
+    "class": "preprint",
+    "title": "SARS-CoV-2 specific antibody responses in COVID-19 patients",
+    "publicationDate": "2020-03-20",
+    "authorString": "OKBA NM et al.",
+    "url": "https://doi.org/10.1101/2020.03.18.20038059",
+    "briefSummary": "Development and validation of serological assays for SARS-CoV-2 by comparing them to plaque reduction neutralisation assay (PRNT).\nConfirming S1 as specific antigen for SARS-CoV-2 testing, relative to S2 antigen.",
+    "longerSummary": "Mount Sinai Immunology Review (http://disq.us/p/285lof8)",
+    "altmetricScore": 810,
+    "publishedVersionDoi": "10.3201/eid2607.200841"
+  },
+  {
+    "id": "10.1101/2020.03.20.999730",
+    "class": "preprint",
+    "title": "Identification of antiviral drug candidates against SARS-CoV-2 from FDA-approved drugs",
+    "publicationDate": "2020-03-20",
+    "authorString": "Jeon S et al.",
+    "url": "https://doi.org/10.1101/2020.03.20.999730",
+    "briefSummary": "Screening FDA-approved drugs for antiviral activity; See also: https://www.biorxiv.org/content/10.1101/2020.03.25.008482v1",
+    "longerSummary": "See Mt. Sinai Review project on in vitro work",
+    "altmetricScore": 554,
+    "publishedVersionDoi": "10.1128/aac.00819-20"
+  },
+  {
+    "id": "10.1101/2020.03.20.000794",
+    "class": "preprint",
+    "title": "COVID-19 Vaccine Candidates: Prediction and Validation of 174 SARS-CoV-2 Epitopes",
+    "publicationDate": "2020-03-21",
+    "authorString": "Prachar M et al.",
+    "url": "https://doi.org/10.1101/2020.03.20.000794",
+    "briefSummary": "The authors tested 19 epitope-HLA-binding prediction tools to assess 777 unique SARS-CoV-2 epitopes, that could bind 11 HLA allotypes. An in vitro assay showed that 174 epitopes formed a stable epitope-HLA complex: 48 were related to SARS and the remaining 126 were novel.",
+    "altmetricScore": 33
+  },
+  {
+    "class": "event",
+    "title": "Over 11,000 deaths worldwide",
+    "publicationDate": "2020-03-21",
+    "url": "https://ourworldindata.org/coronavirus"
+  },
+  {
+    "id": "10.1101/2020.03.22.002386",
+    "class": "preprint",
+    "title": "A SARS-CoV-2-Human Protein-Protein Interaction Map Reveals Drug Targets and Potential Drug-Repurposing",
+    "publicationDate": "2020-03-22",
+    "authorString": "Gordon DE et al.",
+    "url": "https://doi.org/10.1101/2020.03.22.002386",
+    "briefSummary": "Massive collaborative effort to generate a SARS-CoV-2-human PPI map via affinity purification-ms; uncovered interactions with protein trafficking, translation, transcription and ubiquitination pathways; shared interactions with other viruses; 69 FDA-approved drugs that target/alter some of these interactions",
+    "longerSummary": "Reviewed by Mount Sinai Immunology Review project (https://www.biorxiv.org/content/10.1101/2020.03.22.002386v2#comment-4846435618)",
+    "altmetricScore": 3395,
+    "publishedVersionDoi": "10.1038/s41586-020-2286-9"
+  },
+  {
+    "id": "10.1101/2020.03.22.20041079",
+    "class": "preprint",
+    "title": "Social distancing strategies for curbing the COVID-19 epidemic",
+    "publicationDate": "2020-03-24",
+    "authorString": "Kissler SM et al.",
+    "url": "https://doi.org/10.1101/2020.03.22.20041079",
+    "briefSummary": "Using modelling, the authors concluded that intermittent interventions for epidemic control in the United States may be needed until 2022 to keep prevalence within healthcare capacities.",
+    "longerSummary": "Summarised here: https://twitter.com/BallouxFrancois/status/1243384544448790531?s=20",
+    "altmetricScore": 1065
+  },
+  {
+    "id": "10.1101/2020.03.24.004655",
+    "class": "preprint",
+    "title": "SARS-CoV-2 launches a unique transcriptional signature from in vitro, ex vivo, and in vivo systems",
+    "publicationDate": "2020-03-24",
+    "authorString": "Blanco-Melo D et al.",
+    "url": "https://doi.org/10.1101/2020.03.24.004655",
+    "briefSummary": "The authors identified host transcriptional signatures in response to different modalities of SARS-CoV-2 infection, revealing similarities to and differences from other coronaviridiae and influenza infections",
+    "altmetricScore": 386
+  },
+  {
+    "id": "10.1101/2020.03.21.990770",
+    "class": "preprint",
+    "title": "Potent human neutralizing antibodies elicited by SARS-CoV-2 infection",
+    "publicationDate": "2020-03-25",
+    "authorString": "Ju B et al.",
+    "url": "https://doi.org/10.1101/2020.03.21.990770",
+    "briefSummary": "Characterisation of monoclonal antibodies from B cells of 8 human patients - display specific binding and neutralising activity for the virus; don't cross-react with MERS/SARS coronavirus spike proteins; also covered here: https://twitter.com/davidrliu/status/1243377007016251400?s=20",
+    "longerSummary": "Reviewed by the Mount Sinai Immunology group (http://disq.us/p/28cn0yl)",
+    "altmetricScore": 776
+  },
+  {
+    "class": "event",
+    "title": "Modelling from Imperial College London suggests that without intervention, COVID-19 could kill up to 40 million people",
+    "publicationDate": "2020-03-26",
+    "url": "https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/"
+  },
+  {
+    "id": "10.1101/2020.03.25.006569",
+    "class": "preprint",
+    "title": "Codon usage and evolutionary rates of the 2019-nCoV genes",
+    "publicationDate": "2020-03-27",
+    "authorString": "Dilucca M et al.",
+    "url": "https://doi.org/10.1101/2020.03.25.006569",
+    "briefSummary": "Main results suggest that the higher evolutionary rate observed for genes encoding nucleocapsid, viral replicase and spike proteins, could represent a major barrier in the development of antiviral therapeutics 2019-nCoV.",
+    "altmetricScore": 18
+  },
+  {
+    "id": "10.1101/2020.03.24.20042796",
+    "class": "preprint",
+    "title": "Reproducibility and reporting practices in COVID-19 preprint manuscripts",
+    "publicationDate": "2020-03-27",
+    "authorString": "Sumner JQ et al.",
+    "url": "https://doi.org/10.1101/2020.03.24.20042796",
+    "briefSummary": "Analysis of 535 preprints related to COVID-19 highlights the need for improved data sharing and reporting practices.",
+    "altmetricScore": 24
+  },
+  {
+    "id": "10.1101/2020.03.24.20040162",
+    "class": "preprint",
+    "title": "Lactate dehydrogenase, a Risk Factor of Severe COVID-19 Patients",
+    "publicationDate": "2020-03-27",
+    "authorString": "Han Y et al.",
+    "url": "https://doi.org/10.1101/2020.03.24.20040162",
+    "briefSummary": "Suggests that high levels of the enzyme lactate dehydrogenase is a risk factor for severe COVID",
+    "longerSummary": "Twitter thread by Prof Iwasaki: https://twitter.com/VirusesImmunity/status/1246778158290014214?s=20",
+    "altmetricScore": 427
+  },
+  {
+    "id": "10.1101/2020.03.24.20042937",
+    "class": "preprint",
+    "title": "Correlation between universal BCG vaccination policy and reduced morbidity and mortality for COVID-19: an epidemiological study",
+    "publicationDate": "2020-03-28",
+    "authorString": "Miller A et al.",
+    "url": "https://doi.org/10.1101/2020.03.24.20042937",
+    "briefSummary": "An epidemiological study has found that differences in COVID-19 impact could potentially be attributed to the BCG vaccine offering a broader protection on respiratory infections than previously thought. Countries without universal BCG vaccinations (Italy and USA) are hit comparably worse by the corona virus than countries with universal long-standing BCG policies (Iran and China). [Credit: Tasha Aley (@tasha_aley), UCL/MRC LMCB - relayed to GD]",
+    "longerSummary": "Reviewed by the Mount Sinai Immunology group (http://disq.us/p/28bfyk0)",
+    "altmetricScore": 6084
+  },
+  {
+    "id": "10.1101/2020.03.26.010322",
+    "class": "preprint",
+    "title": "Site-specific analysis of the SARS-CoV-2 glycan shield",
+    "publicationDate": "2020-03-28",
+    "authorString": "Watanabe Y et al.",
+    "url": "https://doi.org/10.1101/2020.03.26.010322",
+    "briefSummary": "Site-specific mass spectometry reveals patterns of glycosylation on the SARS-CoV2 spike protein. Preprint related to: https://www.biorxiv.org/content/10.1101/2020.03.28.013276v1",
+    "altmetricScore": 314
+  },
+  {
+    "class": "event",
+    "title": "Over 33,000 deaths worldwide",
+    "publicationDate": "2020-03-29",
+    "url": "https://ourworldindata.org/coronavirus"
+  },
+  {
+    "id": "10.1101/2020.03.27.20044495",
+    "class": "preprint",
+    "title": "An alternative workflow for molecular detection of SARS-CoV-2 - escape from the NA extraction kit-shortage",
+    "publicationDate": "2020-03-30",
+    "authorString": "Fomsgaard AS et al.",
+    "url": "https://doi.org/10.1101/2020.03.27.20044495",
+    "briefSummary": "The shortage of nucleic acid extraction kits for SARS-CoV-2 testing has led Danish scientists Anna S Fomsgaard and Maiken W. Rosenstierne to test alternatives. They found that the best approach is heating samples to 98 degrees Celsius for 5 minutes prior to RT-qPCR, which results in a 97.4% sensitivity and 100% specificity of SARS-CoV-2 detection. [Credit: Patricia Pascual-Vargas (@ppascualvargas), UCL - relayed to GD]",
+    "altmetricScore": 112
+  },
+  {
+    "id": "10.1101/2020.03.29.20046706",
+    "class": "preprint",
+    "title": "No Evidence for Temperature-Dependence of the COVID-19 Epidemic",
+    "publicationDate": "2020-03-31",
+    "authorString": "Jamil T et al.",
+    "url": "https://doi.org/10.1101/2020.03.29.20046706",
+    "briefSummary": "The seasonality of the virus will have a massive impact on isolation and social distancing policies around the world following the first wave of infections this winter. This paper suggests that there is currently no evidence that infection rates are lower in regions with higher temperatures.",
+    "altmetricScore": 340
+  },
+  {
+    "id": "10.1101/2020.03.28.013672",
+    "class": "preprint",
+    "title": "Cigarette smoke exposure and inflammatory signaling increase the expression of the SARS-CoV-2 receptor ACE2 in the respiratory tract",
+    "publicationDate": "2020-03-31",
+    "authorString": "Smith JC et al.",
+    "url": "https://doi.org/10.1101/2020.03.28.013672",
+    "briefSummary": "In a study of 1099 confirmed COVID-19 patients, 12.3% of current smokers required mechanical ventilation, were admitted to an ICU, or died, compared to only 4.7% of non-smokers. This report shows that this effect might be due to upregulated levels of the ACE2 receptor caused by cigarette smoke.",
+    "longerSummary": "Twitter thread: https://twitter.com/JSheltzer/status/1245015018627883011. Also reviewed by the Mount Sinai Immunology review project (http://disq.us/p/28dc0nx)",
+    "altmetricScore": 1103,
+    "publishedVersionDoi": "10.1016/j.devcel.2020.05.012"
+  },
+  {
+    "id": "10.1101/2020.03.30.015461",
+    "class": "preprint",
+    "title": "Potent neutralizing antibodies in the sera of convalescent COVID-19 patients are directed against conserved linear epitopes on the SARS-CoV-2 spike protein",
+    "publicationDate": "2020-03-31",
+    "authorString": "Poh CM et al.",
+    "url": "https://doi.org/10.1101/2020.03.30.015461",
+    "briefSummary": "Second report dealing with neutralising antibodies in convalescent serum, this time 25 samples from Singapore patients. Of the two immunodominant regions in the spike protein, one appears to be specific to SARS-CoV2 and one shared amongst coronaviruses",
+    "altmetricScore": 54
+  },
+  {
+    "id": "10.1101/2020.03.29.013490",
+    "class": "preprint",
+    "title": "Lectin-like Intestinal Defensin Inhibits 2019-nCoV Spike binding to ACE2",
+    "publicationDate": "2020-03-31",
+    "authorString": "Wang C et al.",
+    "url": "https://doi.org/10.1101/2020.03.29.013490",
+    "briefSummary": "Intestinal human defensin (HD) 5, but not HD6, binds to ACE2 with a high affinity and blocks SARS-CoV-2 spike 1 protein (S1) binding. HD5 \"cloak\" on ACE2 binding domain was validated by molecular dynamic simulations, and HD5 preventative effect on SARS-CoV-2 binding was confirmed in intestinal epithelial cells.",
+    "altmetricScore": 100
+  },
+  {
+    "id": "10.1101/2020.03.29.013342",
+    "class": "preprint",
+    "title": "A one-enzyme RT-qPCR assay for SARS-CoV-2, and procedures for reagent production",
+    "publicationDate": "2020-03-31",
+    "authorString": "Bhadra S et al.",
+    "url": "https://doi.org/10.1101/2020.03.29.013342",
+    "briefSummary": "The authors developed a single-enzyme RT-qPCR assay using thermostable reverse transcriptase (RT) /DNA polymerase (RTX) as a comparable alternative to commercial COVID-19 RT-qPCR assays that may be in short supply.",
+    "longerSummary": "Removed from shorter summary: Useful protocol provided for purification of the reagents from constructs that are available from this corresponding lab or Addgene.",
+    "altmetricScore": 25
+  },
+  {
+    "id": "10.1101/2020.03.30.20047308",
+    "class": "preprint",
+    "title": "Predicting Mortality Risk in Patients with COVID-19 Using Artificial Intelligence to Help Medical Decision-Making",
+    "publicationDate": "2020-04-01",
+    "authorString": "Pourhomayoun M et al.",
+    "url": "https://doi.org/10.1101/2020.03.30.20047308",
+    "briefSummary": "Authors used data from 117,000 confirmed COVID-19 patients world-wide to build a machine-learning model that predicts mortality in COVID-19 patients (\"accuracy\" = 93%). The model identified age and co-morbidity as key factors. Caveats: more interactions and other factors will be needed for this tool to aid in medical decision-making.",
+    "altmetricScore": 17
+  },
+  {
+    "id": "10.1101/2020.03.30.20047415",
+    "class": "preprint",
+    "title": "Risk factors for severe corona virus disease 2019 (COVID-19) patients : a systematic review and meta analysis",
+    "publicationDate": "2020-04-01",
+    "authorString": "Xu L et al.",
+    "url": "https://doi.org/10.1101/2020.03.30.20047415",
+    "briefSummary": "The authors summarise Risk Factors for COVID-19 by looking across multiple studies. Table 1 gives an especially useful overview of these patient characteristics along with the authors, patient pool sizes, and regions where these studies were conducted.",
+    "altmetricScore": 28
+  },
+  {
+    "class": "event",
+    "title": "Over 40,000 deaths worldwide from COVID-19",
+    "publicationDate": "2020-04-01",
+    "url": "https://ourworldindata.org/coronavirus"
+  },
+  {
+    "class": "event",
+    "title": "1 million confirmed cases worldwide",
+    "publicationDate": "2020-04-02",
+    "briefSummary": "The Johns Hopkins University Coronavirus Resource Center reports more than 1 million confirmed cases of COVID-19 worldwide."
+  },
+  {
+    "id": "10.1101/2020.04.01.20047381",
+    "class": "preprint",
+    "title": "Level of IL-6 predicts respiratory failure in hospitalized symptomatic COVID-19 patients",
+    "publicationDate": "2020-04-04",
+    "authorString": "Herold T et al.",
+    "url": "https://doi.org/10.1101/2020.04.01.20047381",
+    "briefSummary": "Suggests that higher levels of IL-6 may be predictive of patients who need ventillation. Follows similar work showing LDH levels may be predictive of disease severity",
+    "longerSummary": "IL-6 is increasingly being identified as a potential therapeutic target and this study supports a number of earlier studies",
+    "altmetricScore": 1294,
+    "publishedVersionDoi": "10.1016/j.jaci.2020.05.008"
+  },
+  {
+    "id": "10.1101/2020.04.02.20046375",
+    "class": "preprint",
+    "title": "Modeling the COVID-19 outbreaks and the effectiveness of the containment measures adopted across countries",
+    "publicationDate": "2020-04-04",
+    "authorString": "De Brouwer E et al.",
+    "url": "https://doi.org/10.1101/2020.04.02.20046375",
+    "briefSummary": "The authors use models that suggest that \"herd immunity\" is unfeasable, and call for strategies to \"flatten the curve\".",
+    "longerSummary": "Authors discuss some of the paper limitations themselves (supplementary material)",
+    "altmetricScore": 34
+  },
+  {
+    "id": "10.1101/2020.04.01.019877",
+    "class": "preprint",
+    "title": "Leveraging mRNAs sequences to express SARS-CoV-2 antigens in vivo",
+    "publicationDate": "2020-04-05",
+    "authorString": "Zeng C et al.",
+    "url": "https://doi.org/10.1101/2020.04.01.019877",
+    "briefSummary": "Optimal design of 5' and 3' UTRs for potential SARS-CoV-2 mRNA vaccines",
+    "altmetricScore": 29
+  },
+  {
+    "class": "event",
+    "title": "Over 65,000 deaths worldwide",
+    "publicationDate": "2020-04-05",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.04.03.20047977",
+    "class": "preprint",
+    "title": "ACE2 gene variants may underlie interindividual variability and susceptibility to COVID-19 in the Italian population",
+    "publicationDate": "2020-04-06",
+    "authorString": "Benetti E et al.",
+    "url": "https://doi.org/10.1101/2020.04.03.20047977",
+    "briefSummary": "ACE2 has become an important research topic in relation to COVID-19 pathogenesis.  This study mined around 7000 exosome from Italian genomes looking for variants of the ACE2 receptor, which has been proposed as the main host receptor for SARS-COV-2. Among three common missense changes, unreported in Easter Asia population, p.Asn720Asp is predicted to affect cleavage-dependent virion intake. Additional 30 missense variants were identified, some of which are predicted to affect the interaction with the spike protein.\nCaveats to this paper: the variants discovered that could change the way the virus interacts with the ACE2 receptor are rare. As these variants are so rare, they may notexplain the heterogeneity in disease outcomes in the general public. No correlations with patient data , all predictions from computational studies. Consequently, the hypothesis that these variants might explain higher mortality rates in Italy compared to China is probably over-stretched. [Additional credit: Giulia Paci, @giulia_paci, UCL LMCB]",
+    "longerSummary": "Taken from one of the comments on medRxiv: \"What the authors show is that there are ACE2 variants found in Italians and not in Asians, and that in-silico tools predict that they might have structural or functional effects.\"",
+    "altmetricScore": 299,
+    "publishedVersionDoi": "10.1038/s41431-020-0691-z"
+  },
+  {
+    "id": "10.1101/2020.04.01.20049528",
+    "class": "preprint",
+    "title": "Facemasks and similar barriers to prevent respiratory illness such as COVID-19: A rapid systematic review",
+    "publicationDate": "2020-04-06",
+    "authorString": "Brainard JS et al.",
+    "url": "https://doi.org/10.1101/2020.04.01.20049528",
+    "briefSummary": "Suggests that widespread use of facemasks is not supported by the evidence. However, use in high-risk situations (e.g. hospital settings) is beneficial",
+    "longerSummary": "Further expert opinions can be found at: https://www.sciencemediacentre.org/expert-reaction-to-a-preprint-about-facemask-effectiveness/\nThis study also supports the current WHO guidelines on face masks\nAdditional studies also support that facemasks are optimal for high risk groups, not the general population. \nOne caveat to all of this is that the general population are not educated in the correct and proper use of any PPE and therefore this may factor into the data",
+    "altmetricScore": 696
+  },
+  {
+    "id": "10.1101/2020.04.01.20047373",
+    "class": "preprint",
+    "title": "Frequency of testing for COVID 19 infection and the presence of higher number of available beds per country predict outcomes with the infection, not the GDP of the country - A descriptive statistical analysis",
+    "publicationDate": "2020-04-06",
+    "authorString": "GHOSAL S et al.",
+    "url": "https://doi.org/10.1101/2020.04.01.20047373",
+    "briefSummary": "The authors themselves highlight some key limitations within their preprint. However, this data still supports the prevailing notions that testing and bed capacity are essential",
+    "altmetricScore": 3
+  },
+  {
+    "id": "10.1101/2020.04.03.20051763",
+    "class": "preprint",
+    "title": "Virologic and clinical characteristics for prognosis of severe COVID-19: a retrospective observational study in Wuhan, China",
+    "publicationDate": "2020-04-06",
+    "authorString": "Fu S et al.",
+    "url": "https://doi.org/10.1101/2020.04.03.20051763",
+    "briefSummary": "Authors seek to provide 4 key clinical characteristics of severe COVID-19 by examining viral shedding, serological features, inflammatory response, and lung-lesions.",
+    "longerSummary": "Also shows high IL-6 in pathogenesis, corroborating earlier studies. Data does come from a single center and there are only 50 patients included - wider cohort is necessary but this is still a good start.",
+    "altmetricScore": 5
+  },
+  {
+    "id": "10.1101/2020.03.30.20047365",
+    "class": "preprint",
+    "title": "Neutralizing antibody responses to SARS-CoV-2 in a COVID-19 recovered patient cohort and their implications",
+    "publicationDate": "2020-04-06",
+    "authorString": "Wu F et al.",
+    "url": "https://doi.org/10.1101/2020.03.30.20047365",
+    "briefSummary": "Authors evaluate levels of neutralising antibodies (NAbs) from recovered patients with clinical manifestations. Tentative results suggest correlation between humoral response and cellular immune response; with the caveat that experiments were only performed using plasma from patients with mild symptoms; further tests are needed for advanced cases to confirm correlation.",
+    "longerSummary": "Potential use of plasma from recovered COVID-19 patients with level of neutralising antibodies as a treatment. A recent study (https://www.pnas.org/content/early/2020/04/02/2004168117) from China showed that plasma transfusion to 10 severe adult cases (receiving additional antiviral and antibiotic, antifungal or corticosteroids treatment) led to improved symptoms within 1 to 3 days and increase in neutralising antibody titers and disappearance of SARS-CoV-2 RNA. FDA approved the use of convalescent plasma to treat severely ill and a clinical trial to evaluate it is underway in US.In this preprint authors evaluate levels of neutralising antibodies (NAbs) from recovered patients with clinical manifestations. Plasma from 5 patients recovered from COVID-19 inhibited SARS-CoV-2 PsV infection in in vitro in cell line. SARS-CoV-2 NAbs were not reactive with SARS-CoV. Potential caveats: only performed on plasma from patients with mild symptoms. Might be very important to test plasma of advanced cases to see if there is correlation. Authors acknowledge these limitations and exclusion of these patients due to severe and critical cases receiving passive antibody treatment before sample collection. [Credit: Agata Nyga (@AgataNyga), UCL LMCB]",
+    "altmetricScore": 3849
+  },
+  {
+    "class": "event",
+    "title": "UK Prime Minister admitted to ICU",
+    "publicationDate": "2020-04-06",
+    "briefSummary": "First head of state worldwide to be admitted to hospital for COVID-19"
+  },
+  {
+    "id": "10.1101/2020.04.07.20056309",
+    "class": "preprint",
+    "title": "A Simulated Single Ventilator / Dual Patient Ventilation Strategy for Acute Respiratory Distress Syndrome During the COVID-19 Pandemic",
+    "publicationDate": "2020-04-07",
+    "authorString": "Solis-Lemus JA et al.",
+    "url": "https://doi.org/10.1101/2020.04.07.20056309",
+    "briefSummary": "With an acute shortage of ventilators that are essential in the treatment of COVID-19 patients, this study describes a model whereby two patients can be ventilated using a single machine.",
+    "altmetricScore": 13
+  },
+  {
+    "id": "10.1101/2020.04.04.20053579",
+    "class": "preprint",
+    "title": "Adaptive cyclic exit strategies from lockdown to suppress COVID-19 and allow economic activity",
+    "publicationDate": "2020-04-07",
+    "authorString": "Karin O et al.",
+    "url": "https://doi.org/10.1101/2020.04.04.20053579",
+    "briefSummary": "Using calculated basic reproduction numbers, the authors propose an exit strategy from lockdown: short periods of work interspersed with lockdown intervals. This strategy is designed to restrict spread and ensure that infected individuals are under lockdown when at their most infectious.",
+    "altmetricScore": 202
+  },
+  {
+    "id": "10.1101/2020.04.03.20052548",
+    "class": "preprint",
+    "title": "Lack of Antiviral Activity of Darunavir against SARS-CoV-2",
+    "publicationDate": "2020-04-08",
+    "authorString": "De Meyer S et al.",
+    "url": "https://doi.org/10.1101/2020.04.03.20052548",
+    "briefSummary": "Negative results are often difficult to publish. However, when it is essential to understand what does not work as much as what does work, these negative results are highly important and very welcome. This study is an in vitro evaluation of the efficacy of HIV protease inhibitor darunavir (DRV) as potential antiviral treatment of COVID-19. In human caco-2 cells, clinically relevant concentrations of DRV didn’t show activity against SARS-COV-2. Antiviral activity was evaluated as cytopathogenic effect, scored by two methods. Most experiments were carried out in triplicate. Conflict of interest: Funding for this study was provided by Janssen Pharmaceutica. [Credit Giulia Paci (@giulia_paci), UCL LMCB]",
+    "longerSummary": "There are many drugs currently utilised against other diseases that represent potential therapies for COVID-19. This study investigated the HIV anti-viral drug, Darunavir which the authors show is not effective against COVID-19",
+    "altmetricScore": 70,
+    "publishedVersionDoi": "10.1016/j.ijid.2020.05.085"
+  },
+  {
+    "class": "event",
+    "title": "Over 80,000 deaths worldwide",
+    "publicationDate": "2020-04-08",
+    "url": "https://ourworldindata.org/coronavirus"
+  },
+  {
+    "id": "10.1101/2020.04.07.023903",
+    "class": "preprint",
+    "title": "Structural and functional analysis of a potent sarbecovirus neutralizing antibody",
+    "publicationDate": "2020-04-09",
+    "authorString": "Pinto D et al.",
+    "url": "https://doi.org/10.1101/2020.04.07.023903",
+    "briefSummary": "Monoclonal antibodies isolated in 2003 from a SARS survivor neutralize the SARS-CoV-2 virus, and recognize a glycan-containing epitope that is conserved across the sarbecovirus subgenus (that includes SARS-CoV-1 and SARS-CoV-2)",
+    "altmetricScore": 411
+  },
+  {
+    "class": "event",
+    "title": "Over 1.5 million cases worldwide",
+    "publicationDate": "2020-04-09",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.04.10.20053207",
+    "class": "preprint",
+    "title": "Homologous protein domains in SARS-CoV-2 and measles, mumps and rubella viruses: preliminary evidence that MMR vaccine might provide protection against COVID-19",
+    "publicationDate": "2020-04-10",
+    "authorString": "Franklin R et al.",
+    "url": "https://doi.org/10.1101/2020.04.10.20053207",
+    "briefSummary": "There has been some evidence that suggests the BCG vaccine may provide a degree of immunity against COVID-19. This preprint suggests that another childhood vaccine, MMR may also be beneficial in providing protection against COVID-19",
+    "longerSummary": "This preprints computationally demonstrates similarities in protein domains between SARS-Cov-2 and the rubella, mumps and measles viruses. The authors suggest that prior MMR vaccination may reduce the severity of COVID-19.",
+    "altmetricScore": 843
+  },
+  {
+    "class": "event",
+    "title": "Over 100,000 deaths worldwide",
+    "publicationDate": "2020-04-10",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.04.08.20057794",
+    "class": "preprint",
+    "title": "Factors associated with hospitalization and critical illness among 4,103 patients with COVID-19 disease in New York City",
+    "publicationDate": "2020-04-11",
+    "authorString": "Petrilli CM et al.",
+    "url": "https://doi.org/10.1101/2020.04.08.20057794",
+    "briefSummary": "Comprehensive analysis of the characteristics of 4103 lab-confirmed COVID-19 patients in NYC. Strong associations with age, obesity, heart failure, and kidney disease with severe cases; weaker with race, tobacco usage, pulmonary disease. At early stages of hospitalisation, hypoxia even in the presence of supplemental oxygen and high levels of inflammation correlated strongly with severe disease states.",
+    "altmetricScore": 2346,
+    "publishedVersionDoi": "10.1136/bmj.m1966"
+  },
+  {
+    "id": "10.1101/2020.04.07.20056788",
+    "class": "preprint",
+    "title": "ACE-inhibitors and Angiotensin-2 Receptor Blockers are not associated with severe SARS- COVID19 infection in a multi-site UK acute Hospital Trust",
+    "publicationDate": "2020-04-11",
+    "authorString": "Bean D et al.",
+    "url": "https://doi.org/10.1101/2020.04.07.20056788",
+    "briefSummary": "It has been suggested that ACE inhibitors used to treat hypertension or diabetes could upregulate ACE-2 and thereby exacerbate COVID-19 pathophysiology. Initial results on this small cohort (looking at outcomes for those who were receiving ACE inhibitors just before hospitalisation) suggest that this is not the case; the cohort was not large enough to look for positive outcomes, if any.",
+    "altmetricScore": 301,
+    "publishedVersionDoi": "10.1002/ejhf.1924"
+  },
+  {
+    "id": "10.1101/2020.04.07.20056424",
+    "class": "preprint",
+    "title": "Chloroquine diphosphate in two different dosages as adjunctive therapy of hospitalized patients with severe respiratory syndrome in the context of coronavirus (SARS-CoV-2) infection: Preliminary safety results of a randomized, double-blinded, phase IIb clinical trial (CloroCovid-19 Study)",
+    "publicationDate": "2020-04-11",
+    "authorString": "Borba MGS et al.",
+    "url": "https://doi.org/10.1101/2020.04.07.20056424",
+    "briefSummary": "Supports the hypothesis that there is no strong benefit of CQ treatment, and that doses should be kept low to avoid a potentially adverse impact; a good example of how to cautiously interpret data in the middle of a swirling controversy",
+    "altmetricScore": 4341,
+    "publishedVersionDoi": "10.1001/jamanetworkopen.2020.8857"
+  },
+  {
+    "id": "10.1101/2020.04.11.20061424",
+    "class": "preprint",
+    "title": "Blueprint for a Pop-up SARS-CoV-2 Testing Lab",
+    "publicationDate": "2020-04-12",
+    "authorString": "Innovative Genomics Institute SARS-CoV-2 Testing Consortium et al.",
+    "url": "https://doi.org/10.1101/2020.04.11.20061424",
+    "briefSummary": "Doudna and colleagues share their experience, from ensuring regulatory compliance to cross-validating RT-PCR results against testing benchmarks, of converting an academic research lab to a COVID-19 testing facility within the duration of approximately one month.",
+    "altmetricScore": 222,
+    "publishedVersionDoi": "10.1038/s41587-020-0583-3"
+  },
+  {
+    "id": "10.1101/2020.04.10.036418",
+    "class": "preprint",
+    "title": "The SARS-CoV-2 receptor-binding domain elicits a potent neutralizing response without antibody-dependent enhancement",
+    "publicationDate": "2020-04-12",
+    "authorString": "Quinlan BD et al.",
+    "url": "https://doi.org/10.1101/2020.04.10.036418",
+    "briefSummary": "Antibodies to the receptor-binding domain (RBD) of the viral spike protein were highly effective against SARS-CoV-1; immunisation with the SARS-CoV-2 RBD produced potent neutralising antibodies in rats. Importantly, these did not result in antibody-dependent enhancement of viral entry, a potential concern in the way of constructing an RBD-based vaccine.",
+    "longerSummary": "Mt. Sinai project review:\n\nhttp://disq.us/p/292lzpz",
+    "altmetricScore": 527
+  },
+  {
+    "id": "10.1101/2020.04.12.025577",
+    "class": "preprint",
+    "title": "Mechanistic modeling of the SARS-CoV-2 disease map",
+    "publicationDate": "2020-04-12",
+    "authorString": "Rian K et al.",
+    "url": "https://doi.org/10.1101/2020.04.12.025577",
+    "briefSummary": "Computational tool to model the effect of various knockdowns and perturbations on the host cell SARS-CoV-2 response network (https://covid.pages.uni.lu/map_curation); tool available at http://hipathia.babelomics.org/covid19/",
+    "altmetricScore": 32
+  },
+  {
+    "id": "10.1101/2020.04.09.034462",
+    "class": "preprint",
+    "title": "Insights on early mutational events in SARS-CoV-2 virus reveal founder effects across geographical regions",
+    "publicationDate": "2020-04-12",
+    "authorString": "Farkas C et al.",
+    "url": "https://doi.org/10.1101/2020.04.09.034462",
+    "briefSummary": "Founder mutations in 90% of SARS-CoV-2 sequences from geographically unrelated countries (USA, China and Australia), of which 63% of mutations are missense. Computational analysis of primer sets predict potential consequences on amplification efficiency--and therefore, performance--of RT-qPCR tests.",
+    "altmetricScore": 43,
+    "publishedVersionDoi": "10.7717/peerj.9255"
+  },
+  {
+    "id": "10.1101/2020.04.10.20059337",
+    "class": "bad",
+    "title": "Relationship between Average Daily Temperature and Average Cumulative Daily Rate of Confirmed Cases of COVID-19",
+    "publicationDate": "2020-04-14",
+    "authorString": "Pirouz B et al.",
+    "url": "https://doi.org/10.1101/2020.04.10.20059337",
+    "briefSummary": "The study suggests environmental temperature may affect number of COVID-19 cases. By comparing different regions across 5 countries, this study correlates differential daily temperature correlated with average daily cumulative cases of COVID-19. An important caveat is that this preprint has not explored other potential differences that might have existed between the regions examined, like differences in policies or population density between the regions.",
+    "altmetricScore": 35
+  },
+  {
+    "id": "10.1101/2020.04.09.20059758",
+    "class": "preprint",
+    "title": "A Scalable Method of Applying Heat and Humidity for Decontamination of N95 Respirators During the COVID-19 Crisis",
+    "publicationDate": "2020-04-14",
+    "authorString": "Anderegg L et al.",
+    "url": "https://doi.org/10.1101/2020.04.09.20059758",
+    "briefSummary": "A method has been developed to decontaminate N95 filtering facepiece respirators (FFRs) for reuse by healthcare workers. Applying a heat and humidity procedure for up to five cycles of did not affect filtration efficiency or mask fitting. Further work is required to confirm viral inactivation of SARS-CoV-2, along with its scalability using larger equipment.",
+    "altmetricScore": 20,
+    "publishedVersionDoi": "10.1371/journal.pone.0234851"
+  },
+  {
+    "id": "10.1101/2020.04.10.20060699",
+    "class": "preprint",
+    "title": "No evidence of clinical efficacy of hydroxychloroquine in patients hospitalized for COVID-19 infection with oxygen requirement: results of a study using routinely collected data to emulate a target trial",
+    "publicationDate": "2020-04-14",
+    "authorString": "Mahevas M et al.",
+    "url": "https://doi.org/10.1101/2020.04.10.20060699",
+    "briefSummary": "Hydroxychloroquine (HCQ) displayed no clinical benefit, in this study emulating a target trial across 4 French hospitals including 181 patients with SARS-CoV-2 pneumonia. Primary endpoints for this study were transfer to ICU and/or death.",
+    "altmetricScore": 3614
+  },
+  {
+    "id": "10.1101/2020.04.14.041228",
+    "class": "preprint",
+    "title": "The FDA- approved gold drug Auranofin inhibits novel coronavirus (SARS-COV-2) replication and attenuates inflammation in human cells",
+    "publicationDate": "2020-04-15",
+    "authorString": "Rothan HA et al.",
+    "url": "https://doi.org/10.1101/2020.04.14.041228",
+    "briefSummary": "Preliminary data shows FDA-approved anti-rheumatoid drug, auranofin, inhibited SARS-CoV-2 replication and pro-inflammtory cytokine production in a human cell line at low micro molar concentrations. This drug has not previously been known for antiviral properties and the mechanism remains unclear, therefore, further studies are required to evaulate the use of this drug for treatment of COVID-19.",
+    "altmetricScore": 118,
+    "publishedVersionDoi": "10.1016/j.virol.2020.05.002"
+  },
+  {
+    "class": "event",
+    "title": "US has more cases than Spain, France, Germany and Italy combined",
+    "publicationDate": "2020-04-15",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 2 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-04-15",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.04.14.20062463",
+    "class": "bad",
+    "title": "COVID-19 Antibody Seroprevalence in Santa Clara County, California",
+    "publicationDate": "2020-04-17",
+    "authorString": "Bendavid E et al.",
+    "url": "https://doi.org/10.1101/2020.04.14.20062463",
+    "briefSummary": "Serological (antibody) studies are desparately needed to better identify the true percentage of the population that have been infected. However, caution should be applied to interpreting the results of this study for mulitple reasons, see https://twitter.com/DiseaseEcology/status/1251225273871134721?s=19 for a detailed deconstruction",
+    "longerSummary": "The comments section of this preprint contain many good discussions questioning the validity and reliability of this study. Also see https://twitter.com/DiseaseEcology/status/1251225273871134721?s=19 for further analysis. There is also a discussion on the statistics involved and why they are not as they seem: https://statmodeling.stat.columbia.edu/2020/04/19/fatal-flaws-in-stanford-study-of-coronavirus-prevalence/. More recently, ethical issues have arisen: https://www.buzzfeednews.com/article/stephaniemlee/stanford-coronavirus-neeleman-ioannidis-whistleblower",
+    "altmetricScore": 20104
+  },
+  {
+    "id": "10.1101/2020.04.14.20065771",
+    "class": "preprint",
+    "title": "A systematic review of antibody mediated immunity to coronaviruses: antibody kinetics, correlates of protection, and association of antibody responses with severity of disease",
+    "publicationDate": "2020-04-17",
+    "authorString": "Huang AT et al.",
+    "url": "https://doi.org/10.1101/2020.04.14.20065771",
+    "briefSummary": "Due to the time needed to conduct immunlogical studies, there is a dearth of information relating to SARS-CoV-2 immunity. This review summarises current knowledge in other coronaviruses, and suggests how it may be applied to COVID-19.",
+    "altmetricScore": 924
+  },
+  {
+    "id": "10.1101/2020.04.14.20065375",
+    "class": "preprint",
+    "title": "Ability of Fabric Facemasks Materials to Filter Ultrafine Particles at Coughing Velocity - for Home Made and Fabric Face Mask Creation",
+    "publicationDate": "2020-04-17",
+    "authorString": "O'Kelly E et al.",
+    "url": "https://doi.org/10.1101/2020.04.14.20065375",
+    "briefSummary": "The increasing calls from governments around the world for people to wear facemasks in public may exacerbate the shortage of PPE for frontline workers. This preprint investigates the protective ability of cloth face coverings, and tentatively concludes that they may indeed offer a certain amount of protection.",
+    "longerSummary": "For a more detailed overview of the facemask debate you can watch the following video from @heysciencesam: https://www.youtube.com/watch?time_continue=4&v=WhzzVpp54HA&feature=emb_logo",
+    "altmetricScore": 35
+  },
+  {
+    "class": "event",
+    "title": "Over 150,000 deaths worldwide",
+    "publicationDate": "2020-04-18",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.04.20.048066",
+    "class": "preprint",
+    "title": "Shotgun Transcriptome and Isothermal Profiling of SARS-CoV-2 Infection Reveals Unique Host Responses, Viral Diversification, and Drug Interactions",
+    "publicationDate": "2020-04-20",
+    "authorString": "Butler DJ et al.",
+    "url": "https://doi.org/10.1101/2020.04.20.048066",
+    "briefSummary": "This work describes an isothermal assay platform for rapid detection and surveillance of SARS-CoV2 infection. A whole-transcriptome survey of over 450 viral, host and environmental samples in New York City (NYC) was also performed to identify phylogenetics of NYC COVID infections and host risk factors.",
+    "altmetricScore": 236
+  },
+  {
+    "id": "10.1101/2020.04.16.20065920",
+    "class": "preprint",
+    "title": "Outcomes of hydroxychloroquine usage in United States veterans hospitalized with Covid-19",
+    "publicationDate": "2020-04-21",
+    "authorString": "Magagnoli J et al.",
+    "url": "https://doi.org/10.1101/2020.04.16.20065920",
+    "briefSummary": "Authors found no evidence that use of hydroxychloroquine, either with or without azithromycin, reduced the risk of mechanical ventilation in patients hospitalized with Covid-19. An association of increased overall mortality was identified in patients treated with hydroxychloroquine alone (however this did not hold true when compared to the control group).",
+    "longerSummary": "A retrospective study adding further evidence against the use of Hydroxychloroquine for treatment of COVID-19. One concern relates to the control group of which 30% still recieved Azithromyin. This confuses the interpretation of the data. Moreover, the control group consisted of more patients who recieved ventillation. Despite this, at worse the data suggests that HCQ is no more beneficial than no treatment for COVID-19. As this is a retrospective study and not truely randomly controlled, caution should be exercised when interpreting these results.",
+    "altmetricScore": 10215,
+    "publishedVersionDoi": "10.1016/j.medj.2020.06.001"
+  },
+  {
+    "class": "event",
+    "title": "Over 2.5 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-04-21",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 170,000 deaths worldwide",
+    "publicationDate": "2020-04-21",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.04.16.20067835",
+    "class": "preprint",
+    "title": "Saliva is more sensitive for SARS-CoV-2 detection in COVID-19 patients than nasopharyngeal swabs",
+    "publicationDate": "2020-04-22",
+    "authorString": "Wyllie AL et al.",
+    "url": "https://doi.org/10.1101/2020.04.16.20067835",
+    "briefSummary": "Self-collected saliva samples provided similar, if not more sensitive and consistent results compared to patient-matched nasopharyngeal swabs for the detection of SARS-CoV-2. More data are required to determine efficacy in mild/asympotomatic cases with lower viral load. Supports recent study: https://www.medrxiv.org/content/10.1101/2020.04.11.20062372v1",
+    "altmetricScore": 4797
+  },
+  {
+    "id": "10.1101/2020.04.17.20069930",
+    "class": "bad",
+    "title": "A single-cell atlas of the peripheral immune response to severe COVID-19",
+    "publicationDate": "2020-04-23",
+    "authorString": "Wilk AJ et al.",
+    "url": "https://doi.org/10.1101/2020.04.17.20069930",
+    "briefSummary": "The authors perform single-cell RNA sequencing (scRNA-seq) to peripheral blood mononuclear cells of 7 patients hospitalized with confirmed COVID-19 and 6 healthy controls. This is a powerful technique and the first scRNA-seq study looking at blood immune cells. Due to the novelty surrounding these findings, further validation of this technique will be needed.",
+    "altmetricScore": 112,
+    "publishedVersionDoi": "10.1038/s41591-020-0944-y"
+  },
+  {
+    "id": "10.1101/2020.04.22.20072124",
+    "class": "bad",
+    "title": "Self-reported symptoms of covid-19 including symptoms most predictive of SARS-CoV-2 infection, are heritable",
+    "publicationDate": "2020-04-24",
+    "authorString": "Williams FM et al.",
+    "url": "https://doi.org/10.1101/2020.04.22.20072124",
+    "briefSummary": "TwinsUK study collected data in the C-19 Covid symptom tracker app (https://covid.joinzoe.com/) and claimed to find heritability for susceptibility to infection and severity of symptoms. Although this app is a useful resource, many caveats have been identified in this study, as discussed here: https://twitter.com/bristimtom/status/1254030253854543872.",
+    "altmetricScore": 967
+  },
+  {
+    "class": "event",
+    "title": "Over 2000 preprints posted between bioRxiv and medRxiv",
+    "publicationDate": "2020-04-24",
+    "url": "https://connect.biorxiv.org/relate/content/181"
+  },
+  {
+    "id": "10.1101/2020.04.22.20073551",
+    "class": "preprint",
+    "title": "Relative disease burdens of COVID-19 and seasonal influenza in New York City, February 1 - April 18, 2020.",
+    "publicationDate": "2020-04-27",
+    "authorString": "Faust J et al.",
+    "url": "https://doi.org/10.1101/2020.04.22.20073551",
+    "briefSummary": "Comparison of COVID-19 and seasonal influenza raw count deaths, as opposed to CDC-adjusted estimations, shows 21.1x-21.4x more COVID-19 deaths in New York City from Feb 1st to April 18th 2020. Limitations include: under- or over-reporting of deaths, lags in reporting, and differential peaks of each disease.",
+    "altmetricScore": 348
+  },
+  {
+    "class": "event",
+    "title": "Over 200,000 deaths worldwide",
+    "publicationDate": "2020-04-27",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "New Zealand declares that community transmission of COVID-19 has ended",
+    "publicationDate": "2020-04-27",
+    "url": "https://www.theguardian.com/world/2020/apr/27/new-zealand-prepares-to-lift-strict-lockdown-after-eliminating-coronavirus"
+  },
+  {
+    "class": "event",
+    "title": "Wuhan discharges last COVID-19 patient as China declares fewer than 10 new cases",
+    "publicationDate": "2020-04-27",
+    "url": "https://www.newscientist.com/article/2237475-covid-19-latest-wuhan-discharges-outbreaks-last-coronavirus-patient/"
+  },
+  {
+    "class": "event",
+    "title": "Over 3 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-04-28",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.04.26.20079822",
+    "class": "bad",
+    "title": "Estimation of seroprevalence of novel coronavirus disease (COVID-19) using preserved serum at an outpatient setting in Kobe, Japan: A cross-sectional study.",
+    "publicationDate": "2020-05-01",
+    "authorString": "Doi A et al.",
+    "url": "https://doi.org/10.1101/2020.04.26.20079822",
+    "briefSummary": "Japanese study testing for SARS-CoV-2 antibodies found prevalence of positivity at 2.7%, 396 to 858 fold higher than PCR confirmed cases of COVID. These results should be considered with caution due to the limitations discussed in preprint: (1) samples were obtained from clinic outpatients (2) potential test cross-reactivity with other viruses.",
+    "altmetricScore": 2378
+  },
+  {
+    "id": "10.1101/2020.04.24.20078717",
+    "class": "bad",
+    "title": "Full lockdown policies in Western Europe countries have no evident impacts on the COVID-19 epidemic.",
+    "publicationDate": "2020-05-01",
+    "authorString": "Meunier TAJ. et al.",
+    "url": "https://doi.org/10.1101/2020.04.24.20078717",
+    "briefSummary": "This study used observational data to compare epidemic trajectories before and after full lockdowns, and suggests that these measures may not have reduced deaths in Western Europe.",
+    "altmetricScore": 3900
+  },
+  {
+    "id": "10.1101/2020.04.27.20073379",
+    "class": "bad",
+    "title": "Hydroxychloroquine application is associated with a decreased mortality in critically ill patients with COVID-19",
+    "publicationDate": "2020-05-01",
+    "authorString": "Yu B et al.",
+    "url": "https://doi.org/10.1101/2020.04.27.20073379",
+    "briefSummary": "This retrospective study identifies an association between hydroxychloroquine use and decreased mortality, and corroborates the in vitro antiviral effects of hydroxychloroquine. Caveat: the approval of the study design has been questioned by other researchers (http://disq.us/p/28zsoh0)",
+    "altmetricScore": 3642
+  },
+  {
+    "id": "10.1101/2020.04.27.20081893",
+    "class": "preprint",
+    "title": "Individual variation in susceptibility or exposure to SARS-CoV-2 lowers the herd immunity threshold",
+    "publicationDate": "2020-05-02",
+    "authorString": "Gomes MGM et al.",
+    "url": "https://doi.org/10.1101/2020.04.27.20081893",
+    "briefSummary": "Parsing the heterogeneity of individuals susceptible to COVID-19, the authors concluded that herd immunity may be achieved with a lower percentage of immune individuals than previous estimates suggest.",
+    "altmetricScore": 3448
+  },
+  {
+    "class": "event",
+    "title": "Over 3.3 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-05-02",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 240,000 deaths worldwide",
+    "publicationDate": "2020-05-02",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.04.27.20081810",
+    "class": "preprint",
+    "title": "Clinical classifiers of COVID-19 infection from novel ultra-high-throughput proteomics",
+    "publicationDate": "2020-05-03",
+    "authorString": "Messner CB et al.",
+    "url": "https://doi.org/10.1101/2020.04.27.20081810",
+    "briefSummary": "Development of a rapid, high-throughput, semi-automated mass spectrometry platform helps identify 27 biomarkers in plasma samples that are differentially expressed between mild and severe forms of COVID-19. Highlights potential therapeutic targets linked to IL-6 signaling.",
+    "altmetricScore": 109
+  },
+  {
+    "id": "10.1101/2020.04.26.20081059",
+    "class": "preprint",
+    "title": "Preliminary evidence from a multicenter prospective observational study of the safety and efficacy of chloroquine for the treatment of COVID-19",
+    "publicationDate": "2020-05-04",
+    "authorString": "Huang M et al.",
+    "url": "https://doi.org/10.1101/2020.04.26.20081059",
+    "briefSummary": "In this multicenter prospective observational study, the authors found that chloroquine, even at low doses, decreased the time taken for viral RNA to reach undetectable levels and reduced the duration of fever in patients with COVID-19. Based on the results, the authors tentatively suggest chloroquine's potential role in COVID-19 treatment, but emphasise the need for further studies for chloroquine's efficacy and safety.",
+    "altmetricScore": 2487
+  },
+  {
+    "id": "10.1101/2020.04.30.20085613",
+    "class": "preprint",
+    "title": "Humoral immune response and prolonged PCR positivity in a cohort of 1343 SARS-CoV 2 patients in the New York City region",
+    "publicationDate": "2020-05-05",
+    "authorString": "Wajnberg A et al.",
+    "url": "https://doi.org/10.1101/2020.04.30.20085613",
+    "briefSummary": "Using PCR and ELISA, the authors found that most confirmed COVID-19 patients seroconverted after infection, suggesting that COVID-19 patients may develop humoral immunity to reinfection.",
+    "altmetricScore": 2666
+  },
+  {
+    "id": "10.1101/2020.05.02.20088898",
+    "class": "preprint",
+    "title": "Repeated seroprevalence of anti-SARS-CoV-2 IgG antibodies in a population-based sample from Geneva, Switzerland",
+    "publicationDate": "2020-05-06",
+    "authorString": "Stringhini S et al.",
+    "url": "https://doi.org/10.1101/2020.05.02.20088898",
+    "briefSummary": "In this study consisting of 8 weekly serosurveys spanning 1335 participants from 633 households, the authors found that Geneva, Switzerland is still far from achieving herd immunity.",
+    "altmetricScore": 1367
+  },
+  {
+    "id": "10.1101/2020.05.06.20092999",
+    "class": "preprint",
+    "title": "OpenSAFELY: factors associated with COVID-19-related hospital death in the linked electronic health records of 17 million adult NHS patients.",
+    "publicationDate": "2020-05-07",
+    "authorString": "The OpenSAFELY Collaborative et al.",
+    "url": "https://doi.org/10.1101/2020.05.06.20092999",
+    "briefSummary": "Important study describing the factors influencing COVID-19 deaths. However, the interpretation of the results requires care: https://twitter.com/EpiEllie/status/1258607280133681155?s=19",
+    "altmetricScore": 4290
+  },
+  {
+    "id": "10.1101/2020.05.06.20092999",
+    "class": "preprint",
+    "title": "OpenSAFELY: factors associated with COVID-19-related hospital death in the linked electronic health records of 17 million adult NHS patients.",
+    "publicationDate": "2020-05-07",
+    "authorString": "The OpenSAFELY Collaborative et al.",
+    "url": "https://doi.org/10.1101/2020.05.06.20092999",
+    "briefSummary": "OpenSAFELY is a new pseudoymised analytics platform created from NHS England primary care electronic health records. Preliminary data from this source (n = 17,425,445) suggest an increased risk of COVID-19 hospital death associated with male gender, older age, prior medical conditions (e.g. uncontrolled diabetes and severe asthma), non-white ethnicity (African-American or Asian origin), and deprivation.",
+    "longerSummary": "Reviewed: https://observablehq.com/@ismms-himc/covid-19-sars-cov-2-preprints-from-medrxiv-and-biorxiv\n\nhttp://disq.us/p/29crc30",
+    "altmetricScore": 4290
+  },
+  {
+    "id": "10.1101/2020.05.02.20080036",
+    "class": "preprint",
+    "title": "Hydroxychloroquine and azithromycin plus zinc vs hydroxychloroquine and azithromycin alone: outcomes in hospitalized COVID-19 patients",
+    "publicationDate": "2020-05-08",
+    "authorString": "Carlucci P et al.",
+    "url": "https://doi.org/10.1101/2020.05.02.20080036",
+    "briefSummary": "In this retrospective observational study, the authors found that the addition of zinc sulfate to regimens with hydroxychloroquine and azithromycin reduced mortality and transition to hospice; benefits were mainly found in patients not requiring ICU level of care.",
+    "altmetricScore": 4635
+  },
+  {
+    "class": "event",
+    "title": "Over 4 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-05-10",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 280,000 deaths worldwide",
+    "publicationDate": "2020-05-10",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.05.11.089896",
+    "class": "bad",
+    "title": "Performance of Abbott ID NOW COVID-19 rapid nucleic acid amplification test in nasopharyngeal swabs transported in viral media and dry nasal swabs, in a New York City academic institution",
+    "publicationDate": "2020-05-12",
+    "authorString": "Basu A et al.",
+    "url": "https://doi.org/10.1101/2020.05.11.089896",
+    "briefSummary": "Comparison of nucleic acid amplification tests for SARS-CoV-2 suggest that the Abbot ID NOW COVID-19 test had a third more false negative results. Concerns have been raised that the collection methods and transport of these samples were not compatible with this test.",
+    "altmetricScore": 2376,
+    "publishedVersionDoi": "10.1128/jcm.01136-20"
+  },
+  {
+    "id": "10.1101/2020.05.13.093195",
+    "class": "preprint",
+    "title": "ChAdOx1 nCoV-19 vaccination prevents SARS-CoV-2 pneumonia in rhesus macaques",
+    "publicationDate": "2020-05-13",
+    "authorString": "van Doremalen N et al.",
+    "url": "https://doi.org/10.1101/2020.05.13.093195",
+    "briefSummary": "Tentative but promising results suggesting that injection of the SARS-Cov-2 spike protein ChAdOx1 can vaccinate monkeys and protect against lung damage. https://twitter.com/davidrliu/status/1260888279882268673?s=20",
+    "altmetricScore": 4156
+  },
+  {
+    "id": "10.1101/2020.05.10.20096909",
+    "class": "preprint",
+    "title": "EXCESS MORTALITY FROM COVID-19. WEEKLY EXCESS DEATH RATES BY AGE AND SEX FOR SWEDEN.",
+    "publicationDate": "2020-05-15",
+    "authorString": "Modig K et al.",
+    "url": "https://doi.org/10.1101/2020.05.10.20096909",
+    "briefSummary": "Authors quantify excess deaths (week by week, from March) in Sweden. COVID19 has taken 2-3 years from life expectancy in Sweden. Thread: https://twitter.com/NAChristakis/status/1262012815663149058?s=19",
+    "altmetricScore": 838
+  },
+  {
+    "id": "10.1101/2020.05.14.095414",
+    "class": "preprint",
+    "title": "Pre-existing and de novo humoral immunity to SARS-CoV-2 in humans",
+    "publicationDate": "2020-05-15",
+    "authorString": "Ng KW et al.",
+    "url": "https://doi.org/10.1101/2020.05.14.095414",
+    "briefSummary": "Approximately 10% of SARS-CoV-2 negative blood donors with recent HCoV infections displayed IgG cross-reactivity towards SARS-CoV-2 S protein. Limitations discussed in review: https://www.immunology.ox.ac.uk/covid-19/covid-19-immunology-literature-reviews/pre-existing-and-de-novo-humoral-immunity-to-sars-cov-2-in-humans",
+    "altmetricScore": 2527
+  },
+  {
+    "id": "10.1101/2020.05.13.20094193",
+    "class": "preprint",
+    "title": "Treatment Response to Hydroxychloroquine, Lopinavir/Ritonavir, and Antibiotics for Moderate COVID 19: A First Report on the Pharmacological Outcomes from South Korea",
+    "publicationDate": "2020-05-18",
+    "authorString": "Kim MS et al.",
+    "url": "https://doi.org/10.1101/2020.05.13.20094193",
+    "briefSummary": "In this retrospective cohort study, the authors explored the use of hydroxychloroquine with antibiotics, or lopinavir or ritonavir with antibiotics; and compared these arms to a third conservative treatment control arm. The authors found that hydroxychloroquine with antibiotics led to better viral clearance, reduced hospital stay, and enhanced cough symptom resolution, but caution that toxicity was not measured in their study.",
+    "altmetricScore": 1655
+  },
+  {
+    "id": "10.1101/2020.05.13.20101253",
+    "class": "bad",
+    "title": "The infection fatality rate of COVID-19 inferred from seroprevalence data",
+    "publicationDate": "2020-05-19",
+    "authorString": "Ioannidis J. et al.",
+    "url": "https://doi.org/10.1101/2020.05.13.20101253",
+    "briefSummary": "Infection fatality rates from seroprevalence studies are lower than original estimates made in the early days of the COVID-19 pandemic. Caveats: Concerns regarding the paper's methodology have been raised by other researchers, such as https://twitter.com/GidMK/status/1262956011872280577",
+    "altmetricScore": 3389
+  },
+  {
+    "class": "event",
+    "title": "Over 4.8 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-05-19",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 319,000 deaths worldwide",
+    "publicationDate": "2020-05-19",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.05.21.108506",
+    "class": "preprint",
+    "title": "No evidence for increased transmissibility from recurrent mutations in SARS-CoV-2",
+    "publicationDate": "2020-05-21",
+    "authorString": "van Dorp L et al.",
+    "url": "https://doi.org/10.1101/2020.05.21.108506",
+    "briefSummary": "Tested over 15,000 SARS-CoV-2 genomes and found no evidence for strains acquiring mutations that make them more transmissible",
+    "altmetricScore": 1887
+  },
+  {
+    "class": "event",
+    "title": "Over 5 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-05-21",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 328,000 deaths worldwide",
+    "publicationDate": "2020-05-21",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.05.21.20104521",
+    "class": "preprint",
+    "title": "Full genome viral sequences inform patterns of SARS-CoV-2 spread into and within Israel",
+    "publicationDate": "2020-05-22",
+    "authorString": "Miller D et al.",
+    "url": "https://doi.org/10.1101/2020.05.21.20104521",
+    "briefSummary": "Sequenced 112 genomes and found 1-10% of infected individuals are responsible for 80% of secondary infections using phylogenetic trees. Strong suggestions against the possibility of herd immunity",
+    "altmetricScore": 1444
+  },
+  {
+    "id": "10.1101/2020.05.19.20105999",
+    "class": "preprint",
+    "title": "SARS-CoV-2 RNA concentrations in primary municipal sewage sludge as a leading indicator of COVID-19 outbreak dynamics",
+    "publicationDate": "2020-05-22",
+    "authorString": "Peccia J et al.",
+    "url": "https://doi.org/10.1101/2020.05.19.20105999",
+    "briefSummary": "SARS-CoV-2 RNA concentration in primary sewage sludge highly correlated with COVID-19 epidemiological curve and local hospital admissions, with a seven- to three- day leading indication, respectively.",
+    "altmetricScore": 7586
+  },
+  {
+    "id": "10.1101/2020.05.22.111294",
+    "class": "preprint",
+    "title": "Preprinting a pandemic: the role of preprints in the COVID-19 pandemic",
+    "publicationDate": "2020-05-23",
+    "authorString": "Fraser N et al.",
+    "url": "https://doi.org/10.1101/2020.05.22.111294",
+    "briefSummary": "Preprints represent ~40% of the COVID19 literature",
+    "altmetricScore": 321
+  },
+  {
+    "class": "event",
+    "title": "Over 6 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-05-31",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 369,000 deaths worldwide",
+    "publicationDate": "2020-05-31",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 7 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-06-08",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 400,000 deaths worldwide",
+    "publicationDate": "2020-06-08",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.06.08.20125112",
+    "class": "preprint",
+    "title": "A consensus Covid-19 immune signature combines immuno-protection with discrete sepsis-like traits associated with poor prognosis",
+    "publicationDate": "2020-06-09",
+    "authorString": "Laing AG et al.",
+    "url": "https://doi.org/10.1101/2020.06.08.20125112",
+    "briefSummary": "The authors identified a consensus peripheral blood immunological signature across a heterogeneous population. Implications extend to using certain components for prognosis, as well as boosting the understanding of the underlying pathogenesis of COVID-19.",
+    "altmetricScore": 50
+  },
+  {
+    "id": "10.21203/rs.3.rs-34047/v1",
+    "class": "preprint",
+    "title": "Suppressing COVID-19 transmission in Hong Kong: an observational study of the first four months",
+    "publicationDate": "2020-06-09",
+    "authorString": "Wu P et al.",
+    "url": "https://doi.org/10.21203/rs.3.rs-34047/v1",
+    "briefSummary": "The authors attributed the successful suppression of COVID-19 transmission in the first wave of the pandemic in Hong Kong to a combination of two key public health measures. The focus on early and near complete identification of cases interrupted transmission; while a complete lockdown was avoided with the implementation of more general physical distancing community measures.",
+    "altmetricScore": 804
+  },
+  {
+    "id": "10.1101/2020.06.12.148726",
+    "class": "preprint",
+    "title": "The D614G mutation in the SARS-CoV-2 spike protein reduces S1 shedding and increases infectivity",
+    "publicationDate": "2020-06-12",
+    "authorString": "Zhang L et al.",
+    "url": "https://doi.org/10.1101/2020.06.12.148726",
+    "briefSummary": "Authors reported that a D614G mutation in the SARS-CoV-2 spike protein may increase its infectivity.",
+    "altmetricScore": 1185
+  },
+  {
+    "id": "10.1101/2020.06.13.149039",
+    "class": "preprint",
+    "title": "Inhaled corticosteroids downregulate the SARS-CoV-2 receptor ACE2 in COPD through suppression of type I interferon",
+    "publicationDate": "2020-06-13",
+    "authorString": "Finney LJ et al.",
+    "url": "https://doi.org/10.1101/2020.06.13.149039",
+    "briefSummary": "The authors showed that inhaled corticosteroid (ICS) administration attenuated pulmonary expression of ACE2 in various human and animal models. Because ACE2 has been reported to facilitate cellular entry of SARS-CoV-2, the authors suggest that ICS may modulate the clinical course of COVID-19.",
+    "altmetricScore": 64
+  },
+  {
+    "id": "10.1101/2020.06.11.146878",
+    "class": "preprint",
+    "title": "Colon Cancer and SARS-CoV-2: Impact of ACE2 Expression in Susceptibility to COVID-19",
+    "publicationDate": "2020-06-13",
+    "authorString": "Ahmadi M et al.",
+    "url": "https://doi.org/10.1101/2020.06.11.146878",
+    "briefSummary": "Through the analysis of ACE2 levels, the authors concluded that COVID-19 may adversely affect colon adenocarcinoma (COAD) patient survival outcomes. Therefore, additional preventive measures may be needed to protect patients from COVID-19.",
+    "altmetricScore": 3
+  },
+  {
+    "id": "10.1101/2020.06.14.151357",
+    "class": "preprint",
+    "title": "The Spike D614G mutation increases SARS-CoV-2 infection of multiple human cell types",
+    "publicationDate": "2020-06-15",
+    "authorString": "Daniloski Z et al.",
+    "url": "https://doi.org/10.1101/2020.06.14.151357",
+    "briefSummary": "Authors' findings support recent reports that a D614G mutation in the SARS-CoV-2 Spike (S) protein improves its ability to transduce host cells. Specifically, the G614 variant was more resistant to cleavage than the D614 variant, which may improve the ability of newly-assembled virions to include more receptor binding-capable S protein.",
+    "altmetricScore": 379
+  },
+  {
+    "id": "10.1101/2020.06.15.151779",
+    "class": "preprint",
+    "title": "Naturally mutated spike proteins of SARS-CoV-2 variants show differential levels of cell entry",
+    "publicationDate": "2020-06-15",
+    "authorString": "Ozono S et al.",
+    "url": "https://doi.org/10.1101/2020.06.15.151779",
+    "briefSummary": "Using a lentiviral system, authors reported three key findings: 1) SARS-CoV-2-Spike (S) protein-mediated cell entry strongly depends on TMPRSS2 coexpression, 2) the SARS-CoV-2 D614G mutant exhibited activity for entry approximately 3.5x that of the wild type, and 3) despite the biological and structural changes, the antigenicity of the D614G mutant did not vary significantly from the wild type.",
+    "altmetricScore": 29
+  },
+  {
+    "class": "event",
+    "title": "Over 8 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-06-16",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 438,000 deaths worldwide",
+    "publicationDate": "2020-06-16",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.06.15.152835",
+    "class": "preprint",
+    "title": "A thermostable, closed, SARS-CoV-2 spike protein trimer",
+    "publicationDate": "2020-06-17",
+    "authorString": "Xiong X et al.",
+    "url": "https://doi.org/10.1101/2020.06.15.152835",
+    "briefSummary": "The authors designed a thermostable Spike (S) protein trimer, which they envision would be useful for research in vaccinology, diagnostics, and other scientific research involving SARS-CoV-2.",
+    "altmetricScore": 41
+  },
+  {
+    "id": "10.1101/2020.06.17.157982",
+    "class": "preprint",
+    "title": "Deep mutational scanning of SARS-CoV-2 receptor binding domain reveals constraints on folding and ACE2 binding",
+    "publicationDate": "2020-06-17",
+    "authorString": "Starr TN et al.",
+    "url": "https://doi.org/10.1101/2020.06.17.157982",
+    "briefSummary": "Using a quantitative deep mutational scanning approach, the authors determined the influence of mutations in the receptor binding domain (RBD) on the protein's binding affinity to the ACE2 receptor. The authors identified mutations that increased binding affinity between the RBD, as well as patterns relating to the trade-off between protein stability and binding affinity.",
+    "altmetricScore": 499,
+    "publishedVersionDoi": "10.1016/j.cell.2020.08.012"
+  },
+  {
+    "id": "10.1101/2020.06.19.161042",
+    "class": "preprint",
+    "title": "Drug repurposing screens reveal FDA approved drugs active against SARS-Cov-2",
+    "publicationDate": "2020-06-19",
+    "authorString": "Dittmar M et al.",
+    "url": "https://doi.org/10.1101/2020.06.19.161042",
+    "briefSummary": "In this preprint, the authors screened through 3,000 drugs in monkey (Vero), human hepatocyte (Huh7.5), and human lung epithelial (Calu-3) cells. They identified 9 antiviral candidates active against SARS-CoV-2 in the Calu-3 cells.",
+    "altmetricScore": 97
+  },
+  {
+    "id": "10.1101/2020.06.18.160655",
+    "class": "preprint",
+    "title": "A single dose of recombinant VSV-ΔG-spike vaccine provides protection against SARS-CoV-2 challenge",
+    "publicationDate": "2020-06-19",
+    "authorString": "Yahalom-Ronen Y et al.",
+    "url": "https://doi.org/10.1101/2020.06.18.160655",
+    "briefSummary": "Using a Golden Syrian hamster in vivo model, the authors found that a single-dose of rVSV-∆Gspike vaccine was safe and efficacious in protecting against a SARS-CoV-2 challenge.",
+    "altmetricScore": 186
+  },
+  {
+    "id": "10.1101/2020.06.19.161141",
+    "class": "preprint",
+    "title": "High-density amplicon sequencing identifies community spread and ongoing evolution of SARS-CoV-2 in the Southern United States",
+    "publicationDate": "2020-06-19",
+    "authorString": "McNamara RP et al.",
+    "url": "https://doi.org/10.1101/2020.06.19.161141",
+    "briefSummary": "The authors sequenced SARS-CoV-2 isolates from symptomatic COVID-19 cases in a suburban and rural community in the southeastern US. Their results suggested that the SARS-CoV-2 Spike protein D614G mutant (associated with greater pathogenecity) is the dominant strain in the US.",
+    "altmetricScore": 65
+  },
+  {
+    "id": "10.1101/2020.06.22.20137273",
+    "class": "preprint",
+    "title": "Effect of Dexamethasone in Hospitalized Patients with COVID-19: Preliminary Report",
+    "publicationDate": "2020-06-22",
+    "authorString": "Horby P et al.",
+    "url": "https://doi.org/10.1101/2020.06.22.20137273",
+    "briefSummary": "This preprint is a preliminary report from the RECOVERY trial: dexamethasone reduced deaths in patients receiving mechanical ventilation as well as in patients receiving medical oxygen without mechanical ventilation, but did not reduce mortality in patients not receiving respiratory support at randomisation.",
+    "altmetricScore": 5506
+  },
+  {
+    "id": "10.1101/2020.06.23.167064",
+    "class": "preprint",
+    "title": "SARS-CoV-2 structure and replication characterized by in situ cryo-electron tomography",
+    "publicationDate": "2020-06-23",
+    "authorString": "Klein S et al.",
+    "url": "https://doi.org/10.1101/2020.06.23.167064",
+    "briefSummary": "Using in situ cryo-electron tomography, the authors visualised double-stranded RNA within double-membrane vesicles. They found that membrane formation is influenced by the spike trimer and viral ribonucleoprotein complex recruitment into virion budding sites. These findings may have important implications for SARS-CoV-2 antiviral discovery.",
+    "altmetricScore": 253
+  },
+  {
+    "id": "10.1101/2020.06.30.180380",
+    "class": "preprint",
+    "title": "A High Content Screen for Mucin-1-Reducing Compounds Identifies Fostamatinib as a Candidate for Rapid Repurposing for Acute Lung Injury during the COVID-19 pandemic",
+    "publicationDate": "2020-06-30",
+    "authorString": "Alimova M et al.",
+    "url": "https://doi.org/10.1101/2020.06.30.180380",
+    "briefSummary": "Using a mouse model of ischemia-reperfusion lung injury, the authors showed that Fostamatnib induces the down-regulation and internalization of MUC1, and reduces the expression of MUC1 in the lung.",
+    "altmetricScore": 139
+  },
+  {
+    "id": "10.1101/2020.06.30.20143255",
+    "class": "preprint",
+    "title": "Handyfuge-LAMP: low-cost and electricity-free centrifugation for isothermal SARS-CoV-2 detection in saliva.",
+    "publicationDate": "2020-07-01",
+    "authorString": "Li E et al.",
+    "url": "https://doi.org/10.1101/2020.06.30.20143255",
+    "briefSummary": "The authors describe an inexpensive, manually-powered diagnostic to detect COVID-19 RNA from saliva. This hardware is compatible with the LAMP assay described by Rabe and Cepko (2020).",
+    "altmetricScore": 2495
+  },
+  {
+    "class": "event",
+    "title": "Over 10.7 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-07-02",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 517,000 deaths worldwide",
+    "publicationDate": "2020-07-02",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "id": "10.1101/2020.07.02.20145003",
+    "class": "preprint",
+    "title": "Tissue-specific tolerance in fatal Covid-19",
+    "publicationDate": "2020-07-04",
+    "authorString": "Dorward DA et al.",
+    "url": "https://doi.org/10.1101/2020.07.02.20145003",
+    "briefSummary": "By investigating the histology of various tissues isolated from post-mortems of fatal COVID-19 cases, the authors concluded that death from COVID-19 may mainly be attributed to the immune response rather than tissue-specific injury.",
+    "altmetricScore": 1351
+  },
+  {
+    "id": "10.1101/2020.07.09.20148429",
+    "class": "bad",
+    "title": "Longitudinal evaluation and decline of antibody responses in SARS-CoV-2 infection",
+    "publicationDate": "2020-07-11",
+    "authorString": "Seow J et al.",
+    "url": "https://doi.org/10.1101/2020.07.09.20148429",
+    "briefSummary": "The authors found a decline in antibody titres a few months after patients were exposed to COVID-19. These findings may have important implications in preventing reinfection by SARS-CoV-2, as well as in vaccine development. On the other hand, they may also be natural--following challenge, antibody titres naturally decrease over time.",
+    "altmetricScore": 3822
+  },
+  {
+    "id": "10.1101/2020.07.13.190140",
+    "class": "preprint",
+    "title": "Anti-SARS-CoV-2 IgG from severely ill COVID-19 patients promotes macrophage hyper-inflammatory responses",
+    "publicationDate": "2020-07-13",
+    "authorString": "Hoepel W et al.",
+    "url": "https://doi.org/10.1101/2020.07.13.190140",
+    "briefSummary": "The authors established the mechanistic association between SARS-CoV-2 infection and clinical manifestation of COVID-19. The presence of antibodies targeting the viral spike protein from patient blood triggers a cytokine storm in activated human macrophages, which compromises the vascular endothelial barrier and promotes blood coagulation.",
+    "altmetricScore": 395
+  },
+  {
+    "class": "event",
+    "title": "Over 14.7 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-07-20",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 610,000 deaths worldwide",
+    "publicationDate": "2020-07-20",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 21.2 million confirmed cases of COVID-19 worldwide",
+    "publicationDate": "2020-08-15",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  },
+  {
+    "class": "event",
+    "title": "Over 766,000 deaths worldwide",
+    "publicationDate": "2020-08-15",
+    "url": "https://coronavirus.jhu.edu/map.html"
+  }
+]

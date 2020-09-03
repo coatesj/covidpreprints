@@ -1,6 +1,6 @@
 Package: covidpreprints
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Preprints & COVID-19
+Version: 0.1
 Authors@R: 
     person(given = "First",
            family = "Last",
@@ -19,3 +19,5 @@ Imports:
   timevis
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+URL: https://github.com/coatesj/shiny-server, http://covidpreprints.com/
+BugReports: https://github.com/coatesj/shiny-server/issues
