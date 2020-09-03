@@ -54,7 +54,7 @@ margin-left: 12px;
 }
 
 /* Container around content */
-.container {
+.container_tm {
   position: relative;
   background-color: inherit;
  /* display: grid;
@@ -81,14 +81,14 @@ margin-left: 12px;
 
 }
 
-.container.left {
+.container_tm.left {
 
 	width: 75%;
 
 }
 
 /* The circles on the timeline */
-.container.left::after {
+.container_tm.left::after {
   content: '';
   position: absolute;
   width: 10px;
@@ -102,7 +102,7 @@ margin-left: 12px;
 
 
 /* The circles on the timeline */
-.container.right::before {
+.container_tm.right::before {
   content: '';
   position: absolute;
   width: 10px;
@@ -114,11 +114,11 @@ margin-left: 12px;
   z-index: 1;
 }
 
-.container.right {
+.container_tm.right {
   width: 25%;
 }
 
-.container.right .connector {
+.container_tm.right .connector {
 
 width: 100px;
 flex-grow: 0;
@@ -188,7 +188,7 @@ cat('<div class="timeline">')
 
 for (i in seq_len(nrow(df))) {
   if (df[i, "class"] == "preprint") {
-    cat('<div class="container left">')
+    cat('<div class="container_tm left">')
     cat('<div class="content">')
     cat('<h2>', df[i, "title"], '</h2>')
     cat('<p>', df[i, "authorString"], '</p>')
@@ -196,7 +196,7 @@ for (i in seq_len(nrow(df))) {
     cat('<div class="connector"></div>')
     cat('</div>')
   } else if (df[i, "class"] == "event") {
-    cat('<div class="container right">')
+    cat('<div class="container_tm right">')
     cat('<div class="connector"></div>')
     cat('<div class="content">')
     cat('<h2>', df[i, "title"], '</h2>')
