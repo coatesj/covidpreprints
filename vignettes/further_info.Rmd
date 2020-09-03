@@ -10,7 +10,20 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{css}
+/* We don't have a table of content so we can use the full width instead of 75% */
+.col-md-9 {
+  width: 100%;
+}
+```
+
 ```{r}
-readRDS("infotable.rds") -> info_table
-DT::datatable(info_table, list(lengthMenu = c(10, 25, 30, 50, 75, 100), pageLength = 50))
+library(jsonlite)
+
+df <- fromJSON("../data.json")
+```
+
+```{r}
+df <- df[, c("publicationDate", "title", "briefSummary", "url", "altmetricScore")]
+DT::datatable(df, list(lengthMenu = c(10, 25, 30, 50, 75, 100), pageLength = 50))
 ```
