@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 body {
   background-color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* We do not have a table of content so we can use the full width instead of 75% */
@@ -25,17 +25,47 @@ body {
   width: 100%;
 }
 
-h2 {
-  font-size:16px;
-  margin-right: 12px;
-
+a {
+  color: #0079C3;
+    text-decoration: none;
+  
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+span {
+  font-size:	14px;
+  margin: 0;
+  margin-bottom:6px;
+}
+
+p {
+  
+  font-family: 'PT Serif', serif;
+  font-size:14px;
+  color: #767676;
+    margin:0;
+  margin-right:24px;
+  
+}
+
+h2 {
+  font-size:16px;
+  margin: 0 12px 6px 0;
+  
+}
+
+
 .right h2 {
-
-margin-right: 0px;
-margin-left: 12px;
-
+  
+  margin-right: 0px;
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight:400;
+  color:#212121;
+    
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -44,6 +74,7 @@ margin-left: 12px;
   position: relative;
   max-width: 1200px;
   margin: 120px auto;
+  
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -55,81 +86,20 @@ margin-left: 12px;
   top: 0;
   bottom: 0;
   left: 75%;
-
+  
 }
 
 /* Container around content */
 .container_tl {
   position: relative;
   background-color: inherit;
- /* display: grid;
+  /* display: grid;
   grid-template-columns: auto auto; */
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
+  margin-bottom:24px
+  
 }
-
-/* The actual content */
-.content {
-  /* grid-column: 1 / span 1; */
-  position: relative;
-
-}
-
- .connector {
- 	/* grid-column: 2 / span 1; */
-	/* width: 100%; */
-    border-bottom: 1px solid grey;
-    height: 24px;
-    min-width: 100px;
-    flex-grow: 1;
-
-}
-
-.container_tl.left {
-
-	width: 75%;
-
-}
-
-/* The circles on the timeline */
-.container_tl.left::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  right: -6px;
-  background-color: grey;
-  top: 18px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-
-/* The circles on the timeline */
-.container_tl.right::before {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  left: -4px;
-  background-color: grey;
-  top: 18px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.container_tl.right {
-  width: 25%;
-}
-
-.container.right .connector {
-
-width: 100px;
-flex-grow: 0;
-
-}
-
 
 /* Place the container to the left */
 .left {
@@ -142,53 +112,143 @@ flex-grow: 0;
 }
 
 
+/* The actual content */
+.content {
+  position: relative;
+  display: flex;
+  
+}
 
+.connector {
+  /* grid-column: 2 / span 1; */
+  /* width: 100%; */
+  border-bottom: 1px solid grey;
+  height: 14px;
+  min-width: 100px;
+  flex-grow: 1;
+  
+}
+
+.container_tl.left {
+  
+  width: 75%;
+  
+}
+
+/* The circles on the timeline */
+.left .connector::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -6px;
+  background-color: grey;
+  top: 8px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+/* The circles on the timeline */
+.right .connector::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -4px;
+  background-color: grey;
+  top: 8px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.container_tl.right {
+  width: 25%;
+}
+
+.container_tl.right .connector {
+  
+  width: 100px;
+  flex-grow: 0;
+  
+}
+
+/* styling for the month markers on the timeline */
+.month-marker {
+  display:inline-block;
+  position: relative;
+  z-index:1000;
+  left:75%;
+  margin-left:-35px;
+  background-color:#212121;
+    color:white;
+  height:24px;
+  border-radius:2px;
+  margin-bottom:24px;
+}
+
+.month-marker span {
+  margin:4px 8px;
+}
+
+
+/* position and style the date markers */
+span.date {
+  align-self: flex-end;
+  font-size:12px;
+  color:#767676;
+    margin:0 12px -6px;
+}
+
+/* move the dates on key events to the left */
+.right span.date {
+  align-self:flex-start;
+}
 
 /* Media queries - Responsive timeline on screens less than 730px wide */
-@media screen and (max-width: 730px) {
-
-  /* hide the timeline */
-  .timeline::after {
-   display:none
+  @media screen and (max-width: 730px) {
+    
+    /* hide the timeline */
+    .timeline::after {
+      display:none
+    }
+    
+    /* Full-width containers */
+    .container_tl.left {
+      width: 100%;
+      padding:12px;
+      left: 0;
+    }
+  
+    /*hide the connectors */
+    .connector {
+      display: none;
+      
+    }
+    
+    /* hide the dots */
+    .connector::before, .connector::after {
+      display: none;
+    }
+  
+    
+    .container_tl.right {
+      
+      padding:12px;
+      text-align: right;
+      width: 75%;
+      left: 20%;
+    }
+    
+    .container_tl.right h2 {
+      width: 100%;
+    }
+    
+    .content {
+      width: 100%;
+    }
+    
   }
-  
-  /* Full-width containers */
-  .container_tl.left {
-    width: 100%;
-    padding:12px;
-    left: 0;
-  }
-  
-  /*hide the connectors */
-  .connector {
-    display: none;
-  
-  }
-  
-  /* hide the dots */
-  .container_tl::before, .container_tl::after {
-    display: none;
-  }
-  
-  
-  .container_tl.right {
-
-    padding:12px;
-    text-align: right;
-    width: 75%;
-    left: 20%;
-  }
-
-  .container_tl.right h2 {
-    width: 100%;
-  }
-  
-  .content {
-  width: 100%;
-  }
-  
- 
-}
 ```
 
 
