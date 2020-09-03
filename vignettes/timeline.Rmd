@@ -20,6 +20,11 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+/* We do not have a table of content so we can use the full width instead of 75% */
+.col-md-9 {
+  width: 100%;
+}
+
 h2 {
   font-size:16px;
   margin-right: 12px;
@@ -35,14 +40,10 @@ margin-left: 12px;
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
+  display:block;
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 120px;
-}
-
-.col-md-9 {
-  width: 100%;
+  margin: 120px auto;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -58,7 +59,7 @@ margin-left: 12px;
 }
 
 /* Container around content */
-.container_tm {
+.container_tl {
   position: relative;
   background-color: inherit;
  /* display: grid;
@@ -85,14 +86,14 @@ margin-left: 12px;
 
 }
 
-.container_tm.left {
+.container_tl.left {
 
 	width: 75%;
 
 }
 
 /* The circles on the timeline */
-.container_tm.left::after {
+.container_tl.left::after {
   content: '';
   position: absolute;
   width: 10px;
@@ -106,7 +107,7 @@ margin-left: 12px;
 
 
 /* The circles on the timeline */
-.container_tm.right::before {
+.container_tl.right::before {
   content: '';
   position: absolute;
   width: 10px;
@@ -118,11 +119,11 @@ margin-left: 12px;
   z-index: 1;
 }
 
-.container_tm.right {
+.container_tl.right {
   width: 25%;
 }
 
-.container_tm.right .connector {
+.container.right .connector {
 
 width: 100px;
 flex-grow: 0;
@@ -143,40 +144,50 @@ flex-grow: 0;
 
 
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
+/* Media queries - Responsive timeline on screens less than 730px wide */
+@media screen and (max-width: 730px) {
+
+  /* hide the timeline */
   .timeline::after {
-  left: 31px;
+   display:none
   }
-
+  
   /* Full-width containers */
-  .container {
+  .container_tl.left {
+    width: 100%;
+    padding:12px;
+    left: 0;
+  }
+  
+  /*hide the connectors */
+  .connector {
+    display: none;
+  
+  }
+  
+  /* hide the dots */
+  .container_tl::before, .container_tl::after {
+    display: none;
+  }
+  
+  
+  .container_tl.right {
+
+    padding:12px;
+    text-align: right;
+    width: 75%;
+    left: 20%;
+  }
+
+  .container_tl.right h2 {
+    width: 100%;
+  }
+  
+  .content {
   width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-
   }
-
-
-
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
+  
+ 
 }
 ```
 
@@ -192,7 +203,7 @@ cat('<div class="timeline">')
 
 for (i in seq_len(nrow(df))) {
   if (df[i, "class"] == "preprint") {
-    cat('<div class="container_tm left">')
+    cat('<div class="container_tl left">')
     cat('<div class="content">')
     cat('<h2>', df[i, "title"], '</h2>')
     cat('<p>', df[i, "authorString"], '</p>')
@@ -200,7 +211,7 @@ for (i in seq_len(nrow(df))) {
     cat('<div class="connector"></div>')
     cat('</div>')
   } else if (df[i, "class"] == "event") {
-    cat('<div class="container_tm right">')
+    cat('<div class="container_tl right">')
     cat('<div class="connector"></div>')
     cat('<div class="content">')
     cat('<h2>', df[i, "title"], '</h2>')
