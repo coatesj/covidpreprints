@@ -1,6 +1,8 @@
 navbar:
   type: default
   left:
+    - text: Timeline
+      href: articles/timeline.html
     - text: Further information
       href: articles/further_info.html
     - text: Resources
