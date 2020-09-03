@@ -117,6 +117,10 @@ margin-left: 12px;
   margin-top: 120px;
 }
 
+.col-md-9 {
+  width: 100%;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
@@ -130,7 +134,7 @@ margin-left: 12px;
 }
 
 /* Container around content */
-.container {
+.container_tm {
   position: relative;
   background-color: inherit;
  /* display: grid;
@@ -157,14 +161,14 @@ margin-left: 12px;
 
 }
 
-.container.left {
+.container_tm.left {
 
     width: 75%;
 
 }
 
 /* The circles on the timeline */
-.container.left::after {
+.container_tm.left::after {
   content: '';
   position: absolute;
   width: 10px;
@@ -178,7 +182,7 @@ margin-left: 12px;
 
 
 /* The circles on the timeline */
-.container.right::before {
+.container_tm.right::before {
   content: '';
   position: absolute;
   width: 10px;
@@ -190,11 +194,11 @@ margin-left: 12px;
   z-index: 1;
 }
 
-.container.right {
+.container_tm.right {
   width: 25%;
 }
 
-.container.right .connector {
+.container_tm.right .connector {
 
 width: 100px;
 flex-grow: 0;
@@ -252,7 +256,7 @@ flex-grow: 0;
 }
 </style>
 <div class="timeline">
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -262,7 +266,7 @@ Pneumonia of unknown cause in Wuhan, China
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -272,7 +276,7 @@ Pneumonia of unknown cause in Wuhan, China
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -282,7 +286,7 @@ China shares full genome sequence of 2019-nCoV
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -292,7 +296,7 @@ First cases detected outside of China
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -302,7 +306,7 @@ China releases testing protocols for 2019-nCov
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Discovery of a novel coronavirus associated with the recent pneumonia outbreak in humans and its potential bat origin
@@ -315,7 +319,7 @@ Zhou P et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Pattern of early human-to-human transmission of Wuhan 2019-nCoV
@@ -328,7 +332,7 @@ Riou J et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Complete genome characterisation of a novel coronavirus associated with severe human respiratory disease in Wuhan, China
@@ -341,7 +345,7 @@ Wu F et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -351,7 +355,7 @@ First reported cases in Australia
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Time-varying transmission dynamics of Novel Coronavirus Pneumonia in China
@@ -364,7 +368,7 @@ Liu T et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Full-genome evolutionary analysis of the novel corona virus (2019-nCoV) rejects the hypothesis of emergence as a result of a recent recombination event
@@ -377,7 +381,7 @@ Paraskevis D et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Beware of asymptomatic transmission: Study on 2019-nCoV prevention and control measures based on extended SEIR model
@@ -390,7 +394,7 @@ Shao P et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Potent binding of 2019 novel coronavirus spike protein by a SARS coronavirus-specific human monoclonal antibody
@@ -403,7 +407,7 @@ Tian X et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 The incubation period of 2019-nCoV infections among travellers from Wuhan, China
@@ -416,7 +420,7 @@ Backer JA et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Estimated effectiveness of traveller screening to prevent international spread of 2019 novel coronavirus (2019-nCoV)
@@ -429,7 +433,7 @@ Gostic K et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -439,7 +443,7 @@ Gostic K et al. 
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -449,7 +453,7 @@ First reported cases in UK, Russia, Sweden and Spain
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 The novel coronavirus 2019 (2019-nCoV) uses the SARS-coronavirus receptor ACE2 and the cellular protease TMPRSS2 for entry into target cells
@@ -462,7 +466,7 @@ Hoffmann M et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 The digestive system is a potential route of 2019-nCov infection: a bioinformatics analysis based on single-cell transcriptomes
@@ -475,7 +479,7 @@ Zhang H et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Potent neutralization of 2019 novel coronavirus by recombinant ACE2-Ig
@@ -488,7 +492,7 @@ Lei C et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -498,7 +502,7 @@ First reported death outside of China
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Specific ACE2 Expression in Cholangiocytes May Cause Liver Damage After 2019-nCoV Infection
@@ -511,7 +515,7 @@ Chai X et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Preparedness and vulnerability of African countries against introductions of 2019-nCoV
@@ -524,7 +528,7 @@ Gilbert M et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A database resource for Genome-wide dynamics analysis of Coronaviruses on a historical and global scale
@@ -537,7 +541,7 @@ Zhu Z et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Diarrhea may be underestimated: a missing link in 2019 novel coronavirus
@@ -550,7 +554,7 @@ Liang W et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 The Pathogenicity of SARS-CoV-2 in hACE2 Transgenic Mice
@@ -563,7 +567,7 @@ Bao L et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 The Novel Coronavirus, 2019-nCoV, is Highly Contagious and More Infectious Than Initially Estimated
@@ -576,7 +580,7 @@ Sanche S et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -586,7 +590,7 @@ Sanche S et al. 
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Characteristics of lymphocyte subsets and cytokines in peripheral blood of 123 hospitalized patients with 2019 novel coronavirus pneumonia (NCP)
@@ -599,7 +603,7 @@ Wan S et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -609,7 +613,7 @@ First reported case in Africa
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Cryo-EM Structure of the 2019-nCoV Spike in the Prefusion Conformation
@@ -622,7 +626,7 @@ Wrapp D et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -632,7 +636,7 @@ First reported death in Europe
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -642,7 +646,7 @@ Over 2000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -652,7 +656,7 @@ Italy starts lockdown
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Estimation of COVID-2019 burden and potential for international dissemination of infection from Iran
@@ -665,7 +669,7 @@ Tuite AR et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Clinical presentation and virological assessment of hospitalized cases of coronavirus disease 2019 in a travel-associated transmission cluster
@@ -678,7 +682,7 @@ Woelfel R et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Aerosol and surface stability of HCoV-19 (SARS-CoV-2) compared to SARS-CoV-1
@@ -691,7 +695,7 @@ van Doremalen N et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -701,7 +705,7 @@ Over 4000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -711,7 +715,7 @@ WHO declares COVID-19 a pandemic
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A human monoclonal antibody blocking SARS-CoV-2 infection
@@ -724,7 +728,7 @@ Wang C et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Estimates of the severity of COVID-19 disease
@@ -737,7 +741,7 @@ Verity R et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -747,7 +751,7 @@ Europe becomes the epicenter of the pandemic
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -757,7 +761,7 @@ Modelling from Imperial College London highlights the need for social distancing
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Temporal dynamics in viral shedding and transmissibility of COVID-19
@@ -770,7 +774,7 @@ He X et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -780,7 +784,7 @@ Italy has highest number of deaths in the world
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 SARS-CoV-2 specific antibody responses in COVID-19 patients
@@ -793,7 +797,7 @@ OKBA NM et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Identification of antiviral drug candidates against SARS-CoV-2 from FDA-approved drugs
@@ -806,7 +810,7 @@ Jeon S et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 COVID-19 Vaccine Candidates: Prediction and Validation of 174 SARS-CoV-2 Epitopes
@@ -819,7 +823,7 @@ Prachar M et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -829,7 +833,7 @@ Over 11,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A SARS-CoV-2-Human Protein-Protein Interaction Map Reveals Drug Targets and Potential Drug-Repurposing
@@ -842,7 +846,7 @@ Gordon DE et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Social distancing strategies for curbing the COVID-19 epidemic
@@ -855,7 +859,7 @@ Kissler SM et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 SARS-CoV-2 launches a unique transcriptional signature from in vitro, ex vivo, and in vivo systems
@@ -868,7 +872,7 @@ Blanco-Melo D et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Potent human neutralizing antibodies elicited by SARS-CoV-2 infection
@@ -881,7 +885,7 @@ Ju B et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -891,7 +895,7 @@ Modelling from Imperial College London suggests that without intervention, COVID
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Codon usage and evolutionary rates of the 2019-nCoV genes
@@ -904,7 +908,7 @@ Dilucca M et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Reproducibility and reporting practices in COVID-19 preprint manuscripts
@@ -917,7 +921,7 @@ Sumner JQ et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Lactate dehydrogenase, a Risk Factor of Severe COVID-19 Patients
@@ -930,7 +934,7 @@ Han Y et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Correlation between universal BCG vaccination policy and reduced morbidity and mortality for COVID-19: an epidemiological study
@@ -943,7 +947,7 @@ Miller A et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Site-specific analysis of the SARS-CoV-2 glycan shield
@@ -956,7 +960,7 @@ Watanabe Y et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -966,7 +970,7 @@ Over 33,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 An alternative workflow for molecular detection of SARS-CoV-2 - escape from the NA extraction kit-shortage
@@ -979,7 +983,7 @@ Fomsgaard AS et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 No Evidence for Temperature-Dependence of the COVID-19 Epidemic
@@ -992,7 +996,7 @@ Jamil T et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Cigarette smoke exposure and inflammatory signaling increase the expression of the SARS-CoV-2 receptor ACE2 in the respiratory tract
@@ -1005,7 +1009,7 @@ Smith JC et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Potent neutralizing antibodies in the sera of convalescent COVID-19 patients are directed against conserved linear epitopes on the SARS-CoV-2 spike protein
@@ -1018,7 +1022,7 @@ Poh CM et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Lectin-like Intestinal Defensin Inhibits 2019-nCoV Spike binding to ACE2
@@ -1031,7 +1035,7 @@ Wang C et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A one-enzyme RT-qPCR assay for SARS-CoV-2, and procedures for reagent production
@@ -1044,7 +1048,7 @@ Bhadra S et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Predicting Mortality Risk in Patients with COVID-19 Using Artificial Intelligence to Help Medical Decision-Making
@@ -1057,7 +1061,7 @@ Pourhomayoun M et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Risk factors for severe corona virus disease 2019 (COVID-19) patients : a systematic review and meta analysis
@@ -1070,7 +1074,7 @@ Xu L et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1080,7 +1084,7 @@ Over 40,000 deaths worldwide from COVID-19
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1090,7 +1094,7 @@ Over 40,000 deaths worldwide from COVID-19
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Level of IL-6 predicts respiratory failure in hospitalized symptomatic COVID-19 patients
@@ -1103,7 +1107,7 @@ Herold T et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Modeling the COVID-19 outbreaks and the effectiveness of the containment measures adopted across countries
@@ -1116,7 +1120,7 @@ De Brouwer E et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Leveraging mRNAs sequences to express SARS-CoV-2 antigens in vivo
@@ -1129,7 +1133,7 @@ Zeng C et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1139,7 +1143,7 @@ Over 65,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 ACE2 gene variants may underlie interindividual variability and susceptibility to COVID-19 in the Italian population
@@ -1152,7 +1156,7 @@ Benetti E et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Facemasks and similar barriers to prevent respiratory illness such as COVID-19: A rapid systematic review
@@ -1165,7 +1169,7 @@ Brainard JS et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Frequency of testing for COVID 19 infection and the presence of higher number of available beds per country predict outcomes with the infection, not the GDP of the country - A descriptive statistical analysis
@@ -1178,7 +1182,7 @@ GHOSAL S et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Virologic and clinical characteristics for prognosis of severe COVID-19: a retrospective observational study in Wuhan, China
@@ -1191,7 +1195,7 @@ Fu S et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Neutralizing antibody responses to SARS-CoV-2 in a COVID-19 recovered patient cohort and their implications
@@ -1204,7 +1208,7 @@ Wu F et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1214,7 +1218,7 @@ UK Prime Minister admitted to ICU
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A Simulated Single Ventilator / Dual Patient Ventilation Strategy for Acute Respiratory Distress Syndrome During the COVID-19 Pandemic
@@ -1227,7 +1231,7 @@ Solis-Lemus JA et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Adaptive cyclic exit strategies from lockdown to suppress COVID-19 and allow economic activity
@@ -1240,7 +1244,7 @@ Karin O et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Lack of Antiviral Activity of Darunavir against SARS-CoV-2
@@ -1253,7 +1257,7 @@ De Meyer S et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1263,7 +1267,7 @@ Over 80,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Structural and functional analysis of a potent sarbecovirus neutralizing antibody
@@ -1276,7 +1280,7 @@ Pinto D et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1286,7 +1290,7 @@ Over 1.5 million cases worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Homologous protein domains in SARS-CoV-2 and measles, mumps and rubella viruses: preliminary evidence that MMR vaccine might provide protection against COVID-19
@@ -1299,7 +1303,7 @@ Franklin R et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1309,7 +1313,7 @@ Over 100,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Factors associated with hospitalization and critical illness among 4,103 patients with COVID-19 disease in New York City
@@ -1322,7 +1326,7 @@ Petrilli CM et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 ACE-inhibitors and Angiotensin-2 Receptor Blockers are not associated with severe SARS- COVID19 infection in a multi-site UK acute Hospital Trust
@@ -1335,7 +1339,7 @@ Bean D et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Chloroquine diphosphate in two different dosages as adjunctive therapy of hospitalized patients with severe respiratory syndrome in the context of coronavirus (SARS-CoV-2) infection: Preliminary safety results of a randomized, double-blinded, phase IIb clinical trial (CloroCovid-19 Study)
@@ -1348,7 +1352,7 @@ Borba MGS et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Blueprint for a Pop-up SARS-CoV-2 Testing Lab
@@ -1361,7 +1365,7 @@ Innovative Genomics Institute SARS-CoV-2 Testing Consortium et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 The SARS-CoV-2 receptor-binding domain elicits a potent neutralizing response without antibody-dependent enhancement
@@ -1374,7 +1378,7 @@ Quinlan BD et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Mechanistic modeling of the SARS-CoV-2 disease map
@@ -1387,7 +1391,7 @@ Rian K et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Insights on early mutational events in SARS-CoV-2 virus reveal founder effects across geographical regions
@@ -1400,7 +1404,7 @@ Farkas C et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A Scalable Method of Applying Heat and Humidity for Decontamination of N95 Respirators During the COVID-19 Crisis
@@ -1413,7 +1417,7 @@ Anderegg L et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 No evidence of clinical efficacy of hydroxychloroquine in patients hospitalized for COVID-19 infection with oxygen requirement: results of a study using routinely collected data to emulate a target trial
@@ -1426,7 +1430,7 @@ Mahevas M et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 The FDA- approved gold drug Auranofin inhibits novel coronavirus (SARS-COV-2) replication and attenuates inflammation in human cells
@@ -1439,7 +1443,7 @@ Rothan HA et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1449,7 +1453,7 @@ US has more cases than Spain, France, Germany and Italy combined
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1459,7 +1463,7 @@ Over 2 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A systematic review of antibody mediated immunity to coronaviruses: antibody kinetics, correlates of protection, and association of antibody responses with severity of disease
@@ -1472,7 +1476,7 @@ Huang AT et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Ability of Fabric Facemasks Materials to Filter Ultrafine Particles at Coughing Velocity - for Home Made and Fabric Face Mask Creation
@@ -1485,7 +1489,7 @@ O’Kelly E et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1495,7 +1499,7 @@ Over 150,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Shotgun Transcriptome and Isothermal Profiling of SARS-CoV-2 Infection Reveals Unique Host Responses, Viral Diversification, and Drug Interactions
@@ -1508,7 +1512,7 @@ Butler DJ et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Outcomes of hydroxychloroquine usage in United States veterans hospitalized with Covid-19
@@ -1521,7 +1525,7 @@ Magagnoli J et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1531,7 +1535,7 @@ Over 2.5 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1541,7 +1545,7 @@ Over 170,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Saliva is more sensitive for SARS-CoV-2 detection in COVID-19 patients than nasopharyngeal swabs
@@ -1554,7 +1558,7 @@ Wyllie AL et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1564,7 +1568,7 @@ Over 2000 preprints posted between bioRxiv and medRxiv
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Relative disease burdens of COVID-19 and seasonal influenza in New York City, February 1 - April 18, 2020.
@@ -1577,7 +1581,7 @@ Faust J et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1587,7 +1591,7 @@ Over 200,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1597,7 +1601,7 @@ New Zealand declares that community transmission of COVID-19 has ended
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1607,7 +1611,7 @@ Wuhan discharges last COVID-19 patient as China declares fewer than 10 new cases
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1617,7 +1621,7 @@ Over 3 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Individual variation in susceptibility or exposure to SARS-CoV-2 lowers the herd immunity threshold
@@ -1630,7 +1634,7 @@ Gomes MGM et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1640,7 +1644,7 @@ Over 3.3 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1650,7 +1654,7 @@ Over 240,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Clinical classifiers of COVID-19 infection from novel ultra-high-throughput proteomics
@@ -1663,7 +1667,7 @@ Messner CB et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Preliminary evidence from a multicenter prospective observational study of the safety and efficacy of chloroquine for the treatment of COVID-19
@@ -1676,7 +1680,7 @@ Huang M et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Humoral immune response and prolonged PCR positivity in a cohort of 1343 SARS-CoV 2 patients in the New York City region
@@ -1689,7 +1693,7 @@ Wajnberg A et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Repeated seroprevalence of anti-SARS-CoV-2 IgG antibodies in a population-based sample from Geneva, Switzerland
@@ -1702,7 +1706,7 @@ Stringhini S et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 OpenSAFELY: factors associated with COVID-19-related hospital death in the linked electronic health records of 17 million adult NHS patients.
@@ -1715,7 +1719,7 @@ The OpenSAFELY Collaborative et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 OpenSAFELY: factors associated with COVID-19-related hospital death in the linked electronic health records of 17 million adult NHS patients.
@@ -1728,7 +1732,7 @@ The OpenSAFELY Collaborative et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Hydroxychloroquine and azithromycin plus zinc vs hydroxychloroquine and azithromycin alone: outcomes in hospitalized COVID-19 patients
@@ -1741,7 +1745,7 @@ Carlucci P et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1751,7 +1755,7 @@ Over 4 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1761,7 +1765,7 @@ Over 280,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 ChAdOx1 nCoV-19 vaccination prevents SARS-CoV-2 pneumonia in rhesus macaques
@@ -1774,7 +1778,7 @@ van Doremalen N et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 EXCESS MORTALITY FROM COVID-19. WEEKLY EXCESS DEATH RATES BY AGE AND SEX FOR SWEDEN.
@@ -1787,7 +1791,7 @@ Modig K et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Pre-existing and de novo humoral immunity to SARS-CoV-2 in humans
@@ -1800,7 +1804,7 @@ Ng KW et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Treatment Response to Hydroxychloroquine, Lopinavir/Ritonavir, and Antibiotics for Moderate COVID 19: A First Report on the Pharmacological Outcomes from South Korea
@@ -1813,7 +1817,7 @@ Kim MS et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1823,7 +1827,7 @@ Over 4.8 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1833,7 +1837,7 @@ Over 319,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 No evidence for increased transmissibility from recurrent mutations in SARS-CoV-2
@@ -1846,7 +1850,7 @@ van Dorp L et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1856,7 +1860,7 @@ Over 5 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1866,7 +1870,7 @@ Over 328,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Full genome viral sequences inform patterns of SARS-CoV-2 spread into and within Israel
@@ -1879,7 +1883,7 @@ Miller D et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 SARS-CoV-2 RNA concentrations in primary municipal sewage sludge as a leading indicator of COVID-19 outbreak dynamics
@@ -1892,7 +1896,7 @@ Peccia J et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Preprinting a pandemic: the role of preprints in the COVID-19 pandemic
@@ -1905,7 +1909,7 @@ Fraser N et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1915,7 +1919,7 @@ Over 6 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1925,7 +1929,7 @@ Over 369,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1935,7 +1939,7 @@ Over 7 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -1945,7 +1949,7 @@ Over 400,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A consensus Covid-19 immune signature combines immuno-protection with discrete sepsis-like traits associated with poor prognosis
@@ -1958,7 +1962,7 @@ Laing AG et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Suppressing COVID-19 transmission in Hong Kong: an observational study of the first four months
@@ -1971,7 +1975,7 @@ Wu P et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 The D614G mutation in the SARS-CoV-2 spike protein reduces S1 shedding and increases infectivity
@@ -1984,7 +1988,7 @@ Zhang L et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Inhaled corticosteroids downregulate the SARS-CoV-2 receptor ACE2 in COPD through suppression of type I interferon
@@ -1997,7 +2001,7 @@ Finney LJ et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Colon Cancer and SARS-CoV-2: Impact of ACE2 Expression in Susceptibility to COVID-19
@@ -2010,7 +2014,7 @@ Ahmadi M et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 The Spike D614G mutation increases SARS-CoV-2 infection of multiple human cell types
@@ -2023,7 +2027,7 @@ Daniloski Z et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Naturally mutated spike proteins of SARS-CoV-2 variants show differential levels of cell entry
@@ -2036,7 +2040,7 @@ Ozono S et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -2046,7 +2050,7 @@ Over 8 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -2056,7 +2060,7 @@ Over 438,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A thermostable, closed, SARS-CoV-2 spike protein trimer
@@ -2069,7 +2073,7 @@ Xiong X et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Deep mutational scanning of SARS-CoV-2 receptor binding domain reveals constraints on folding and ACE2 binding
@@ -2082,7 +2086,7 @@ Starr TN et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Drug repurposing screens reveal FDA approved drugs active against SARS-Cov-2
@@ -2095,7 +2099,7 @@ Dittmar M et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A single dose of recombinant VSV-ΔG-spike vaccine provides protection against SARS-CoV-2 challenge
@@ -2108,7 +2112,7 @@ Yahalom-Ronen Y et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 High-density amplicon sequencing identifies community spread and ongoing evolution of SARS-CoV-2 in the Southern United States
@@ -2121,7 +2125,7 @@ McNamara RP et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Effect of Dexamethasone in Hospitalized Patients with COVID-19: Preliminary Report
@@ -2134,7 +2138,7 @@ Horby P et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 SARS-CoV-2 structure and replication characterized by in situ cryo-electron tomography
@@ -2147,7 +2151,7 @@ Klein S et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 A High Content Screen for Mucin-1-Reducing Compounds Identifies Fostamatinib as a Candidate for Rapid Repurposing for Acute Lung Injury during the COVID-19 pandemic
@@ -2160,7 +2164,7 @@ Alimova M et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Handyfuge-LAMP: low-cost and electricity-free centrifugation for isothermal SARS-CoV-2 detection in saliva.
@@ -2173,7 +2177,7 @@ Li E et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -2183,7 +2187,7 @@ Over 10.7 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -2193,7 +2197,7 @@ Over 517,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Tissue-specific tolerance in fatal Covid-19
@@ -2206,7 +2210,7 @@ Dorward DA et al. 
 
 </div>
 </div>
-<div class="container left">
+<div class="container_tm left">
 <div class="content">
 <h2>
 Anti-SARS-CoV-2 IgG from severely ill COVID-19 patients promotes macrophage hyper-inflammatory responses
@@ -2219,7 +2223,7 @@ Hoepel W et al. 
 
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -2229,7 +2233,7 @@ Over 14.7 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -2239,7 +2243,7 @@ Over 610,000 deaths worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
@@ -2249,7 +2253,7 @@ Over 21.2 million confirmed cases of COVID-19 worldwide
 </h2>
 </div>
 </div>
-<div class="container right">
+<div class="container_tm right">
 <div class="connector">
 
 </div>
