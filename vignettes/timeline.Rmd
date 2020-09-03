@@ -51,6 +51,12 @@ p {
   
 }
 
+h1 {
+  font-size:48px;
+  margin: 12px 0;
+}
+
+
 h2 {
   font-size:16px;
   margin: 0 12px 6px 0;
@@ -256,24 +262,44 @@ span.date {
 library(jsonlite)
 
 df <- fromJSON("../data.json")
+df$publicationDate <- as.Date(df$publicationDate)
 ```
+
+# Covid Preprints
+
+## A timeline of landmark preprints in response to COVID-19.
 
 ```{r, results='asis'}
 cat('<div class="timeline">')
 
+month <- "init"
+
 for (i in seq_len(nrow(df))) {
+  
+  new_month <- format(df[i, "publicationDate"], "%b %Y")
+  
+  if (new_month != month) {
+    cat('<div class="month-marker">')
+    cat('<span>', new_month, '</span>')
+    cat('</div>')
+    month <- new_month
+  }
+  
   if (df[i, "class"] == "preprint") {
     cat('<div class="container_tl left">')
+    cat('<span class="date">', sprintf("%sth", format(df[i, "publicationDate"], "%e")), '</span>')
     cat('<div class="content">')
     cat('<h2><a href=', df[i, "url"], '>', df[i, "title"], '</a></h2>')
-    cat('<p>', df[i, "authorString"], '</p>')
-    cat('</div>')
     cat('<div class="connector"></div>')
+    cat('</div>')
+    cat('<span class="author-name">', df[i, "authorString"], '</span>')
+    cat('<p>', df[i, "briefSummary"], '</p>')
     cat('</div>')
   } else if (df[i, "class"] == "event") {
     cat('<div class="container_tl right">')
-    cat('<div class="connector"></div>')
+    cat('<span class="date">', sprintf("%sth", format(df[i, "publicationDate"], "%e")), '</span>')
     cat('<div class="content">')
+    cat('<div class="connector"></div>')
     cat('<h2>', df[i, "title"], '</h2>')
     cat('</div>')
     cat('</div>')
