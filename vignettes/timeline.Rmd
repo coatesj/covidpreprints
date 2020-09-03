@@ -10,6 +10,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 ```{css}
 * {
   box-sizing: border-box;
