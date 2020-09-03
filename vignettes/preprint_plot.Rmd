@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-The following is a graph demonstrating the volume of COVID-19 related preprints posted to popular preprint sites (BioRxiv & MedRxiv). Thanks to Prof. Steve Royle for allowing us to include this here (https://quantixed.org/2020/03/18/take-off-preprints-on-covid-19/)
+The following is a graph demonstrating the volume of COVID-19 related preprints posted to popular preprint sites (BioRxiv & MedRxiv).
 
 ```{r}
 library(httr)
