@@ -86,6 +86,7 @@
 
     
     
+<p><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
 <style type="text/css">
 * {
   box-sizing: border-box;
@@ -93,32 +94,75 @@
 
 body {
   background-color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
+/* We do not have a table of content so we can use the full width instead of 75% */
+.col-md-9 {
+  width: 100%;
+}
+
+a {
+  color: #0079C3;
+    text-decoration: none;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+span {
+  font-size:    14px;
+  margin: 0;
+  margin-bottom:6px;
+}
+
+p {
+  
+  font-family: 'PT Serif', serif;
+  font-size:14px;
+  color: #767676;
+    margin:0;
+  margin-right:24px;
+  
+}
+
+h1 {
+  font-size:48px;
+  margin: 12px 0;
+}
+
 
 h2 {
   font-size:16px;
-  margin-right: 12px;
-
+  margin: 0 12px 6px 0;
+  
 }
 
+.timeline h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+
 .right h2 {
-
-margin-right: 0px;
-margin-left: 12px;
-
+  
+  margin-right: 0px;
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight:400;
+  color:#212121;
+    
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
+  display:block;
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 120px;
-}
-
-.col-md-9 {
-  width: 100%;
+  margin: 120px auto;
+  
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -130,81 +174,20 @@ margin-left: 12px;
   top: 0;
   bottom: 0;
   left: 75%;
-
+  
 }
 
 /* Container around content */
-.container_tm {
+.container_tl {
   position: relative;
   background-color: inherit;
- /* display: grid;
+  /* display: grid;
   grid-template-columns: auto auto; */
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
+  margin-bottom:24px
+  
 }
-
-/* The actual content */
-.content {
-  /* grid-column: 1 / span 1; */
-  position: relative;
-
-}
-
- .connector {
-    /* grid-column: 2 / span 1; */
-    /* width: 100%; */
-    border-bottom: 1px solid grey;
-    height: 24px;
-    min-width: 100px;
-    flex-grow: 1;
-
-}
-
-.container_tm.left {
-
-    width: 75%;
-
-}
-
-/* The circles on the timeline */
-.container_tm.left::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  right: -6px;
-  background-color: grey;
-  top: 18px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-
-/* The circles on the timeline */
-.container_tm.right::before {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  left: -4px;
-  background-color: grey;
-  top: 18px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.container_tm.right {
-  width: 25%;
-}
-
-.container_tm.right .connector {
-
-width: 100px;
-flex-grow: 0;
-
-}
-
 
 /* Place the container to the left */
 .left {
@@ -217,2050 +200,2462 @@ flex-grow: 0;
 }
 
 
-
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-
-  /* Full-width containers */
-  .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-
-  }
-
-
-
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
+/* The actual content */
+.content {
+  position: relative;
+  display: flex;
+  
 }
+
+.connector {
+  /* grid-column: 2 / span 1; */
+  /* width: 100%; */
+  border-bottom: 1px solid grey;
+  height: 14px;
+  min-width: 100px;
+  flex-grow: 1;
+  
+}
+
+.container_tl.left {
+  
+  width: 75%;
+  
+}
+
+/* The circles on the timeline */
+.left .connector::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -6px;
+  background-color: grey;
+  top: 8px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+/* The circles on the timeline */
+.right .connector::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -4px;
+  background-color: grey;
+  top: 8px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.container_tl.right {
+  width: 25%;
+}
+
+.container_tl.right .connector {
+  
+  width: 100px;
+  flex-grow: 0;
+  
+}
+
+/* styling for the month markers on the timeline */
+.month-marker {
+  display:inline-block;
+  position: relative;
+  z-index:1000;
+  left:75%;
+  margin-left:-35px;
+  background-color:#212121;
+    color:white;
+  height:24px;
+  border-radius:2px;
+  margin-bottom:24px;
+}
+
+.month-marker span {
+  margin:4px 8px;
+}
+
+
+/* position and style the date markers */
+span.date {
+  align-self: flex-end;
+  font-size:12px;
+  color:#767676;
+    margin:0 12px -6px;
+}
+
+/* move the dates on key events to the left */
+.right span.date {
+  align-self:flex-start;
+}
+
+/* Media queries - Responsive timeline on screens less than 730px wide */
+  @media screen and (max-width: 730px) {
+    
+    /* hide the timeline */
+    .timeline::after {
+      display:none
+    }
+    
+    /* Full-width containers */
+    .container_tl.left {
+      width: 100%;
+      padding:12px;
+      left: 0;
+    }
+  
+    /*hide the connectors */
+    .connector {
+      display: none;
+      
+    }
+    
+    /* hide the dots */
+    .connector::before, .connector::after {
+      display: none;
+    }
+  
+    
+    .container_tl.right {
+      
+      padding:12px;
+      text-align: right;
+      width: 75%;
+      left: 20%;
+    }
+    
+    .container_tl.right h2 {
+      width: 100%;
+    }
+    
+    .content {
+      width: 100%;
+    }
+    
+  }
 </style>
+<div id="covid-preprints" class="section level1">
+<h1 class="hasAnchor">
+<a href="#covid-preprints" class="anchor"></a>Covid Preprints</h1>
+<div id="a-timeline-of-landmark-preprints-in-response-to-covid-19-" class="section level2">
+<h2 class="hasAnchor">
+<a href="#a-timeline-of-landmark-preprints-in-response-to-covid-19-" class="anchor"></a>A timeline of landmark preprints in response to COVID-19.</h2>
 <div class="timeline">
-<div class="container_tm right">
+<div class="month-marker">
+<span> Dec 2019 </span>
+</div>
+<div class="container_tl right">
+<span class="date"> 31th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Pneumonia of unknown cause in Wuhan, China
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> Pneumonia of unknown cause in Wuhan, China </a>
 </h2>
+</div>
 </div>
+<div class="month-marker">
+<span> Jan 2020 </span>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 9th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-1st COVID-19 death
+<a href="https://www.theguardian.com/world/ng-interactive/2020/apr/08/coronavirus-100-days-that-changed-the-world"> 1st COVID-19 death </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 12th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-China shares full genome sequence of 2019-nCoV
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> China shares full genome sequence of 2019-nCoV </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 13th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-First cases detected outside of China
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> First cases detected outside of China </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 21th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-China releases testing protocols for 2019-nCov
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> China releases testing protocols for 2019-nCov </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 23th </span>
 <div class="content">
 <h2>
-Discovery of a novel coronavirus associated with the recent pneumonia outbreak in humans and its potential bat origin
+<a href="https://doi.org/10.1101/2020.01.22.914952"> Discovery of a novel coronavirus associated with the recent pneumonia outbreak in humans and its potential bat origin </a>
 </h2>
-<p>
-Zhou P et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Pattern of early human-to-human transmission of Wuhan 2019-nCoV
-</h2>
+<span class="author-name"> Zhou P et al. </span>
 <p>
-Riou J et al. 
+Reports the identification and characterization of (nCoV-2019). Full-length genome sequences were obtained from patients, and were found to share 79.5% sequence identify to SARS-CoV, and to be 96% identical at the whole genome level to a bat coronavirus. Study confirmed that virus uses the same cell entry receptor, ACE2, as SARS-CoV.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 24th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.01.23.917351"> Pattern of early human-to-human transmission of Wuhan 2019-nCoV </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Complete genome characterisation of a novel coronavirus associated with severe human respiratory disease in Wuhan, China
-</h2>
+<span class="author-name"> Riou J et al. </span>
 <p>
-Wu F et al. 
+Stochastic simulations of early outbreak trajectories revealed that transmission characteristics were similar in magnitude to SARS-CoV and the 1918 influenza pandemic. Findings underlie importance of surveillance and early control in controlling viral transmission.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 25th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.01.24.919183"> Complete genome characterisation of a novel coronavirus associated with severe human respiratory disease in Wuhan, China </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Wu F et al. </span>
+<p>
+Bronchoalveolar lavage was collected from 7 workers at the Wuhan seafood market. Next generation metagenomic RNA sequencing identified an RNA virus of family Coronaviridae, called at the time WH-Human-1 coronavirus. Phylogenetic analyis showed 89.1% similarity to SARS-like coronaviruses previously sampled from bats in China.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 25th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-First reported cases in Australia
+<a href="https://pandemic.internationalsos.com/login?returnUrl=/countries/australia"> First reported cases in Australia </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 26th </span>
 <div class="content">
 <h2>
-Time-varying transmission dynamics of Novel Coronavirus Pneumonia in China
+<a href="https://doi.org/10.1101/2020.01.25.919787"> Time-varying transmission dynamics of Novel Coronavirus Pneumonia in China </a>
 </h2>
-<p>
-Liu T et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Full-genome evolutionary analysis of the novel corona virus (2019-nCoV) rejects the hypothesis of emergence as a result of a recent recombination event
-</h2>
+<span class="author-name"> Liu T et al. </span>
 <p>
-Paraskevis D et al. 
+Proposed that novel coronavirus has higher transmissibility than SARS between humans.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 27th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.01.26.920249"> Full-genome evolutionary analysis of the novel corona virus (2019-nCoV) rejects the hypothesis of emergence as a result of a recent recombination event </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Beware of asymptomatic transmission: Study on 2019-nCoV prevention and control measures based on extended SEIR model
-</h2>
+<span class="author-name"> Paraskevis D et al. </span>
 <p>
-Shao P et al. 
+SARS-CoV-2 shows discordant clustering with the Bat-SARS-like coronavirus sequences. Almost half of the virus’ genome is of a distinct lineage within the betacoronavirus, suggesting that spontaneous emergence of SARS-CoV-2 is unlikely.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 28th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.01.28.923169"> Beware of asymptomatic transmission: Study on 2019-nCoV prevention and control measures based on extended SEIR model </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Potent binding of 2019 novel coronavirus spike protein by a SARS coronavirus-specific human monoclonal antibody
-</h2>
+<span class="author-name"> Shao P et al. </span>
 <p>
-Tian X et al. 
+Based on models studying the movement of people, this study posits a possibility of assymptomatic transmission. It is also one of the first studies advocating the importance of testing.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 28th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.01.28.923011"> Potent binding of 2019 novel coronavirus spike protein by a SARS coronavirus-specific human monoclonal antibody </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-The incubation period of 2019-nCoV infections among travellers from Wuhan, China
-</h2>
+<span class="author-name"> Tian X et al. </span>
 <p>
-Backer JA et al. 
+This study found that CR3022, a SARS-CoV-specific human monoclonal antibody, binds potently with SARS-CoV-2. Therefore, CR3022 may be a potential candidate for therapeutics; in contrast to other anti-SARS-CoV antibodies that fail to neutralize SARS-CoV-2.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 28th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.01.27.20018986"> The incubation period of 2019-nCoV infections among travellers from Wuhan, China </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Estimated effectiveness of traveller screening to prevent international spread of 2019 novel coronavirus (2019-nCoV)
-</h2>
+<span class="author-name"> Backer JA et al. </span>
 <p>
-Gostic K et al. 
+Using the travel history of cases detected outside Wuhan, authors first estimated the mean incubation period to be 6.4 days, ranging from 2.1 to 11.1 days. They first suggested using these values for case definition.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 30th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.01.28.20019224"> Estimated effectiveness of traveller screening to prevent international spread of 2019 novel coronavirus (2019-nCoV) </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Gostic K et al. </span>
+<p>
+Using an interactive model, authors analyzed the impact of travel screening programs on coronavirus spread. They estimated that around half of infected travelers will be missed by screening programs, generally consisting of those who have not yet developed symptoms and are unaware of exposure.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 30th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-2019-nCoV declared a public health emergency by WHO
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> 2019-nCoV declared a public health emergency by WHO </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 30th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-First reported cases in UK, Russia, Sweden and Spain
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> First reported cases in UK, Russia, Sweden and Spain </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 31th </span>
 <div class="content">
 <h2>
-The novel coronavirus 2019 (2019-nCoV) uses the SARS-coronavirus receptor ACE2 and the cellular protease TMPRSS2 for entry into target cells
+<a href="https://doi.org/10.1101/2020.01.31.929042"> The novel coronavirus 2019 (2019-nCoV) uses the SARS-coronavirus receptor ACE2 and the cellular protease TMPRSS2 for entry into target cells </a>
 </h2>
-<p>
-Hoffmann M et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-The digestive system is a potential route of 2019-nCov infection: a bioinformatics analysis based on single-cell transcriptomes
-</h2>
+<span class="author-name"> Hoffmann M et al. </span>
 <p>
-Zhang H et al. 
+SARS-CoV-2 enters cells via SARS-coronavirus receptor, ACE2, and cellular protease TMPRSS2. TMPRSS2 inhibitor and serum from convalescent SARS patient prevented entry of SARS-CoV-2. This highlights the similarities between SARS-CoV-2 and SARS-coronavirus infections and could identify a potential target for antiviral intervention.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 31th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.01.30.927806"> The digestive system is a potential route of 2019-nCov infection: a bioinformatics analysis based on single-cell transcriptomes </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Potent neutralization of 2019 novel coronavirus by recombinant ACE2-Ig
-</h2>
+<span class="author-name"> Zhang H et al. </span>
 <p>
-Lei C et al. 
+Single-cell transcriptomes of lung, esophagus, gastric, ileum and colon showed that ACE2 is highly expressed in the respiratory tract and in absorptive enterocytes from ileum and colon; indicating that the digestive system may be another route for 2019-nCov infection.
 </p>
 </div>
+<div class="month-marker">
+<span> Feb 2020 </span>
+</div>
+<div class="container_tl left">
+<span class="date"> 2th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.02.01.929976"> Potent neutralization of 2019 novel coronavirus by recombinant ACE2-Ig </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm right">
+<span class="author-name"> Lei C et al. </span>
+<p>
+The study generated a novel recombinant protein by connecting the extracellular domain of human ACE2 to the Fc region of the human immunoglobulin IgG1. Fusion proteins potently neutralized SARS-CoV and 2019-nCoV in vitro.
+</p>
+</div>
+<div class="container_tl right">
+<span class="date"> 2th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-First reported death outside of China
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> First reported death outside of China </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 4th </span>
 <div class="content">
 <h2>
-Specific ACE2 Expression in Cholangiocytes May Cause Liver Damage After 2019-nCoV Infection
+<a href="https://doi.org/10.1101/2020.02.03.931766"> Specific ACE2 Expression in Cholangiocytes May Cause Liver Damage After 2019-nCoV Infection </a>
 </h2>
-<p>
-Chai X et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Preparedness and vulnerability of African countries against introductions of 2019-nCoV
-</h2>
+<span class="author-name"> Chai X et al. </span>
 <p>
-Gilbert M et al. 
+The study found specific expression of ACE2 in cholangiocytes (epithelial cells of the bile duct), tentatively suggesting that the liver damage observed in some infected patients may be caused by cholangiocyte dysfunction. Further studies will be needed to reinforce the relationship between SARS-CoV-2 and liver injury before these findings are incorporated into the clinical management of COVID-19 patients.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 7th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.02.05.20020792"> Preparedness and vulnerability of African countries against introductions of 2019-nCoV </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-A database resource for Genome-wide dynamics analysis of Coronaviruses on a historical and global scale
-</h2>
+<span class="author-name"> Gilbert M et al. </span>
 <p>
-Zhu Z et al. 
+Authors evaluated the preparedness and vulnerability of African countries against the risk of importation of 2019-nCoV based on travel volumes from infected provinces in China to African countries. Authors identified countries with highest (Egypt, Algeria, and South Africa) and moderate risk with high vulnerabilities (Nigeria, Ethiopia, Sudan, Angola, Tanzania, Ghana, and Kenya), and called for intensifying surveillance and capacity building.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 7th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.02.05.920009"> A database resource for Genome-wide dynamics analysis of Coronaviruses on a historical and global scale </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Diarrhea may be underestimated: a missing link in 2019 novel coronavirus
-</h2>
+<span class="author-name"> Zhu Z et al. </span>
 <p>
-Liang W et al. 
+This work developed a coronavirus database (CoVdb)- an online genomics and proteomics analysis platform. The database annotates the genome of every strain and identifies possible ORFs of all strains available in Genebank. It also provides population genetics analysis, functional analysis and structural analysis on a historical and global scale. Accessed freely at <a href="http://covdb.popgenetics.net" class="uri">http://covdb.popgenetics.net</a>.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 11th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.02.03.20020289"> Diarrhea may be underestimated: a missing link in 2019 novel coronavirus </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-The Pathogenicity of SARS-CoV-2 in hACE2 Transgenic Mice
-</h2>
+<span class="author-name"> Liang W et al. </span>
 <p>
-Bao L et al. 
+The authors suggest that ACE2-expressing small intestinal epithelium cells might be vulnerable to 2019-nCoV infection, and that diarrhea may serve as an indicator for infection. The authors suggest that clinicians should pay more attention to patients with diarrhea during the outbreak of pneumonia.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 11th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.02.07.939389"> The Pathogenicity of SARS-CoV-2 in hACE2 Transgenic Mice </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-The Novel Coronavirus, 2019-nCoV, is Highly Contagious and More Infectious Than Initially Estimated
-</h2>
+<span class="author-name"> Bao L et al. </span>
 <p>
-Sanche S et al. 
+The study used hACE2 transgenic mice to study the pathogenicity of SARS-CoV-2. They define histopathology in the lungs, specific to transgenic mice and not observed in wild type mice. They propose this mouse model may facilitate the development of therapeutics and vaccines against SARS-CoV-2.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 11th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.02.07.20021154"> The Novel Coronavirus, 2019-nCoV, is Highly Contagious and More Infectious Than Initially Estimated </a>
+</h2>
 <div class="connector">
 
 </div>
+</div>
+<span class="author-name"> Sanche S et al. </span>
+<p>
+Initially, the basic reproductive number (R0) was estimated to be 2.2 to 2.7. This study integrates new estimates and high-resolution real-time human travel and infection data with mathematical models, and re-estimates the R0 value as being between 4.7 and 6.6.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 11th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-2019-nCoV officially named COVID-19 (disease)/ SARS-CoV-2 (virus)
+&lt;a href= <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen" class="uri">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen</a>, related preprint <a href="https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1" class="uri">https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1</a> &gt; 2019-nCoV officially named COVID-19 (disease)/ SARS-CoV-2 (virus) 
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 12th </span>
 <div class="content">
 <h2>
-Characteristics of lymphocyte subsets and cytokines in peripheral blood of 123 hospitalized patients with 2019 novel coronavirus pneumonia (NCP)
+<a href="https://doi.org/10.1101/2020.02.10.20021832"> Characteristics of lymphocyte subsets and cytokines in peripheral blood of 123 hospitalized patients with 2019 novel coronavirus pneumonia (NCP) </a>
 </h2>
-<p>
-Wan S et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
+</div>
+<span class="author-name"> Wan S et al. </span>
+<p>
+Reviewed by the Mount Sinai Immunology review project
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 14th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-First reported case in Africa
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> First reported case in Africa </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 15th </span>
 <div class="content">
 <h2>
-Cryo-EM Structure of the 2019-nCoV Spike in the Prefusion Conformation
+<a href="https://doi.org/10.1101/2020.02.11.944462"> Cryo-EM Structure of the 2019-nCoV Spike in the Prefusion Conformation </a>
 </h2>
-<p>
-Wrapp D et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
+</div>
+<span class="author-name"> Wrapp D et al. </span>
+<p>
+3.5 Å-resolution cryo-EM structure of the 2019-nCoV S trimer in the prefusion conformation; now published in Science at <a href="https://science.sciencemag.org/content/367/6483/1260" class="uri">https://science.sciencemag.org/content/367/6483/1260</a>
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 15th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-First reported death in Europe
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> First reported death in Europe </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 19th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 2000 deaths worldwide
+<a href="https://ourworldindata.org/coronavirus"> Over 2000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 22th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Italy starts lockdown
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"> Italy starts lockdown </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 25th </span>
 <div class="content">
 <h2>
-Estimation of COVID-2019 burden and potential for international dissemination of infection from Iran
+<a href="https://doi.org/10.1101/2020.02.24.20027375"> Estimation of COVID-2019 burden and potential for international dissemination of infection from Iran </a>
 </h2>
-<p>
-Tuite AR et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Clinical presentation and virological assessment of hospitalized cases of coronavirus disease 2019 in a travel-associated transmission cluster
-</h2>
+<span class="author-name"> Tuite AR et al. </span>
 <p>
-Woelfel R et al. 
+Early suggestion that the Iran likely had a large, undetected outbreak, which could complicate global containment.
 </p>
-</div>
-<div class="connector">
-
 </div>
+<div class="month-marker">
+<span> Mar 2020 </span>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 8th </span>
 <div class="content">
 <h2>
-Aerosol and surface stability of HCoV-19 (SARS-CoV-2) compared to SARS-CoV-1
+<a href="https://doi.org/10.1101/2020.03.05.20030502"> Clinical presentation and virological assessment of hospitalized cases of coronavirus disease 2019 in a travel-associated transmission cluster </a>
 </h2>
+<div class="connector">
+
+</div>
+</div>
+<span class="author-name"> Woelfel R et al. </span>
 <p>
-van Doremalen N et al. 
+Analysis of time course and prevalence of viral loads. Active replication of the virus in upper respiratory tract. No infectious virus from stool. Now published at Nature as <a href="https://www.nature.com/articles/s41586-020-2196-x#disqus_thread" class="uri">https://www.nature.com/articles/s41586-020-2196-x#disqus_thread</a>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 10th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.09.20033217"> Aerosol and surface stability of HCoV-19 (SARS-CoV-2) compared to SARS-CoV-1 </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> van Doremalen N et al. </span>
+<p>
+Decay kinetics for the virus on various surfaces in varied environmental conditions, including plastic, metal and cardboard; now published as <a href="https://www.nejm.org/doi/10.1056/NEJMc2004973" class="uri">https://www.nejm.org/doi/10.1056/NEJMc2004973</a>
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 10th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 4000 deaths worldwide
+<a href="https://ourworldindata.org/coronavirus"> Over 4000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 11th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-WHO declares COVID-19 a pandemic
+&lt;a href= Info from WHO, <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen" class="uri">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen</a> &gt; WHO declares COVID-19 a pandemic 
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 12th </span>
 <div class="content">
 <h2>
-A human monoclonal antibody blocking SARS-CoV-2 infection
+<a href="https://doi.org/10.1101/2020.03.11.987958"> A human monoclonal antibody blocking SARS-CoV-2 infection </a>
 </h2>
-<p>
-Wang C et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Estimates of the severity of COVID-19 disease
-</h2>
+<span class="author-name"> Wang C et al. </span>
 <p>
-Verity R et al. 
+Report of a human monoclonal antibody that neutralizes SARS-CoV-2 (and SARS-CoV). This cross-neutralizing antibody targets a communal epitope on these viruses and offers potential for prevention and treatment of COVID-19.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 13th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.09.20033357"> Estimates of the severity of COVID-19 disease </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Verity R et al. </span>
+<p>
+Modelling suggests that 1-1.5% of COVID-19 cases in China were fatal
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 13th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Europe becomes the epicenter of the pandemic
+&lt;a href= Info from WHO, <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen" class="uri">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen</a> &gt; Europe becomes the epicenter of the pandemic 
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 16th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Modelling from Imperial College London highlights the need for social distancing in limiting infection spread and preventing healthcare systems from being overburdened
+<a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/"> Modelling from Imperial College London highlights the need for social distancing in limiting infection spread and preventing healthcare systems from being overburdened </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 18th </span>
 <div class="content">
 <h2>
-Temporal dynamics in viral shedding and transmissibility of COVID-19
+<a href="https://doi.org/10.1101/2020.03.15.20036707"> Temporal dynamics in viral shedding and transmissibility of COVID-19 </a>
 </h2>
-<p>
-He X et al. 
-</p>
-</div>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> He X et al. </span>
+<p>
+Models suggest that COVID-19 Infectiousness peaks at or before symptom onset, and 44% of transmissions could happen before symptom onset.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 19th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Italy has highest number of deaths in the world
+&lt;a href= Info from WHO, <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen" class="uri">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen</a> &gt; Italy has highest number of deaths in the world 
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 20th </span>
 <div class="content">
 <h2>
-SARS-CoV-2 specific antibody responses in COVID-19 patients
+<a href="https://doi.org/10.1101/2020.03.18.20038059"> SARS-CoV-2 specific antibody responses in COVID-19 patients </a>
 </h2>
-<p>
-OKBA NM et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Identification of antiviral drug candidates against SARS-CoV-2 from FDA-approved drugs
-</h2>
+<span class="author-name"> OKBA NM et al. </span>
 <p>
-Jeon S et al. 
+Development and validation of serological assays for SARS-CoV-2 by comparing them to plaque reduction neutralisation assay (PRNT). Confirming S1 as specific antigen for SARS-CoV-2 testing, relative to S2 antigen.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 20th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.20.999730"> Identification of antiviral drug candidates against SARS-CoV-2 from FDA-approved drugs </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-COVID-19 Vaccine Candidates: Prediction and Validation of 174 SARS-CoV-2 Epitopes
-</h2>
+<span class="author-name"> Jeon S et al. </span>
 <p>
-Prachar M et al. 
+Screening FDA-approved drugs for antiviral activity; See also: <a href="https://www.biorxiv.org/content/10.1101/2020.03.25.008482v1" class="uri">https://www.biorxiv.org/content/10.1101/2020.03.25.008482v1</a>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 21th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.20.000794"> COVID-19 Vaccine Candidates: Prediction and Validation of 174 SARS-CoV-2 Epitopes </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Prachar M et al. </span>
+<p>
+The authors tested 19 epitope-HLA-binding prediction tools to assess 777 unique SARS-CoV-2 epitopes, that could bind 11 HLA allotypes. An in vitro assay showed that 174 epitopes formed a stable epitope-HLA complex: 48 were related to SARS and the remaining 126 were novel.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 21th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 11,000 deaths worldwide
+<a href="https://ourworldindata.org/coronavirus"> Over 11,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 22th </span>
 <div class="content">
 <h2>
-A SARS-CoV-2-Human Protein-Protein Interaction Map Reveals Drug Targets and Potential Drug-Repurposing
+<a href="https://doi.org/10.1101/2020.03.22.002386"> A SARS-CoV-2-Human Protein-Protein Interaction Map Reveals Drug Targets and Potential Drug-Repurposing </a>
 </h2>
-<p>
-Gordon DE et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Social distancing strategies for curbing the COVID-19 epidemic
-</h2>
+<span class="author-name"> Gordon DE et al. </span>
 <p>
-Kissler SM et al. 
+Massive collaborative effort to generate a SARS-CoV-2-human PPI map via affinity purification-ms; uncovered interactions with protein trafficking, translation, transcription and ubiquitination pathways; shared interactions with other viruses; 69 FDA-approved drugs that target/alter some of these interactions
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 24th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.22.20041079"> Social distancing strategies for curbing the COVID-19 epidemic </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-SARS-CoV-2 launches a unique transcriptional signature from in vitro, ex vivo, and in vivo systems
-</h2>
+<span class="author-name"> Kissler SM et al. </span>
 <p>
-Blanco-Melo D et al. 
+Using modelling, the authors concluded that intermittent interventions for epidemic control in the United States may be needed until 2022 to keep prevalence within healthcare capacities.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 24th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.24.004655"> SARS-CoV-2 launches a unique transcriptional signature from in vitro, ex vivo, and in vivo systems </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Potent human neutralizing antibodies elicited by SARS-CoV-2 infection
-</h2>
+<span class="author-name"> Blanco-Melo D et al. </span>
 <p>
-Ju B et al. 
+The authors identified host transcriptional signatures in response to different modalities of SARS-CoV-2 infection, revealing similarities to and differences from other coronaviridiae and influenza infections
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 25th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.21.990770"> Potent human neutralizing antibodies elicited by SARS-CoV-2 infection </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Ju B et al. </span>
+<p>
+Characterisation of monoclonal antibodies from B cells of 8 human patients - display specific binding and neutralising activity for the virus; don’t cross-react with MERS/SARS coronavirus spike proteins; also covered here: <a href="https://twitter.com/davidrliu/status/1243377007016251400?s=20" class="uri">https://twitter.com/davidrliu/status/1243377007016251400?s=20</a>
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 26th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Modelling from Imperial College London suggests that without intervention, COVID-19 could kill up to 40 million people
+<a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/"> Modelling from Imperial College London suggests that without intervention, COVID-19 could kill up to 40 million people </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 27th </span>
 <div class="content">
 <h2>
-Codon usage and evolutionary rates of the 2019-nCoV genes
+<a href="https://doi.org/10.1101/2020.03.25.006569"> Codon usage and evolutionary rates of the 2019-nCoV genes </a>
 </h2>
-<p>
-Dilucca M et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Reproducibility and reporting practices in COVID-19 preprint manuscripts
-</h2>
+<span class="author-name"> Dilucca M et al. </span>
 <p>
-Sumner JQ et al. 
+Main results suggest that the higher evolutionary rate observed for genes encoding nucleocapsid, viral replicase and spike proteins, could represent a major barrier in the development of antiviral therapeutics 2019-nCoV.
 </p>
-</div>
-<div class="connector">
-
-</div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 27th </span>
 <div class="content">
 <h2>
-Lactate dehydrogenase, a Risk Factor of Severe COVID-19 Patients
+<a href="https://doi.org/10.1101/2020.03.24.20042796"> Reproducibility and reporting practices in COVID-19 preprint manuscripts </a>
 </h2>
-<p>
-Han Y et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Correlation between universal BCG vaccination policy and reduced morbidity and mortality for COVID-19: an epidemiological study
-</h2>
+<span class="author-name"> Sumner JQ et al. </span>
 <p>
-Miller A et al. 
+Analysis of 535 preprints related to COVID-19 highlights the need for improved data sharing and reporting practices.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 27th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.24.20040162"> Lactate dehydrogenase, a Risk Factor of Severe COVID-19 Patients </a>
+</h2>
 <div class="connector">
 
 </div>
+</div>
+<span class="author-name"> Han Y et al. </span>
+<p>
+Suggests that high levels of the enzyme lactate dehydrogenase is a risk factor for severe COVID
+</p>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 28th </span>
 <div class="content">
 <h2>
-Site-specific analysis of the SARS-CoV-2 glycan shield
+<a href="https://doi.org/10.1101/2020.03.24.20042937"> Correlation between universal BCG vaccination policy and reduced morbidity and mortality for COVID-19: an epidemiological study </a>
 </h2>
+<div class="connector">
+
+</div>
+</div>
+<span class="author-name"> Miller A et al. </span>
 <p>
-Watanabe Y et al. 
+An epidemiological study has found that differences in COVID-19 impact could potentially be attributed to the BCG vaccine offering a broader protection on respiratory infections than previously thought. Countries without universal BCG vaccinations (Italy and USA) are hit comparably worse by the corona virus than countries with universal long-standing BCG policies (Iran and China). <span class="citation">[Credit: Tasha Aley (@tasha_aley), UCL/MRC LMCB - relayed to GD]</span>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 28th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.26.010322"> Site-specific analysis of the SARS-CoV-2 glycan shield </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm right">
+<span class="author-name"> Watanabe Y et al. </span>
+<p>
+Site-specific mass spectometry reveals patterns of glycosylation on the SARS-CoV2 spike protein. Preprint related to: <a href="https://www.biorxiv.org/content/10.1101/2020.03.28.013276v1" class="uri">https://www.biorxiv.org/content/10.1101/2020.03.28.013276v1</a>
+</p>
+</div>
+<div class="container_tl right">
+<span class="date"> 29th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 33,000 deaths worldwide
+<a href="https://ourworldindata.org/coronavirus"> Over 33,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 30th </span>
 <div class="content">
 <h2>
-An alternative workflow for molecular detection of SARS-CoV-2 - escape from the NA extraction kit-shortage
+<a href="https://doi.org/10.1101/2020.03.27.20044495"> An alternative workflow for molecular detection of SARS-CoV-2 - escape from the NA extraction kit-shortage </a>
 </h2>
-<p>
-Fomsgaard AS et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-No Evidence for Temperature-Dependence of the COVID-19 Epidemic
-</h2>
+<span class="author-name"> Fomsgaard AS et al. </span>
 <p>
-Jamil T et al. 
+The shortage of nucleic acid extraction kits for SARS-CoV-2 testing has led Danish scientists Anna S Fomsgaard and Maiken W. Rosenstierne to test alternatives. They found that the best approach is heating samples to 98 degrees Celsius for 5 minutes prior to RT-qPCR, which results in a 97.4% sensitivity and 100% specificity of SARS-CoV-2 detection. <span class="citation">[Credit: Patricia Pascual-Vargas (@ppascualvargas), UCL - relayed to GD]</span>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 31th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.29.20046706"> No Evidence for Temperature-Dependence of the COVID-19 Epidemic </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Cigarette smoke exposure and inflammatory signaling increase the expression of the SARS-CoV-2 receptor ACE2 in the respiratory tract
-</h2>
+<span class="author-name"> Jamil T et al. </span>
 <p>
-Smith JC et al. 
+The seasonality of the virus will have a massive impact on isolation and social distancing policies around the world following the first wave of infections this winter. This paper suggests that there is currently no evidence that infection rates are lower in regions with higher temperatures.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 31th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.28.013672"> Cigarette smoke exposure and inflammatory signaling increase the expression of the SARS-CoV-2 receptor ACE2 in the respiratory tract </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Potent neutralizing antibodies in the sera of convalescent COVID-19 patients are directed against conserved linear epitopes on the SARS-CoV-2 spike protein
-</h2>
+<span class="author-name"> Smith JC et al. </span>
 <p>
-Poh CM et al. 
+In a study of 1099 confirmed COVID-19 patients, 12.3% of current smokers required mechanical ventilation, were admitted to an ICU, or died, compared to only 4.7% of non-smokers. This report shows that this effect might be due to upregulated levels of the ACE2 receptor caused by cigarette smoke.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 31th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.30.015461"> Potent neutralizing antibodies in the sera of convalescent COVID-19 patients are directed against conserved linear epitopes on the SARS-CoV-2 spike protein </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Lectin-like Intestinal Defensin Inhibits 2019-nCoV Spike binding to ACE2
-</h2>
+<span class="author-name"> Poh CM et al. </span>
 <p>
-Wang C et al. 
+Second report dealing with neutralising antibodies in convalescent serum, this time 25 samples from Singapore patients. Of the two immunodominant regions in the spike protein, one appears to be specific to SARS-CoV2 and one shared amongst coronaviruses
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 31th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.29.013490"> Lectin-like Intestinal Defensin Inhibits 2019-nCoV Spike binding to ACE2 </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-A one-enzyme RT-qPCR assay for SARS-CoV-2, and procedures for reagent production
-</h2>
+<span class="author-name"> Wang C et al. </span>
 <p>
-Bhadra S et al. 
+Intestinal human defensin (HD) 5, but not HD6, binds to ACE2 with a high affinity and blocks SARS-CoV-2 spike 1 protein (S1) binding. HD5 “cloak” on ACE2 binding domain was validated by molecular dynamic simulations, and HD5 preventative effect on SARS-CoV-2 binding was confirmed in intestinal epithelial cells.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 31th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.29.013342"> A one-enzyme RT-qPCR assay for SARS-CoV-2, and procedures for reagent production </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Predicting Mortality Risk in Patients with COVID-19 Using Artificial Intelligence to Help Medical Decision-Making
-</h2>
+<span class="author-name"> Bhadra S et al. </span>
 <p>
-Pourhomayoun M et al. 
+The authors developed a single-enzyme RT-qPCR assay using thermostable reverse transcriptase (RT) /DNA polymerase (RTX) as a comparable alternative to commercial COVID-19 RT-qPCR assays that may be in short supply.
 </p>
-</div>
-<div class="connector">
-
 </div>
+<div class="month-marker">
+<span> Apr 2020 </span>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 1th </span>
 <div class="content">
 <h2>
-Risk factors for severe corona virus disease 2019 (COVID-19) patients : a systematic review and meta analysis
+<a href="https://doi.org/10.1101/2020.03.30.20047308"> Predicting Mortality Risk in Patients with COVID-19 Using Artificial Intelligence to Help Medical Decision-Making </a>
 </h2>
+<div class="connector">
+
+</div>
+</div>
+<span class="author-name"> Pourhomayoun M et al. </span>
 <p>
-Xu L et al. 
+Authors used data from 117,000 confirmed COVID-19 patients world-wide to build a machine-learning model that predicts mortality in COVID-19 patients (“accuracy” = 93%). The model identified age and co-morbidity as key factors. Caveats: more interactions and other factors will be needed for this tool to aid in medical decision-making.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 1th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.30.20047415"> Risk factors for severe corona virus disease 2019 (COVID-19) patients : a systematic review and meta analysis </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm right">
+<span class="author-name"> Xu L et al. </span>
+<p>
+The authors summarise Risk Factors for COVID-19 by looking across multiple studies. Table 1 gives an especially useful overview of these patient characteristics along with the authors, patient pool sizes, and regions where these studies were conducted.
+</p>
+</div>
+<div class="container_tl right">
+<span class="date"> 1th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 40,000 deaths worldwide from COVID-19
+<a href="https://ourworldindata.org/coronavirus"> Over 40,000 deaths worldwide from COVID-19 </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 2th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-1 million confirmed cases worldwide
+<a href="NA"> 1 million confirmed cases worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 4th </span>
 <div class="content">
 <h2>
-Level of IL-6 predicts respiratory failure in hospitalized symptomatic COVID-19 patients
+<a href="https://doi.org/10.1101/2020.04.01.20047381"> Level of IL-6 predicts respiratory failure in hospitalized symptomatic COVID-19 patients </a>
 </h2>
-<p>
-Herold T et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Modeling the COVID-19 outbreaks and the effectiveness of the containment measures adopted across countries
-</h2>
+<span class="author-name"> Herold T et al. </span>
 <p>
-De Brouwer E et al. 
+Suggests that higher levels of IL-6 may be predictive of patients who need ventillation. Follows similar work showing LDH levels may be predictive of disease severity
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 4th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.02.20046375"> Modeling the COVID-19 outbreaks and the effectiveness of the containment measures adopted across countries </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Leveraging mRNAs sequences to express SARS-CoV-2 antigens in vivo
-</h2>
+<span class="author-name"> De Brouwer E et al. </span>
 <p>
-Zeng C et al. 
+The authors use models that suggest that “herd immunity” is unfeasable, and call for strategies to “flatten the curve”.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 5th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.01.019877"> Leveraging mRNAs sequences to express SARS-CoV-2 antigens in vivo </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Zeng C et al. </span>
+<p>
+Optimal design of 5’ and 3’ UTRs for potential SARS-CoV-2 mRNA vaccines
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 5th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 65,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 65,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 6th </span>
 <div class="content">
 <h2>
-ACE2 gene variants may underlie interindividual variability and susceptibility to COVID-19 in the Italian population
+<a href="https://doi.org/10.1101/2020.04.03.20047977"> ACE2 gene variants may underlie interindividual variability and susceptibility to COVID-19 in the Italian population </a>
 </h2>
-<p>
-Benetti E et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Facemasks and similar barriers to prevent respiratory illness such as COVID-19: A rapid systematic review
-</h2>
+<span class="author-name"> Benetti E et al. </span>
 <p>
-Brainard JS et al. 
+ACE2 has become an important research topic in relation to COVID-19 pathogenesis. This study mined around 7000 exosome from Italian genomes looking for variants of the ACE2 receptor, which has been proposed as the main host receptor for SARS-COV-2. Among three common missense changes, unreported in Easter Asia population, p.Asn720Asp is predicted to affect cleavage-dependent virion intake. Additional 30 missense variants were identified, some of which are predicted to affect the interaction with the spike protein. Caveats to this paper: the variants discovered that could change the way the virus interacts with the ACE2 receptor are rare. As these variants are so rare, they may notexplain the heterogeneity in disease outcomes in the general public. No correlations with patient data , all predictions from computational studies. Consequently, the hypothesis that these variants might explain higher mortality rates in Italy compared to China is probably over-stretched. <span class="citation">[Additional credit: Giulia Paci, @giulia_paci, UCL LMCB]</span>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 6th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.01.20049528"> Facemasks and similar barriers to prevent respiratory illness such as COVID-19: A rapid systematic review </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Frequency of testing for COVID 19 infection and the presence of higher number of available beds per country predict outcomes with the infection, not the GDP of the country - A descriptive statistical analysis
-</h2>
+<span class="author-name"> Brainard JS et al. </span>
 <p>
-GHOSAL S et al. 
+Suggests that widespread use of facemasks is not supported by the evidence. However, use in high-risk situations (e.g. hospital settings) is beneficial
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 6th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.01.20047373"> Frequency of testing for COVID 19 infection and the presence of higher number of available beds per country predict outcomes with the infection, not the GDP of the country - A descriptive statistical analysis </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Virologic and clinical characteristics for prognosis of severe COVID-19: a retrospective observational study in Wuhan, China
-</h2>
+<span class="author-name"> GHOSAL S et al. </span>
 <p>
-Fu S et al. 
+The authors themselves highlight some key limitations within their preprint. However, this data still supports the prevailing notions that testing and bed capacity are essential
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 6th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.03.20051763"> Virologic and clinical characteristics for prognosis of severe COVID-19: a retrospective observational study in Wuhan, China </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Neutralizing antibody responses to SARS-CoV-2 in a COVID-19 recovered patient cohort and their implications
-</h2>
+<span class="author-name"> Fu S et al. </span>
 <p>
-Wu F et al. 
+Authors seek to provide 4 key clinical characteristics of severe COVID-19 by examining viral shedding, serological features, inflammatory response, and lung-lesions.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 6th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.03.30.20047365"> Neutralizing antibody responses to SARS-CoV-2 in a COVID-19 recovered patient cohort and their implications </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Wu F et al. </span>
+<p>
+Authors evaluate levels of neutralising antibodies (NAbs) from recovered patients with clinical manifestations. Tentative results suggest correlation between humoral response and cellular immune response; with the caveat that experiments were only performed using plasma from patients with mild symptoms; further tests are needed for advanced cases to confirm correlation.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 6th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-UK Prime Minister admitted to ICU
+<a href="NA"> UK Prime Minister admitted to ICU </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 7th </span>
 <div class="content">
 <h2>
-A Simulated Single Ventilator / Dual Patient Ventilation Strategy for Acute Respiratory Distress Syndrome During the COVID-19 Pandemic
+<a href="https://doi.org/10.1101/2020.04.07.20056309"> A Simulated Single Ventilator / Dual Patient Ventilation Strategy for Acute Respiratory Distress Syndrome During the COVID-19 Pandemic </a>
 </h2>
-<p>
-Solis-Lemus JA et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Adaptive cyclic exit strategies from lockdown to suppress COVID-19 and allow economic activity
-</h2>
+<span class="author-name"> Solis-Lemus JA et al. </span>
 <p>
-Karin O et al. 
+With an acute shortage of ventilators that are essential in the treatment of COVID-19 patients, this study describes a model whereby two patients can be ventilated using a single machine.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 7th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.04.20053579"> Adaptive cyclic exit strategies from lockdown to suppress COVID-19 and allow economic activity </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Lack of Antiviral Activity of Darunavir against SARS-CoV-2
-</h2>
+<span class="author-name"> Karin O et al. </span>
 <p>
-De Meyer S et al. 
+Using calculated basic reproduction numbers, the authors propose an exit strategy from lockdown: short periods of work interspersed with lockdown intervals. This strategy is designed to restrict spread and ensure that infected individuals are under lockdown when at their most infectious.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 8th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.03.20052548"> Lack of Antiviral Activity of Darunavir against SARS-CoV-2 </a>
+</h2>
 <div class="connector">
 
 </div>
+</div>
+<span class="author-name"> De Meyer S et al. </span>
+<p>
+Negative results are often difficult to publish. However, when it is essential to understand what does not work as much as what does work, these negative results are highly important and very welcome. This study is an in vitro evaluation of the efficacy of HIV protease inhibitor darunavir (DRV) as potential antiviral treatment of COVID-19. In human caco-2 cells, clinically relevant concentrations of DRV didn’t show activity against SARS-COV-2. Antiviral activity was evaluated as cytopathogenic effect, scored by two methods. Most experiments were carried out in triplicate. Conflict of interest: Funding for this study was provided by Janssen Pharmaceutica. <span class="citation">[Credit Giulia Paci (@giulia_paci), UCL LMCB]</span>
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 8th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 80,000 deaths worldwide
+<a href="https://ourworldindata.org/coronavirus"> Over 80,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 9th </span>
 <div class="content">
 <h2>
-Structural and functional analysis of a potent sarbecovirus neutralizing antibody
+<a href="https://doi.org/10.1101/2020.04.07.023903"> Structural and functional analysis of a potent sarbecovirus neutralizing antibody </a>
 </h2>
-<p>
-Pinto D et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
+</div>
+<span class="author-name"> Pinto D et al. </span>
+<p>
+Monoclonal antibodies isolated in 2003 from a SARS survivor neutralize the SARS-CoV-2 virus, and recognize a glycan-containing epitope that is conserved across the sarbecovirus subgenus (that includes SARS-CoV-1 and SARS-CoV-2)
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 9th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 1.5 million cases worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 1.5 million cases worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 10th </span>
 <div class="content">
 <h2>
-Homologous protein domains in SARS-CoV-2 and measles, mumps and rubella viruses: preliminary evidence that MMR vaccine might provide protection against COVID-19
+<a href="https://doi.org/10.1101/2020.04.10.20053207"> Homologous protein domains in SARS-CoV-2 and measles, mumps and rubella viruses: preliminary evidence that MMR vaccine might provide protection against COVID-19 </a>
 </h2>
-<p>
-Franklin R et al. 
-</p>
-</div>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Franklin R et al. </span>
+<p>
+There has been some evidence that suggests the BCG vaccine may provide a degree of immunity against COVID-19. This preprint suggests that another childhood vaccine, MMR may also be beneficial in providing protection against COVID-19
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 10th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 100,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 100,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 11th </span>
 <div class="content">
 <h2>
-Factors associated with hospitalization and critical illness among 4,103 patients with COVID-19 disease in New York City
+<a href="https://doi.org/10.1101/2020.04.08.20057794"> Factors associated with hospitalization and critical illness among 4,103 patients with COVID-19 disease in New York City </a>
 </h2>
-<p>
-Petrilli CM et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-ACE-inhibitors and Angiotensin-2 Receptor Blockers are not associated with severe SARS- COVID19 infection in a multi-site UK acute Hospital Trust
-</h2>
+<span class="author-name"> Petrilli CM et al. </span>
 <p>
-Bean D et al. 
+Comprehensive analysis of the characteristics of 4103 lab-confirmed COVID-19 patients in NYC. Strong associations with age, obesity, heart failure, and kidney disease with severe cases; weaker with race, tobacco usage, pulmonary disease. At early stages of hospitalisation, hypoxia even in the presence of supplemental oxygen and high levels of inflammation correlated strongly with severe disease states.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 11th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.07.20056788"> ACE-inhibitors and Angiotensin-2 Receptor Blockers are not associated with severe SARS- COVID19 infection in a multi-site UK acute Hospital Trust </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Chloroquine diphosphate in two different dosages as adjunctive therapy of hospitalized patients with severe respiratory syndrome in the context of coronavirus (SARS-CoV-2) infection: Preliminary safety results of a randomized, double-blinded, phase IIb clinical trial (CloroCovid-19 Study)
-</h2>
+<span class="author-name"> Bean D et al. </span>
 <p>
-Borba MGS et al. 
+It has been suggested that ACE inhibitors used to treat hypertension or diabetes could upregulate ACE-2 and thereby exacerbate COVID-19 pathophysiology. Initial results on this small cohort (looking at outcomes for those who were receiving ACE inhibitors just before hospitalisation) suggest that this is not the case; the cohort was not large enough to look for positive outcomes, if any.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 11th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.07.20056424"> Chloroquine diphosphate in two different dosages as adjunctive therapy of hospitalized patients with severe respiratory syndrome in the context of coronavirus (SARS-CoV-2) infection: Preliminary safety results of a randomized, double-blinded, phase IIb clinical trial (CloroCovid-19 Study) </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Blueprint for a Pop-up SARS-CoV-2 Testing Lab
-</h2>
+<span class="author-name"> Borba MGS et al. </span>
 <p>
-Innovative Genomics Institute SARS-CoV-2 Testing Consortium et al. 
+Supports the hypothesis that there is no strong benefit of CQ treatment, and that doses should be kept low to avoid a potentially adverse impact; a good example of how to cautiously interpret data in the middle of a swirling controversy
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 12th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.11.20061424"> Blueprint for a Pop-up SARS-CoV-2 Testing Lab </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-The SARS-CoV-2 receptor-binding domain elicits a potent neutralizing response without antibody-dependent enhancement
-</h2>
+<span class="author-name"> Innovative Genomics Institute SARS-CoV-2 Testing Consortium et al. </span>
 <p>
-Quinlan BD et al. 
+Doudna and colleagues share their experience, from ensuring regulatory compliance to cross-validating RT-PCR results against testing benchmarks, of converting an academic research lab to a COVID-19 testing facility within the duration of approximately one month.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 12th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.10.036418"> The SARS-CoV-2 receptor-binding domain elicits a potent neutralizing response without antibody-dependent enhancement </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Mechanistic modeling of the SARS-CoV-2 disease map
-</h2>
+<span class="author-name"> Quinlan BD et al. </span>
 <p>
-Rian K et al. 
+Antibodies to the receptor-binding domain (RBD) of the viral spike protein were highly effective against SARS-CoV-1; immunisation with the SARS-CoV-2 RBD produced potent neutralising antibodies in rats. Importantly, these did not result in antibody-dependent enhancement of viral entry, a potential concern in the way of constructing an RBD-based vaccine.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 12th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.12.025577"> Mechanistic modeling of the SARS-CoV-2 disease map </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Insights on early mutational events in SARS-CoV-2 virus reveal founder effects across geographical regions
-</h2>
+<span class="author-name"> Rian K et al. </span>
 <p>
-Farkas C et al. 
+Computational tool to model the effect of various knockdowns and perturbations on the host cell SARS-CoV-2 response network (<a href="https://covid.pages.uni.lu/map_curation" class="uri">https://covid.pages.uni.lu/map_curation</a>); tool available at <a href="http://hipathia.babelomics.org/covid19/" class="uri">http://hipathia.babelomics.org/covid19/</a>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 12th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.09.034462"> Insights on early mutational events in SARS-CoV-2 virus reveal founder effects across geographical regions </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-A Scalable Method of Applying Heat and Humidity for Decontamination of N95 Respirators During the COVID-19 Crisis
-</h2>
+<span class="author-name"> Farkas C et al. </span>
 <p>
-Anderegg L et al. 
+Founder mutations in 90% of SARS-CoV-2 sequences from geographically unrelated countries (USA, China and Australia), of which 63% of mutations are missense. Computational analysis of primer sets predict potential consequences on amplification efficiency–and therefore, performance–of RT-qPCR tests.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 14th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.09.20059758"> A Scalable Method of Applying Heat and Humidity for Decontamination of N95 Respirators During the COVID-19 Crisis </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-No evidence of clinical efficacy of hydroxychloroquine in patients hospitalized for COVID-19 infection with oxygen requirement: results of a study using routinely collected data to emulate a target trial
-</h2>
+<span class="author-name"> Anderegg L et al. </span>
 <p>
-Mahevas M et al. 
+A method has been developed to decontaminate N95 filtering facepiece respirators (FFRs) for reuse by healthcare workers. Applying a heat and humidity procedure for up to five cycles of did not affect filtration efficiency or mask fitting. Further work is required to confirm viral inactivation of SARS-CoV-2, along with its scalability using larger equipment.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 14th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.10.20060699"> No evidence of clinical efficacy of hydroxychloroquine in patients hospitalized for COVID-19 infection with oxygen requirement: results of a study using routinely collected data to emulate a target trial </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-The FDA- approved gold drug Auranofin inhibits novel coronavirus (SARS-COV-2) replication and attenuates inflammation in human cells
-</h2>
+<span class="author-name"> Mahevas M et al. </span>
 <p>
-Rothan HA et al. 
+Hydroxychloroquine (HCQ) displayed no clinical benefit, in this study emulating a target trial across 4 French hospitals including 181 patients with SARS-CoV-2 pneumonia. Primary endpoints for this study were transfer to ICU and/or death.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 15th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.14.041228"> The FDA- approved gold drug Auranofin inhibits novel coronavirus (SARS-COV-2) replication and attenuates inflammation in human cells </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Rothan HA et al. </span>
+<p>
+Preliminary data shows FDA-approved anti-rheumatoid drug, auranofin, inhibited SARS-CoV-2 replication and pro-inflammtory cytokine production in a human cell line at low micro molar concentrations. This drug has not previously been known for antiviral properties and the mechanism remains unclear, therefore, further studies are required to evaulate the use of this drug for treatment of COVID-19.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 15th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-US has more cases than Spain, France, Germany and Italy combined
+<a href="https://coronavirus.jhu.edu/map.html"> US has more cases than Spain, France, Germany and Italy combined </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 15th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 2 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 2 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 17th </span>
 <div class="content">
 <h2>
-A systematic review of antibody mediated immunity to coronaviruses: antibody kinetics, correlates of protection, and association of antibody responses with severity of disease
+<a href="https://doi.org/10.1101/2020.04.14.20065771"> A systematic review of antibody mediated immunity to coronaviruses: antibody kinetics, correlates of protection, and association of antibody responses with severity of disease </a>
 </h2>
-<p>
-Huang AT et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Ability of Fabric Facemasks Materials to Filter Ultrafine Particles at Coughing Velocity - for Home Made and Fabric Face Mask Creation
-</h2>
+<span class="author-name"> Huang AT et al. </span>
 <p>
-O’Kelly E et al. 
+Due to the time needed to conduct immunlogical studies, there is a dearth of information relating to SARS-CoV-2 immunity. This review summarises current knowledge in other coronaviruses, and suggests how it may be applied to COVID-19.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 17th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.14.20065375"> Ability of Fabric Facemasks Materials to Filter Ultrafine Particles at Coughing Velocity - for Home Made and Fabric Face Mask Creation </a>
+</h2>
 <div class="connector">
 
 </div>
+</div>
+<span class="author-name"> O’Kelly E et al. </span>
+<p>
+The increasing calls from governments around the world for people to wear facemasks in public may exacerbate the shortage of PPE for frontline workers. This preprint investigates the protective ability of cloth face coverings, and tentatively concludes that they may indeed offer a certain amount of protection.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 18th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 150,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 150,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 20th </span>
 <div class="content">
 <h2>
-Shotgun Transcriptome and Isothermal Profiling of SARS-CoV-2 Infection Reveals Unique Host Responses, Viral Diversification, and Drug Interactions
+<a href="https://doi.org/10.1101/2020.04.20.048066"> Shotgun Transcriptome and Isothermal Profiling of SARS-CoV-2 Infection Reveals Unique Host Responses, Viral Diversification, and Drug Interactions </a>
 </h2>
-<p>
-Butler DJ et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Outcomes of hydroxychloroquine usage in United States veterans hospitalized with Covid-19
-</h2>
+<span class="author-name"> Butler DJ et al. </span>
 <p>
-Magagnoli J et al. 
+This work describes an isothermal assay platform for rapid detection and surveillance of SARS-CoV2 infection. A whole-transcriptome survey of over 450 viral, host and environmental samples in New York City (NYC) was also performed to identify phylogenetics of NYC COVID infections and host risk factors.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 21th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.16.20065920"> Outcomes of hydroxychloroquine usage in United States veterans hospitalized with Covid-19 </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm right">
+<span class="author-name"> Magagnoli J et al. </span>
+<p>
+Authors found no evidence that use of hydroxychloroquine, either with or without azithromycin, reduced the risk of mechanical ventilation in patients hospitalized with Covid-19. An association of increased overall mortality was identified in patients treated with hydroxychloroquine alone (however this did not hold true when compared to the control group).
+</p>
+</div>
+<div class="container_tl right">
+<span class="date"> 21th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 2.5 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 2.5 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 21th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 170,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 170,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 22th </span>
 <div class="content">
 <h2>
-Saliva is more sensitive for SARS-CoV-2 detection in COVID-19 patients than nasopharyngeal swabs
+<a href="https://doi.org/10.1101/2020.04.16.20067835"> Saliva is more sensitive for SARS-CoV-2 detection in COVID-19 patients than nasopharyngeal swabs </a>
 </h2>
-<p>
-Wyllie AL et al. 
-</p>
-</div>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Wyllie AL et al. </span>
+<p>
+Self-collected saliva samples provided similar, if not more sensitive and consistent results compared to patient-matched nasopharyngeal swabs for the detection of SARS-CoV-2. More data are required to determine efficacy in mild/asympotomatic cases with lower viral load. Supports recent study: <a href="https://www.medrxiv.org/content/10.1101/2020.04.11.20062372v1" class="uri">https://www.medrxiv.org/content/10.1101/2020.04.11.20062372v1</a>
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 24th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 2000 preprints posted between bioRxiv and medRxiv
+<a href="https://connect.biorxiv.org/relate/content/181"> Over 2000 preprints posted between bioRxiv and medRxiv </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 27th </span>
 <div class="content">
 <h2>
-Relative disease burdens of COVID-19 and seasonal influenza in New York City, February 1 - April 18, 2020.
+<a href="https://doi.org/10.1101/2020.04.22.20073551"> Relative disease burdens of COVID-19 and seasonal influenza in New York City, February 1 - April 18, 2020. </a>
 </h2>
-<p>
-Faust J et al. 
-</p>
-</div>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Faust J et al. </span>
+<p>
+Comparison of COVID-19 and seasonal influenza raw count deaths, as opposed to CDC-adjusted estimations, shows 21.1x-21.4x more COVID-19 deaths in New York City from Feb 1st to April 18th 2020. Limitations include: under- or over-reporting of deaths, lags in reporting, and differential peaks of each disease.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 27th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 200,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 200,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 27th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-New Zealand declares that community transmission of COVID-19 has ended
+<a href="https://www.theguardian.com/world/2020/apr/27/new-zealand-prepares-to-lift-strict-lockdown-after-eliminating-coronavirus"> New Zealand declares that community transmission of COVID-19 has ended </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 27th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Wuhan discharges last COVID-19 patient as China declares fewer than 10 new cases
+<a href="https://www.newscientist.com/article/2237475-covid-19-latest-wuhan-discharges-outbreaks-last-coronavirus-patient/"> Wuhan discharges last COVID-19 patient as China declares fewer than 10 new cases </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 28th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 3 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 3 million confirmed cases of COVID-19 worldwide </a>
 </h2>
+</div>
 </div>
+<div class="month-marker">
+<span> May 2020 </span>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 2th </span>
 <div class="content">
 <h2>
-Individual variation in susceptibility or exposure to SARS-CoV-2 lowers the herd immunity threshold
+<a href="https://doi.org/10.1101/2020.04.27.20081893"> Individual variation in susceptibility or exposure to SARS-CoV-2 lowers the herd immunity threshold </a>
 </h2>
-<p>
-Gomes MGM et al. 
-</p>
-</div>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Gomes MGM et al. </span>
+<p>
+Parsing the heterogeneity of individuals susceptible to COVID-19, the authors concluded that herd immunity may be achieved with a lower percentage of immune individuals than previous estimates suggest.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 2th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 3.3 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 3.3 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 2th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 240,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 240,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 3th </span>
 <div class="content">
 <h2>
-Clinical classifiers of COVID-19 infection from novel ultra-high-throughput proteomics
+<a href="https://doi.org/10.1101/2020.04.27.20081810"> Clinical classifiers of COVID-19 infection from novel ultra-high-throughput proteomics </a>
 </h2>
-<p>
-Messner CB et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Preliminary evidence from a multicenter prospective observational study of the safety and efficacy of chloroquine for the treatment of COVID-19
-</h2>
+<span class="author-name"> Messner CB et al. </span>
 <p>
-Huang M et al. 
+Development of a rapid, high-throughput, semi-automated mass spectrometry platform helps identify 27 biomarkers in plasma samples that are differentially expressed between mild and severe forms of COVID-19. Highlights potential therapeutic targets linked to IL-6 signaling.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 4th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.26.20081059"> Preliminary evidence from a multicenter prospective observational study of the safety and efficacy of chloroquine for the treatment of COVID-19 </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Humoral immune response and prolonged PCR positivity in a cohort of 1343 SARS-CoV 2 patients in the New York City region
-</h2>
+<span class="author-name"> Huang M et al. </span>
 <p>
-Wajnberg A et al. 
+In this multicenter prospective observational study, the authors found that chloroquine, even at low doses, decreased the time taken for viral RNA to reach undetectable levels and reduced the duration of fever in patients with COVID-19. Based on the results, the authors tentatively suggest chloroquine’s potential role in COVID-19 treatment, but emphasise the need for further studies for chloroquine’s efficacy and safety.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 5th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.04.30.20085613"> Humoral immune response and prolonged PCR positivity in a cohort of 1343 SARS-CoV 2 patients in the New York City region </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Repeated seroprevalence of anti-SARS-CoV-2 IgG antibodies in a population-based sample from Geneva, Switzerland
-</h2>
+<span class="author-name"> Wajnberg A et al. </span>
 <p>
-Stringhini S et al. 
+Using PCR and ELISA, the authors found that most confirmed COVID-19 patients seroconverted after infection, suggesting that COVID-19 patients may develop humoral immunity to reinfection.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 6th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.05.02.20088898"> Repeated seroprevalence of anti-SARS-CoV-2 IgG antibodies in a population-based sample from Geneva, Switzerland </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-OpenSAFELY: factors associated with COVID-19-related hospital death in the linked electronic health records of 17 million adult NHS patients.
-</h2>
+<span class="author-name"> Stringhini S et al. </span>
 <p>
-The OpenSAFELY Collaborative et al. 
+In this study consisting of 8 weekly serosurveys spanning 1335 participants from 633 households, the authors found that Geneva, Switzerland is still far from achieving herd immunity.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 7th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.05.06.20092999"> OpenSAFELY: factors associated with COVID-19-related hospital death in the linked electronic health records of 17 million adult NHS patients. </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-OpenSAFELY: factors associated with COVID-19-related hospital death in the linked electronic health records of 17 million adult NHS patients.
-</h2>
+<span class="author-name"> The OpenSAFELY Collaborative et al. </span>
 <p>
-The OpenSAFELY Collaborative et al. 
+Important study describing the factors influencing COVID-19 deaths. However, the interpretation of the results requires care: <a href="https://twitter.com/EpiEllie/status/1258607280133681155?s=19" class="uri">https://twitter.com/EpiEllie/status/1258607280133681155?s=19</a>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 7th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.05.06.20092999"> OpenSAFELY: factors associated with COVID-19-related hospital death in the linked electronic health records of 17 million adult NHS patients. </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Hydroxychloroquine and azithromycin plus zinc vs hydroxychloroquine and azithromycin alone: outcomes in hospitalized COVID-19 patients
-</h2>
+<span class="author-name"> The OpenSAFELY Collaborative et al. </span>
 <p>
-Carlucci P et al. 
+OpenSAFELY is a new pseudoymised analytics platform created from NHS England primary care electronic health records. Preliminary data from this source (n = 17,425,445) suggest an increased risk of COVID-19 hospital death associated with male gender, older age, prior medical conditions (e.g. uncontrolled diabetes and severe asthma), non-white ethnicity (African-American or Asian origin), and deprivation.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 8th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.05.02.20080036"> Hydroxychloroquine and azithromycin plus zinc vs hydroxychloroquine and azithromycin alone: outcomes in hospitalized COVID-19 patients </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Carlucci P et al. </span>
+<p>
+In this retrospective observational study, the authors found that the addition of zinc sulfate to regimens with hydroxychloroquine and azithromycin reduced mortality and transition to hospice; benefits were mainly found in patients not requiring ICU level of care.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 10th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 4 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 4 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 10th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 280,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 280,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 13th </span>
 <div class="content">
 <h2>
-ChAdOx1 nCoV-19 vaccination prevents SARS-CoV-2 pneumonia in rhesus macaques
+<a href="https://doi.org/10.1101/2020.05.13.093195"> ChAdOx1 nCoV-19 vaccination prevents SARS-CoV-2 pneumonia in rhesus macaques </a>
 </h2>
-<p>
-van Doremalen N et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-EXCESS MORTALITY FROM COVID-19. WEEKLY EXCESS DEATH RATES BY AGE AND SEX FOR SWEDEN.
-</h2>
+<span class="author-name"> van Doremalen N et al. </span>
 <p>
-Modig K et al. 
+Tentative but promising results suggesting that injection of the SARS-Cov-2 spike protein ChAdOx1 can vaccinate monkeys and protect against lung damage. <a href="https://twitter.com/davidrliu/status/1260888279882268673?s=20" class="uri">https://twitter.com/davidrliu/status/1260888279882268673?s=20</a>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 15th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.05.10.20096909"> EXCESS MORTALITY FROM COVID-19. WEEKLY EXCESS DEATH RATES BY AGE AND SEX FOR SWEDEN. </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Pre-existing and de novo humoral immunity to SARS-CoV-2 in humans
-</h2>
+<span class="author-name"> Modig K et al. </span>
 <p>
-Ng KW et al. 
+Authors quantify excess deaths (week by week, from March) in Sweden. COVID19 has taken 2-3 years from life expectancy in Sweden. Thread: <a href="https://twitter.com/NAChristakis/status/1262012815663149058?s=19" class="uri">https://twitter.com/NAChristakis/status/1262012815663149058?s=19</a>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 15th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.05.14.095414"> Pre-existing and de novo humoral immunity to SARS-CoV-2 in humans </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Treatment Response to Hydroxychloroquine, Lopinavir/Ritonavir, and Antibiotics for Moderate COVID 19: A First Report on the Pharmacological Outcomes from South Korea
-</h2>
+<span class="author-name"> Ng KW et al. </span>
 <p>
-Kim MS et al. 
+Approximately 10% of SARS-CoV-2 negative blood donors with recent HCoV infections displayed IgG cross-reactivity towards SARS-CoV-2 S protein. Limitations discussed in review: <a href="https://www.immunology.ox.ac.uk/covid-19/covid-19-immunology-literature-reviews/pre-existing-and-de-novo-humoral-immunity-to-sars-cov-2-in-humans" class="uri">https://www.immunology.ox.ac.uk/covid-19/covid-19-immunology-literature-reviews/pre-existing-and-de-novo-humoral-immunity-to-sars-cov-2-in-humans</a>
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 18th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.05.13.20094193"> Treatment Response to Hydroxychloroquine, Lopinavir/Ritonavir, and Antibiotics for Moderate COVID 19: A First Report on the Pharmacological Outcomes from South Korea </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Kim MS et al. </span>
+<p>
+In this retrospective cohort study, the authors explored the use of hydroxychloroquine with antibiotics, or lopinavir or ritonavir with antibiotics; and compared these arms to a third conservative treatment control arm. The authors found that hydroxychloroquine with antibiotics led to better viral clearance, reduced hospital stay, and enhanced cough symptom resolution, but caution that toxicity was not measured in their study.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 19th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 4.8 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 4.8 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 19th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 319,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 319,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 21th </span>
 <div class="content">
 <h2>
-No evidence for increased transmissibility from recurrent mutations in SARS-CoV-2
+<a href="https://doi.org/10.1101/2020.05.21.108506"> No evidence for increased transmissibility from recurrent mutations in SARS-CoV-2 </a>
 </h2>
-<p>
-van Dorp L et al. 
-</p>
-</div>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> van Dorp L et al. </span>
+<p>
+Tested over 15,000 SARS-CoV-2 genomes and found no evidence for strains acquiring mutations that make them more transmissible
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 21th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 5 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 5 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 21th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 328,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 328,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 22th </span>
 <div class="content">
 <h2>
-Full genome viral sequences inform patterns of SARS-CoV-2 spread into and within Israel
+<a href="https://doi.org/10.1101/2020.05.21.20104521"> Full genome viral sequences inform patterns of SARS-CoV-2 spread into and within Israel </a>
 </h2>
-<p>
-Miller D et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-SARS-CoV-2 RNA concentrations in primary municipal sewage sludge as a leading indicator of COVID-19 outbreak dynamics
-</h2>
+<span class="author-name"> Miller D et al. </span>
 <p>
-Peccia J et al. 
+Sequenced 112 genomes and found 1-10% of infected individuals are responsible for 80% of secondary infections using phylogenetic trees. Strong suggestions against the possibility of herd immunity
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 22th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.05.19.20105999"> SARS-CoV-2 RNA concentrations in primary municipal sewage sludge as a leading indicator of COVID-19 outbreak dynamics </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Preprinting a pandemic: the role of preprints in the COVID-19 pandemic
-</h2>
+<span class="author-name"> Peccia J et al. </span>
 <p>
-Fraser N et al. 
+SARS-CoV-2 RNA concentration in primary sewage sludge highly correlated with COVID-19 epidemiological curve and local hospital admissions, with a seven- to three- day leading indication, respectively.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 23th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.05.22.111294"> Preprinting a pandemic: the role of preprints in the COVID-19 pandemic </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Fraser N et al. </span>
+<p>
+Preprints represent ~40% of the COVID19 literature
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 31th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 6 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 6 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 31th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 369,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 369,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="month-marker">
+<span> Jun 2020 </span>
+</div>
+<div class="container_tl right">
+<span class="date"> 8th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 7 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 7 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 8th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 400,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 400,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 9th </span>
 <div class="content">
 <h2>
-A consensus Covid-19 immune signature combines immuno-protection with discrete sepsis-like traits associated with poor prognosis
+<a href="https://doi.org/10.1101/2020.06.08.20125112"> A consensus Covid-19 immune signature combines immuno-protection with discrete sepsis-like traits associated with poor prognosis </a>
 </h2>
-<p>
-Laing AG et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Suppressing COVID-19 transmission in Hong Kong: an observational study of the first four months
-</h2>
+<span class="author-name"> Laing AG et al. </span>
 <p>
-Wu P et al. 
+The authors identified a consensus peripheral blood immunological signature across a heterogeneous population. Implications extend to using certain components for prognosis, as well as boosting the understanding of the underlying pathogenesis of COVID-19.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 9th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.21203/rs.3.rs-34047/v1"> Suppressing COVID-19 transmission in Hong Kong: an observational study of the first four months </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-The D614G mutation in the SARS-CoV-2 spike protein reduces S1 shedding and increases infectivity
-</h2>
+<span class="author-name"> Wu P et al. </span>
 <p>
-Zhang L et al. 
+The authors attributed the successful suppression of COVID-19 transmission in the first wave of the pandemic in Hong Kong to a combination of two key public health measures. The focus on early and near complete identification of cases interrupted transmission; while a complete lockdown was avoided with the implementation of more general physical distancing community measures.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 12th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.12.148726"> The D614G mutation in the SARS-CoV-2 spike protein reduces S1 shedding and increases infectivity </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Inhaled corticosteroids downregulate the SARS-CoV-2 receptor ACE2 in COPD through suppression of type I interferon
-</h2>
+<span class="author-name"> Zhang L et al. </span>
 <p>
-Finney LJ et al. 
+Authors reported that a D614G mutation in the SARS-CoV-2 spike protein may increase its infectivity.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 13th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.13.149039"> Inhaled corticosteroids downregulate the SARS-CoV-2 receptor ACE2 in COPD through suppression of type I interferon </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Colon Cancer and SARS-CoV-2: Impact of ACE2 Expression in Susceptibility to COVID-19
-</h2>
+<span class="author-name"> Finney LJ et al. </span>
 <p>
-Ahmadi M et al. 
+The authors showed that inhaled corticosteroid (ICS) administration attenuated pulmonary expression of ACE2 in various human and animal models. Because ACE2 has been reported to facilitate cellular entry of SARS-CoV-2, the authors suggest that ICS may modulate the clinical course of COVID-19.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 13th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.11.146878"> Colon Cancer and SARS-CoV-2: Impact of ACE2 Expression in Susceptibility to COVID-19 </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-The Spike D614G mutation increases SARS-CoV-2 infection of multiple human cell types
-</h2>
+<span class="author-name"> Ahmadi M et al. </span>
 <p>
-Daniloski Z et al. 
+Through the analysis of ACE2 levels, the authors concluded that COVID-19 may adversely affect colon adenocarcinoma (COAD) patient survival outcomes. Therefore, additional preventive measures may be needed to protect patients from COVID-19.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 15th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.14.151357"> The Spike D614G mutation increases SARS-CoV-2 infection of multiple human cell types </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Naturally mutated spike proteins of SARS-CoV-2 variants show differential levels of cell entry
-</h2>
+<span class="author-name"> Daniloski Z et al. </span>
 <p>
-Ozono S et al. 
+Authors’ findings support recent reports that a D614G mutation in the SARS-CoV-2 Spike (S) protein improves its ability to transduce host cells. Specifically, the G614 variant was more resistant to cleavage than the D614 variant, which may improve the ability of newly-assembled virions to include more receptor binding-capable S protein.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 15th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.15.151779"> Naturally mutated spike proteins of SARS-CoV-2 variants show differential levels of cell entry </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm right">
+<span class="author-name"> Ozono S et al. </span>
+<p>
+Using a lentiviral system, authors reported three key findings: 1) SARS-CoV-2-Spike (S) protein-mediated cell entry strongly depends on TMPRSS2 coexpression, 2) the SARS-CoV-2 D614G mutant exhibited activity for entry approximately 3.5x that of the wild type, and 3) despite the biological and structural changes, the antigenicity of the D614G mutant did not vary significantly from the wild type.
+</p>
+</div>
+<div class="container_tl right">
+<span class="date"> 16th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 8 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 8 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 16th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 438,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 438,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 17th </span>
 <div class="content">
 <h2>
-A thermostable, closed, SARS-CoV-2 spike protein trimer
+<a href="https://doi.org/10.1101/2020.06.15.152835"> A thermostable, closed, SARS-CoV-2 spike protein trimer </a>
 </h2>
-<p>
-Xiong X et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Deep mutational scanning of SARS-CoV-2 receptor binding domain reveals constraints on folding and ACE2 binding
-</h2>
+<span class="author-name"> Xiong X et al. </span>
 <p>
-Starr TN et al. 
+The authors designed a thermostable Spike (S) protein trimer, which they envision would be useful for research in vaccinology, diagnostics, and other scientific research involving SARS-CoV-2.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 17th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.17.157982"> Deep mutational scanning of SARS-CoV-2 receptor binding domain reveals constraints on folding and ACE2 binding </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Drug repurposing screens reveal FDA approved drugs active against SARS-Cov-2
-</h2>
+<span class="author-name"> Starr TN et al. </span>
 <p>
-Dittmar M et al. 
+Using a quantitative deep mutational scanning approach, the authors determined the influence of mutations in the receptor binding domain (RBD) on the protein’s binding affinity to the ACE2 receptor. The authors identified mutations that increased binding affinity between the RBD, as well as patterns relating to the trade-off between protein stability and binding affinity.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 19th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.19.161042"> Drug repurposing screens reveal FDA approved drugs active against SARS-Cov-2 </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-A single dose of recombinant VSV-ΔG-spike vaccine provides protection against SARS-CoV-2 challenge
-</h2>
+<span class="author-name"> Dittmar M et al. </span>
 <p>
-Yahalom-Ronen Y et al. 
+In this preprint, the authors screened through 3,000 drugs in monkey (Vero), human hepatocyte (Huh7.5), and human lung epithelial (Calu-3) cells. They identified 9 antiviral candidates active against SARS-CoV-2 in the Calu-3 cells.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 19th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.18.160655"> A single dose of recombinant VSV-ΔG-spike vaccine provides protection against SARS-CoV-2 challenge </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-High-density amplicon sequencing identifies community spread and ongoing evolution of SARS-CoV-2 in the Southern United States
-</h2>
+<span class="author-name"> Yahalom-Ronen Y et al. </span>
 <p>
-McNamara RP et al. 
+Using a Golden Syrian hamster in vivo model, the authors found that a single-dose of rVSV-∆Gspike vaccine was safe and efficacious in protecting against a SARS-CoV-2 challenge.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 19th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.19.161141"> High-density amplicon sequencing identifies community spread and ongoing evolution of SARS-CoV-2 in the Southern United States </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Effect of Dexamethasone in Hospitalized Patients with COVID-19: Preliminary Report
-</h2>
+<span class="author-name"> McNamara RP et al. </span>
 <p>
-Horby P et al. 
+The authors sequenced SARS-CoV-2 isolates from symptomatic COVID-19 cases in a suburban and rural community in the southeastern US. Their results suggested that the SARS-CoV-2 Spike protein D614G mutant (associated with greater pathogenecity) is the dominant strain in the US.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 22th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.22.20137273"> Effect of Dexamethasone in Hospitalized Patients with COVID-19: Preliminary Report </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-SARS-CoV-2 structure and replication characterized by in situ cryo-electron tomography
-</h2>
+<span class="author-name"> Horby P et al. </span>
 <p>
-Klein S et al. 
+This preprint is a preliminary report from the RECOVERY trial: dexamethasone reduced deaths in patients receiving mechanical ventilation as well as in patients receiving medical oxygen without mechanical ventilation, but did not reduce mortality in patients not receiving respiratory support at randomisation.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 23th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.23.167064"> SARS-CoV-2 structure and replication characterized by in situ cryo-electron tomography </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-A High Content Screen for Mucin-1-Reducing Compounds Identifies Fostamatinib as a Candidate for Rapid Repurposing for Acute Lung Injury during the COVID-19 pandemic
-</h2>
+<span class="author-name"> Klein S et al. </span>
 <p>
-Alimova M et al. 
+Using in situ cryo-electron tomography, the authors visualised double-stranded RNA within double-membrane vesicles. They found that membrane formation is influenced by the spike trimer and viral ribonucleoprotein complex recruitment into virion budding sites. These findings may have important implications for SARS-CoV-2 antiviral discovery.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 30th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.30.180380"> A High Content Screen for Mucin-1-Reducing Compounds Identifies Fostamatinib as a Candidate for Rapid Repurposing for Acute Lung Injury during the COVID-19 pandemic </a>
+</h2>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Handyfuge-LAMP: low-cost and electricity-free centrifugation for isothermal SARS-CoV-2 detection in saliva.
-</h2>
+<span class="author-name"> Alimova M et al. </span>
 <p>
-Li E et al. 
+Using a mouse model of ischemia-reperfusion lung injury, the authors showed that Fostamatnib induces the down-regulation and internalization of MUC1, and reduces the expression of MUC1 in the lung.
 </p>
+</div>
+<div class="month-marker">
+<span> Jul 2020 </span>
 </div>
+<div class="container_tl left">
+<span class="date"> 1th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.06.30.20143255"> Handyfuge-LAMP: low-cost and electricity-free centrifugation for isothermal SARS-CoV-2 detection in saliva. </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Li E et al. </span>
+<p>
+The authors describe an inexpensive, manually-powered diagnostic to detect COVID-19 RNA from saliva. This hardware is compatible with the LAMP assay described by Rabe and Cepko (2020).
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 2th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 10.7 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 10.7 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 2th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 517,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 517,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm left">
+<div class="container_tl left">
+<span class="date"> 4th </span>
 <div class="content">
 <h2>
-Tissue-specific tolerance in fatal Covid-19
+<a href="https://doi.org/10.1101/2020.07.02.20145003"> Tissue-specific tolerance in fatal Covid-19 </a>
 </h2>
-<p>
-Dorward DA et al. 
-</p>
-</div>
 <div class="connector">
 
 </div>
 </div>
-<div class="container_tm left">
-<div class="content">
-<h2>
-Anti-SARS-CoV-2 IgG from severely ill COVID-19 patients promotes macrophage hyper-inflammatory responses
-</h2>
+<span class="author-name"> Dorward DA et al. </span>
 <p>
-Hoepel W et al. 
+By investigating the histology of various tissues isolated from post-mortems of fatal COVID-19 cases, the authors concluded that death from COVID-19 may mainly be attributed to the immune response rather than tissue-specific injury.
 </p>
 </div>
+<div class="container_tl left">
+<span class="date"> 13th </span>
+<div class="content">
+<h2>
+<a href="https://doi.org/10.1101/2020.07.13.190140"> Anti-SARS-CoV-2 IgG from severely ill COVID-19 patients promotes macrophage hyper-inflammatory responses </a>
+</h2>
 <div class="connector">
 
+</div>
 </div>
+<span class="author-name"> Hoepel W et al. </span>
+<p>
+The authors established the mechanistic association between SARS-CoV-2 infection and clinical manifestation of COVID-19. The presence of antibodies targeting the viral spike protein from patient blood triggers a cytokine storm in activated human macrophages, which compromises the vascular endothelial barrier and promotes blood coagulation.
+</p>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 20th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 14.7 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 14.7 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 20th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 610,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 610,000 deaths worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="month-marker">
+<span> Aug 2020 </span>
+</div>
+<div class="container_tl right">
+<span class="date"> 15th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 21.2 million confirmed cases of COVID-19 worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 21.2 million confirmed cases of COVID-19 worldwide </a>
 </h2>
 </div>
 </div>
-<div class="container_tm right">
+<div class="container_tl right">
+<span class="date"> 15th </span>
+<div class="content">
 <div class="connector">
 
 </div>
-<div class="content">
 <h2>
-Over 766,000 deaths worldwide
+<a href="https://coronavirus.jhu.edu/map.html"> Over 766,000 deaths worldwide </a>
 </h2>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2268,7 +2663,9 @@ Over 766,000 deaths worldwide
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-      </div>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
+</div>
 
 </div>
 
