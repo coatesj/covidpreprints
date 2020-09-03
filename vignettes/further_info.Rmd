@@ -25,5 +25,6 @@ df <- fromJSON("../data.json")
 
 ```{r}
 df <- df[, c("publicationDate", "title", "briefSummary", "url", "altmetricScore")]
-DT::datatable(df, list(lengthMenu = c(10, 25, 30, 50, 75, 100), pageLength = 50), rownames = FALSE, style = "bootstrap")
+df$url <- paste0("<a href='", df$url, "'>", df$url, "</a>")
+DT::datatable(df, list(lengthMenu = c(10, 25, 30, 50, 75, 100), pageLength = 50), rownames = FALSE, style = "bootstrap", escape = FALSE)
 ```
