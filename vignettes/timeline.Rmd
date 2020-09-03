@@ -300,7 +300,7 @@ for (i in seq_len(nrow(df))) {
     cat('<span class="date">', sprintf("%sth", format(df[i, "publicationDate"], "%e")), '</span>')
     cat('<div class="content">')
     cat('<div class="connector"></div>')
-    cat('<h2>', df[i, "title"], '</h2>')
+    cat('<h2><a href=', df[i, "url"], '>', df[i, "title"], '</a></h2>')
     cat('</div>')
     cat('</div>')
   }
