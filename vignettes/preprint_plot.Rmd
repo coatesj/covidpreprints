@@ -6,7 +6,9 @@ output: html_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  echo = FALSE
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
 )
 ```
 
