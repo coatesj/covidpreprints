@@ -41,6 +41,10 @@ margin-left: 12px;
   margin-top: 120px;
 }
 
+.col-md-9 {
+  width: 100%;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
