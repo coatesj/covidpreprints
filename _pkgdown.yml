@@ -1,3 +1,7 @@
+template:
+  params:
+    ganalytics: UA-164190709-1
+
 navbar:
   type: default
   left:
