@@ -28,21 +28,16 @@ for(i in content(GET(github_url))$tree){
 }
 
 # Write all .md files to "sinai" folder
-for(i in content(GET(folder_url))$tree){
+res <- lapply(content(GET(folder_url))$tree, function(i) {
   name = i$path
-  if(str_detect(name, r"(\.md$)")){
+  if(str_detect(name, r"(\.md$)")) {
       file_url <- str_c("https://raw.githubusercontent.com/ismms-himc/covid-19_sinai_reviews/master/",
                         folder_name, "/", name)
-      write(content(GET(file_url)), file = str_c("./sinai/", name))
+      content(GET(file_url))
   }
-}
+})
 ```
 
 ```{r, results='asis'}
-res <- lapply(list.files(paste0("./sinai/"), pattern = "\\.md$", full.names = TRUE), function(f) {
-  knitr::knit_child(
-    f, quiet = TRUE
-  )
-})
 cat(unlist(res), sep = '\n')
 ```
