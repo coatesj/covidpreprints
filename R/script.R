@@ -69,24 +69,3 @@ combined <- bind_rows(preprints, events) %>%
          ) %>%
   arrange(date) %>%
   write_json(., "data.json", pretty = TRUE)
-
-# Set GitHub URL and folder name for the Sinai reviews
-github_url <- "https://api.github.com/repos/ismms-himc/covid-19_sinai_reviews/git/trees/master"
-folder_name <- "markdown_files"
-
-# Find URL for the folder
-for(i in content(GET(github_url))$tree){
-  if(i$path == folder_name){
-    folder_url <- i$url
-  }
-}
-
-# Write all .md files to "sinai" folder
-for(i in content(GET(folder_url))$tree){
-  name = i$path
-  if(str_detect(name, r"(\.md$)")){
-      file_url <- str_c("https://raw.githubusercontent.com/ismms-himc/covid-19_sinai_reviews/master/",
-                        folder_name, "/", name)
-      write(content(GET(file_url)), file = str_c("./sinai/", name))
-  }
-}
