@@ -266,9 +266,11 @@ span.date {
 
 
 ```{r}
-library(jsonlite)
+# Set Google Sheet URL
+sheet_url <- "https://docs.google.com/spreadsheets/d/1BES52D4nYUZjV6kx1S_lJKSHvC9I0uzPTFA2mcxv4FI"
 
-df <- fromJSON("../data.json")
+df <- update_covidpreprints(sheet_url)
+
 df$publicationDate <- as.Date(df$publicationDate)
 ```
 

@@ -1,4 +1,5 @@
-update_covidpreprints_json <- function(sheet_url) {
+#' @export
+update_covidpreprints <- function(sheet_url) {
 
   # Read Google Sheet (Preprints tab) and add data
   preprints <- read_sheet(sheet_url, sheet = "Preprints") %>%
@@ -21,7 +22,6 @@ update_covidpreprints_json <- function(sheet_url) {
            altmetricScore, altmetricUrl, altmetricDonut, tweeters,
            preLightsUrl
     ) %>%
-    arrange(date) %>%
-    write_json(., "data.json", pretty = TRUE)
+    arrange(date)
 
 }
