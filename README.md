@@ -1,10 +1,7 @@
 # covidpreprints <img src="man/figures/logo.png" align="right" alt="" width="120" />
 
 
-Coding & website maintained by Dr J Coates (jc2216@cam.ac.uk) and the preLights COVID team (prelights.biologists.com). Thanks to Lars Hubatsch for contributions to the coding. 
+Website maintained by Dr J Coates (jonathon.coates@qmul.ac.uk) and the preLights COVID team (prelights.biologists.com). Special thanks to the team behind the coding and those who contributed at the eLife Sprint 2020. Full details can be found on the website. 
 
 
-Suggestions for improvement to the code are welcomed - The current code is the result of a "learn as I do it" approach. 
-
-This is one of the Sprint 2020 projects!
-
+Suggestions for improvement to the code or new features are welcomed.
