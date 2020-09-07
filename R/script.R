@@ -6,10 +6,6 @@
 #' @import httr
 #' @import jsonlite
 
-# Set Google de-authentication mode as sheet is public
-# N.B. Authentication will be required if sheet is made private
-gs4_deauth()
-
 # Set Google Sheet URL
 sheet_url <- "https://docs.google.com/spreadsheets/d/1BES52D4nYUZjV6kx1S_lJKSHvC9I0uzPTFA2mcxv4FI"
 
