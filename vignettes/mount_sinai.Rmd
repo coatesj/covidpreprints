@@ -7,22 +7,42 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   echo = FALSE,
-  eval = FALSE
+  warning = FALSE,
+  message = FALSE
 )
 ```
 
 The following is a collection of the Mount Sinai Immunology researchers (@MountSinaiNYC). We thank the team for their important efforts in reviewing critical literature during such a turbulent period and for allowing us to link to these reviews. See https://observablehq.com/@ismms-himc/covid-19-sars-cov-2-preprints-from-medrxiv-and-biorxiv for more. Please use Crt+F to search.
 
-```{r, results='asis'}
+```{r}
 library(httr)
-library(magrittr)
-md_files <- content(GET("https://api.github.com/repos/ismms-himc/covid-19_sinai_reviews/git/trees/0bab9c9c04f752c903f8f4590dc1285a4fe0501e"), "text")
-md_urls <- jsonlite::fromJSON(md_files)$tree$url
-res <- lapply(md_urls, function(u) {
-  message(u)
-  content(GET(u))$content %>%
-    openssl::base64_decode() %>%
-    rawToChar()
+library(tidyverse)
+github_url <- "https://api.github.com/repos/ismms-himc/covid-19_sinai_reviews/git/trees/master"
+folder_name <- "markdown_files"
+
+# Find URL for the folder
+for(i in content(GET(github_url))$tree){
+  if(i$path == folder_name){
+    folder_url <- i$url
+  }
+}
+
+# Write all .md files to "sinai" folder
+for(i in content(GET(folder_url))$tree){
+  name = i$path
+  if(str_detect(name, r"(\.md$)")){
+      file_url <- str_c("https://raw.githubusercontent.com/ismms-himc/covid-19_sinai_reviews/master/",
+                        folder_name, "/", name)
+      write(content(GET(file_url)), file = str_c(tempdir(), "/sinai/", name))
+  }
+}
+```
+
+```{r, results='asis'}
+res <- lapply(list.files(paste0(tempdir(), "/sinai/"), pattern = "\\.md$", full.names = TRUE), function(f) {
+  knitr::knit_child(
+    f, quiet = TRUE
+  )
 })
 cat(unlist(res), sep = '\n')
 ```
