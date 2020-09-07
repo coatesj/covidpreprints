@@ -1,10 +1,10 @@
-library(tidyverse)  # general data wrangling
-library(lubridate)  # handling dates
-library(googlesheets4)  # importing Google Sheets
-library(europepmc)  # retrieving preprint metadata
-library(rAltmetric)  # retrieving Altmetric scores
-library(httr)  # downloading files from the web
-library(jsonlite)  # JSON export
+#' @import tidyverse
+#' @import lubridate
+#' @import googlesheets4
+#' @import europepmc
+#' @import rAltmetric
+#' @import httr
+#' @import jsonlite
 
 # Set Google de-authentication mode as sheet is public
 # N.B. Authentication will be required if sheet is made private
