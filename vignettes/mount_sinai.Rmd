@@ -6,7 +6,8 @@ output: html_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  echo = FALSE
+  echo = FALSE,
+  eval = FALSE
 )
 ```
 
@@ -14,8 +15,9 @@ The following is a collection of the Mount Sinai Immunology researchers (@MountS
 
 ```{r, results='asis'}
 library(httr)
+library(magrittr)
 md_files <- content(GET("https://api.github.com/repos/ismms-himc/covid-19_sinai_reviews/git/trees/0bab9c9c04f752c903f8f4590dc1285a4fe0501e"), "text")
-md_urls <- jsonlite::fromJSON(all_files)$tree$url
+md_urls <- jsonlite::fromJSON(md_files)$tree$url
 res <- lapply(md_urls, function(u) {
   message(u)
   content(GET(u))$content %>%
