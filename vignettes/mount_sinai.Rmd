@@ -14,11 +14,17 @@ knitr::opts_chunk$set(
 
 The following is a collection of the Mount Sinai Immunology researchers (@MountSinaiNYC). We thank the team for their important efforts in reviewing critical literature during such a turbulent period and for allowing us to link to these reviews. See https://observablehq.com/@ismms-himc/covid-19-sars-cov-2-preprints-from-medrxiv-and-biorxiv for more. Please use Crt+F to search.
 
+
 ```{r}
 library(httr)
-library(tidyverse)
+set_config(add_headers(Authorization = paste("Bearer", Sys.getenv("GITHUB_PAT"))))
+
 github_url <- "https://api.github.com/repos/ismms-himc/covid-19_sinai_reviews/git/trees/master"
 folder_name <- "markdown_files"
+```
+
+```{r}
+library(tidyverse)
 
 # Find URL for the folder
 for(i in content(GET(github_url))$tree){
