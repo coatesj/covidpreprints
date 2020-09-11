@@ -6,7 +6,9 @@ output: html_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  echo = FALSE
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
 )
 ```
 
@@ -17,14 +19,97 @@ knitr::opts_chunk$set(
 }
 ```
 
-```{r}
-library(jsonlite)
 
-df <- fromJSON("../data.json")
+```{r, load_libraries}
+library(tidyverse)  # general data wrangling
+library(lubridate)  # handling dates
+library(googlesheets4)  # importing Google Sheets
+library(europepmc)  # retrieving preprint metadata
+library(rAltmetric)  # retrieving Altmetric scores
+library(httr) 
+```
+
+```{r, setup_google_sheets}
+# Set Google de-authentication mode as sheet is public
+# N.B. Authentication will be required if sheet is made private
+googlesheets4::gs4_deauth()
+
+# Set Google Sheet URL
+sheet_url <- "https://docs.google.com/spreadsheets/d/1BES52D4nYUZjV6kx1S_lJKSHvC9I0uzPTFA2mcxv4FI"
+```
+
+```{r, define_utilities}
+epmc <- function(doi){
+  data <- epmc_search_by_doi(doi = doi,
+                             output = "raw")[[1]][[1]]
+  if(length(data[["commentCorrectionList"]]) > 0){
+    l <- data[["commentCorrectionList"]][["commentCorrection"]]
+    for(i in l){
+      if(i[["type"]] == "Preprint of"){
+        pub_doi <- epmc_details(i[["id"]], i[["source"]])[["basic"]][["doi"]]
+    }
+    }
+  } else {
+    pub_doi <- NA
+  }
+  prelights_link <- epmc_lablinks(ext_id = data$id, data_src = data$source,
+                                  lab_id = "1859", verbose = FALSE) %>%
+    { map_chr(.$link, "url") }
+  if(is_empty(prelights_link)) prelights_link <- NA
+  return(tibble(title = data[["title"]],
+                date = as_date(data[["firstPublicationDate"]]),
+                authorString = str_c(str_split(data[["authorString"]],
+                                               ", ")[[1]][[1]], " et al."),
+                publishedVersionDoi = pub_doi,
+                citationCount = data[["citedByCount"]],
+                preLightsUrl = prelights_link))
+}
+
+# Function to return Altmetric info for a DOI
+altmetric <- function(doi){
+  data <- altmetrics(doi = doi) %>%
+    altmetric_data()
+  return(tibble(altmetricScore = ceiling(as.integer(data$score)),
+                tweeters = data$cited_by_tweeters_count,
+                altmetricDonut = data$images.small,
+                altmetricUrl = data$details_url))
+}
+```
+
+
+```{r, fetch_metadata}
+# Read Google Sheet (Preprints tab) and add data
+preprints <- read_sheet(sheet_url, sheet = "Preprints") %>%
+  filter(class %in% c("preprint", "bad")) %>% # filter non-preprints
+  filter(!str_detect(id, "arXiv")) %>% # filter arXiv preprints (for now...)
+  mutate(publication = map(id, epmc),
+         altmetric = map(id, altmetric),
+         url = str_c("https://doi.org/", id)) %>%
+  unnest(publication, altmetric)
+
+# Read Google Sheet (Events tab)
+events <- read_sheet(sheet_url, sheet = "Events") %>%
+  filter(class %in% c("event"))
+
+# Combine and write to JSON object
+combined <- bind_rows(preprints, events) %>%
+  select(date, class, title, url,
+         briefSummary, longerSummary,
+         authorString, publishedVersionDoi, citationCount,
+         altmetricScore, altmetricUrl, altmetricDonut, tweeters,
+         preLightsUrl
+  ) %>%
+  arrange(date) %>%
+  as.data.frame()
 ```
 
 ```{r}
-df <- df[, c("publicationDate", "title", "briefSummary", "url", "altmetricScore")]
-df$url <- paste0("<a href='", df$url, "'>", df$url, "</a>")
-DT::datatable(df, list(lengthMenu = c(10, 25, 30, 50, 75, 100), pageLength = 50), rownames = FALSE, style = "bootstrap", escape = FALSE)
+combined %>%
+  select(class, date, title, briefSummary, url, altmetricDonut, altmetricUrl) %>%
+  mutate(url = paste0("<a href='", url, "'>", url, "</a>"),
+         am = if_else(class == "event",
+                      "",
+                      paste0("<a href='", altmetricUrl, "'><img src='", altmetricDonut, "'></a>"))) %>%
+  select(-class, -altmetricDonut, -altmetricUrl) %>%
+  DT::datatable(list(lengthMenu = c(10, 25, 30, 50, 75, 100), pageLength = 50), rownames = FALSE, style = "bootstrap", escape = FALSE)
 ```
