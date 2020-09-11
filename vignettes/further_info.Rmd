@@ -107,9 +107,9 @@ combined <- bind_rows(preprints, events) %>%
 combined %>%
   select(class, date, title, briefSummary, url, altmetricDonut, altmetricUrl) %>%
   mutate(url = paste0("<a href='", url, "'>", url, "</a>"),
-         am = if_else(class == "event",
-                      "",
-                      paste0("<a href='", altmetricUrl, "'><img src='", altmetricDonut, "'></a>"))) %>%
+         altmetric = if_else(class == "event",
+                             "",
+                             paste0("<a href='", altmetricUrl, "'><img src='", altmetricDonut, "'></a>"))) %>%
   select(-class, -altmetricDonut, -altmetricUrl) %>%
   DT::datatable(list(lengthMenu = c(10, 25, 30, 50, 75, 100), pageLength = 50), rownames = FALSE, style = "bootstrap", escape = FALSE)
 ```
