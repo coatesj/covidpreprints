@@ -1,8 +1,14 @@
 pandoc: 2.7.3
-pkgdown: 1.6.0
+pkgdown: 1.6.1
 pkgdown_sha: ~
-articles: []
-last_built: 2020-09-12T00:05Z
+articles:
+  about: about.html
+  further_info: further_info.html
+  mount_sinai: mount_sinai.html
+  preprint_plot: preprint_plot.html
+  resources: resources.html
+  timeline: timeline.html
+last_built: 2020-09-13T00:02Z
 urls:
   reference: https://covidpreprints.com/reference
   article: https://covidpreprints.com/articles
