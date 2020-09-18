@@ -106,12 +106,12 @@ combined <- bind_rows(preprints, events) %>%
 ```{r}
 combined %>%
   select(class, date, title, briefSummary, url, altmetricDonut, altmetricUrl, altmetricScore) %>%
-  mutate(url = paste0("<a href='", url, "'>", url, "</a>"),
+  mutate(title = paste0("<a href='", url, "'>", title, "</a>"),
          altmetric = if_else(class == "event",
                              "",
                              paste0("<a href='", altmetricUrl, "'><img src='", altmetricDonut, "'></a>")),
          altmetricScore = if_else(altmetricScore == "", 0, altmetricScore)) %>%
-  select(-class, -altmetricDonut, -altmetricUrl) %>%
-  DT::datatable(rownames = FALSE, style = "bootstrap", escape = FALSE, options = list(columnDefs = list(list(orderData = 4, targets = 5), list(visible = FALSE, targets = 4)), lengthMenu = c(10, 25, 30, 50, 75, 100), pageLength = 50)) %>%
+  select(-class, -url, -altmetricDonut, -altmetricUrl) %>%
+  DT::datatable(rownames = FALSE, style = "bootstrap", escape = FALSE, options = list(columnDefs = list(list(orderData = 3, targets = 4), list(visible = FALSE, targets = 3)), lengthMenu = c(10, 25, 30, 50, 75, 100), pageLength = 50)) %>%
   DT::formatDate("date", method = "toLocaleDateString", params = list('en-US', list(year = 'numeric', month = 'long', day = 'numeric')))
 ```
