@@ -47,6 +47,9 @@ parse_epmc <- function(item){
       if(i[["type"]] == "Preprint of"){
         pub_doi <- epmc_details(i[["id"]], i[["source"]])[["basic"]][["doi"]]
       }
+      if (is.null(pub_doi)) {
+        pub_doi <- NA_character_
+      }
     }
   } else {
     pub_doi <- NA_character_
