@@ -39,9 +39,8 @@ sheet_url <- "https://docs.google.com/spreadsheets/d/1BES52D4nYUZjV6kx1S_lJKSHvC
 ```
 
 ```{r, define_utilities}
-epmc <- function(doi){
-  data <- epmc_search_by_doi(doi = doi,
-                             output = "raw")[[1]][[1]]
+parse_epmc <- function(item){
+  data <- item[[1]]
   if(length(data[["commentCorrectionList"]]) > 0){
     l <- data[["commentCorrectionList"]][["commentCorrection"]]
     for(i in l){
@@ -82,10 +81,11 @@ altmetric <- function(doi){
 preprints <- read_sheet(sheet_url, sheet = "Preprints") %>%
   filter(class %in% c("preprint", "bad")) %>% # filter non-preprints
   filter(!str_detect(id, "arXiv")) %>% # filter arXiv preprints (for now...)
-  mutate(publication = map(id, epmc),
+  mutate(publication = map(epmc_search_by_doi(id, output = "raw"), parse_epmc),
          altmetric = map(id, altmetric),
          url = str_c("https://doi.org/", id)) %>%
-  unnest(publication, altmetric)
+  unnest(publication) %>%
+  unnest(altmetric)
 
 # Read Google Sheet (Events tab)
 events <- read_sheet(sheet_url, sheet = "Events") %>%
