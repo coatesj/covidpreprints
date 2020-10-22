@@ -18,9 +18,8 @@ The database is being actively maintiained & managed by Zhang-He Goh (@zhanghe_g
 
 In addition, our thanks go out to the wider scientific community who are diligently assessing and communicating important preprints during this difficult time. 
 
-preLights is a community service supported by The Company of Biologists, the not-for-profit publisher of Development, Journal of Cell Science, Journal of Experimental Biology, Disease Models & Mechanisms and Biology Open. The Company of Biologists is also a UK charity, providing grants and other support for the scientific community.
-Follow preLights on Twitter at https://twitter.com/preLights
+Please note that by including content on this site, we do not endorse or claim to verify the preprint contents nor can we independently confirm the results. It is with the best effort that we collate and review the included preprints but cannot be held liable for any inaccuracies. 
 
-![](../www/prelights.png)
+
                                  
         
